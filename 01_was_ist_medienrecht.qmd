@@ -1,0 +1,160 @@
+---
+title: "Was ist Medienrecht? – Definition und Einordnung"
+subtitle: "Einheit 1: Ziele und Aufgaben des Medienrechts"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+
+# --- Ausgabe-Formate ---
+format: moodle-html
+---
+
+# Was ist Medienrecht? – Definition und Einordnung
+
+## Der Begriff und die Natur des Rechtsgebiets
+
+Das Medienrecht ist – um es direkt vorab zu klären – kein klassisches "Kodifikationsrecht". Sie würden vergeblich nach dem einen "Medien-Gesetzbuch" suchen. Vielmehr handelt es sich um eine klassische *Querschnittsmaterie*. Es bündelt Regelungen aus verschiedenen Rechtsgebieten, sofern diese mediale Sachverhalte betreffen.
+
+::: {.flip-card}
+#### Querschnittsmaterie
+Ein Rechtsgebiet, das sich nicht aus einer einzigen zentralen Kodifikation speist, sondern Normen aus Zivilrecht, öffentlichem Recht und Strafrecht funktionsspezifisch zusammenführt.
+:::
+
+Das Spektrum der beteiligten klassischen Gebiete ist breit gefächert:
+
+*   **Zivilrecht:** Hier geht es um die horizontalen Beziehungen zwischen Privaten. Denken Sie an das [Urheberrecht (UrhG)](http://www.gesetze-im-internet.de/urhg/) bei der Nutzung von Inhalten, das [Vertragsrecht](http://www.gesetze-im-internet.de/bgb/) bei Streaming-Abos oder Schadensersatzansprüche bei Verletzungen des [Allgemeinen Persönlichkeitsrechts](http://www.gesetze-im-internet.de/gg/art_2.html).
+*   **Öffentliches Recht:** Regelt das vertikale Verhältnis zwischen Staat und Bürger. Dies umfasst die Rundfunkregulierung, das Verfassungsrecht und die Organisation der Medienaufsicht.
+*   **Strafrecht:** Ist die ultio ratio bei schwerwiegenden Verstößen wie Beleidigung, Volksverhetzung oder der Verbreitung jugendgefährdender Inhalte.
+
+Gegenstand der Regelung ist sowohl die private als auch die öffentliche Kommunikation. Wir blicken dabei auf die traditionellen Massenmedien (Presse, Rundfunk, Film) ebenso wie auf die "neuen" Helden (und Schurken) der digitalen Ära: Interntdienste, Soziale Netzwerke und komplexe Plattformdienste und auch KI-Systeme.
+
+## Der „Doppelcharakter“ der Medien
+
+Wer das Medienrecht verstehen will, muss den "Januskopf" der Medien begreifen. Medien sind nämlich nie nur eindimensional.
+
+1.  **Wirtschaftsgut:** Medienunternehmen sind Marktteilnehmer. Sie müssen Gehälter zahlen, sie konkurrieren um Werbebudgets und Abonnements. Hier regiert die Logik des Marktes.
+2.  **Kulturgut:** Gleichzeitig sind Medien die "Vierte Gewalt in der Demokratie". Sie dienen der öffentlichen Meinungsbildung, vermitteln Kultur und Bildung und erfüllen eine demokratiekonstituierende Funktion.
+
+::: {.details}
+#### Zum Spannungsverhältnis zwischen ökonomischer Ratio und publizistischem Auftrag
+Das Spannungsverhältnis zwischen ökonomischer Ratio und publizistischem Auftrag prägt die gesamte Rechtssetzung zu den Medien. Der Staat befindet sich auf einer permanenten Gratwanderung: Er muss einerseits die wirtschaftliche Betätigung über die Wirtschaftsgrundrechte ermöglichen, andererseits aber sicherstellen, dass die publizistische Qualität und Vielfalt nicht völlig der Gewinnmaximiierung zum Opfer fällt.
+:::
+
+## Ziele und Funktionen des Medienrechts
+
+Das Medienrecht ist kein Selbstzweck. Es verfolgt handfeste Schutzziele auf vier Ebenen:
+
+> "Die Freiheit der Medien ist nicht die Freiheit der Verleger/-innen, sondern die Freiheit der Bürger/-innen, sich aus einer Vielfalt von Quellen zu informieren."
+
+*   **Staat und Gesellschaft (Demokratiefunktion):** Sicherung der Medienfreiheit als Basis der Demokratie und Gewährleistung von Meinungsvielfalt (Pluralismus).
+*   **Persönlichkeitsschutz (Schutzfunktion):** Schutz des Einzelnen vor medialer Übermacht (Menschenwürde, Persönlichkeitsrecht) sowie der Jugendschutz.
+*   **Medienwirtschaft:** Schutz geistigen Eigentums ([UrhG](http://www.gesetze-im-internet.de/urhg/)) und Schaffung fairer Marktbedingungen im Verhältnis zu den großen Plattformen ([DSA](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32022R2065), [DMA](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32022R1925)).
+*   **Kulturpolitik:** Förderung kultureller Identität und Qualität.
+
+# Die Rechtsquellen: Ein Mehrebenensystem
+
+Die Kompetenzverteilung im Medienrecht kann einem auf den ersten Blick wie ein Dschungel erscheinen. Aber auf den zweiten Blick wird maches klarer, denn das Medienrecht lässt sich als hierarchisches Mehrebenensystem verstehen.
+
+Erkunden Sie zunächst die verschiedenen Ebenen des Medienrechts in der interaktiven Übersicht:
+
+<iframe src="widgets/kapitel-01/widget-mehrebenen.html" 
+        width="100%" height="450px" frameborder="0"
+        title="Interaktive Übersicht Mehrebenensystem">
+</iframe>
+
+
+## Internationale und Europäische Ebene
+
+Da Bits und Bytes nicht an Grenzen haltmachen, wird das Medienrecht massiv europäisiert.
+
+### Europarat (Völkerrecht)
+Die [Europäische Menschenrechtskonvention (EMRK)](https://www.coe.int/de/web/conventions/full-list/-/conventions/rms/0900001680063784) ist zentral. **Art. 10 EMRK** schützt die Freiheit der Meinungsäußerung, während **Art. 8 EMRK** das Recht auf Achtung des Privatlebens gewährleistet.
+
+### Europäische Union (Unionsrecht)
+Die EU hat zwar keine umfassende Kompetenz für "Medienkultur" (das ist Ländersache!), greift aber über die Binnenmarktkompetenz massiv im Medienbereich ein. Hier ein Überblick über die wichtigsten Rechtsakte (lange nicht vollständig):
+
+*   **Primärrecht:** [Art. 11 der EU-Grundrechtecharta (GRC)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:12012P/TXT) schützt die Medienfreiheit.
+*   **Sekundärrecht:** Das moderne digitale Medienrecht wird durch EU-Verordnungen dominiert:
+    *   **Infrastruktur:** Europäischer Kodex für elektronische Kommunikation.
+    *   **Mediendienste:** [AVMD-Richtlinie](https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:32010L0013).
+    *   **Plattformen:** Der [Digital Services Act (DSA)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32022R2065) gilt als das "Grundgesetz für Internet- und Plattformdienste".
+    *   **Datenschutz:** Die [DSGVO](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32016R0679) ist Ihnen sicher ein Begriff.
+    *   **KI:** Der [AI Act](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689) regelt den Einsatz von KI-Systemen.
+
+## Nationale Ebene (Deutschland)
+
+### Verfassungsrecht (Grundgesetz)
+Das Fundament ist [Art. 5 Abs. 1 GG](http://www.gesetze-im-internet.de/gg/art_5.html). Er enthält das Quintett der Kommunikationsfreiheiten: *Meinungs-*, *Informations-*, *Presse-*, *Rundfunk-* und *Filmfreiheit*.
+
+### Kompetenzverteilung (Föderalismus)
+Hier wird es typisch deutsch:
+
+*   **Bund:** Zuständig für die Technik, also Telekommunikation ([Art. 73 GG](http://www.gesetze-im-internet.de/gg/art_73.html)) und das [Urheberrecht](http://www.gesetze-im-internet.de/urhg/).
+
+*   **Länder:** Zuständig für die Inhalte (Kulturhoheit, [Art. 70 GG](http://www.gesetze-im-internet.de/gg/art_70.html)).
+Lässt sich danach immer sauber abgrenzen? Nein, selbstverständlich nicht. 
+
+::: {.drag-exercise}
+Der Bund regelt die *technische Übertragung*, während die Länder für die *medialen Inhalte* zuständig sind.
+:::
+
+Zuständigkeits-Check: Können Sie die Themen dem Bund oder den Ländern zuordnen?
+
+<iframe src="widgets/kapitel-01/widget-kompetenz-check.html" 
+        width="100%" height="480px" frameborder="0"
+        title="Interaktives Quiz Kompetenzverteilung">
+</iframe>
+
+## Staatsverträge und Gesetze auf Länderebene
+Da die Länder für Medieninhalte zuständig sind, schließen sie Staatsverträge, um einen Flickenteppich zu vermeiden.
+*   **Medienstaatsvertrag (MStV):** Das zentrale Regelwerk.
+*   **Landespressegesetze:** Regeln das Pressewesen.
+
+# Vertiefung: Wichtige Abgrenzungen und Historie
+
+## Medienpolitik vs. Medienrecht
+Das Medienrecht setzt den Rahmen (**"Was darf man?"**), während die Medienpolitik gestaltet (**"Was wollen wir?"**). Das Verfassungsrecht lässt Spielräume, verlangt aber z.B. die *Staatsferne des Rundfunks*.
+
+## Historische Entwicklung
+Früher lebten wir in einer Welt der "Mangelverwaltung" (begrenzte Frequenzen beim Rundfunk, riesige Investitionen für einen Fernsehsender). Heute befinden wir uns in der Welt des Überflusses an Informationen und medialen Angeboten - uns allen zugänglich über das Internet als Basisinfrastruktur. Die Herausforderung: In Zeiten von Social Media fehlen oft die klassischen journalistischen Filter. Gatekeeper wie Google oder Meta dominieren den Zugang zu Informationen, was neue regulatorische Antworten (wie den DSA) erfordert.
+
+::: {.quick-check}
+Welches Gesetz wird oft als "Grundgesetz des Internets" bezeichnet?
+
+- DSGVO
+- **Digital Services Act (DSA)**
+- Medienstaatsvertrag
+- Grundgesetz (Art. 5)
+:::
+
+::: {.quick-check}
+Wer ist in Deutschland primär für die Regulierung von Medieninhalten zuständig?
+
+- Der Bund
+- **Die Bundesländer**
+- Die Europäische Union allein
+- Das Bundesministerium für Digitales
+:::
+
+Welche der folgenden Grundrechte finden sich in Art. 5 Abs. 1 GG?
+
+::: {.quick-check}
+Markieren Sie alle zutreffenden:
+
+- **Meinungsfreiheit**
+- **Pressefreiheit**
+- Berufsfreiheit
+- **Rundfunkfreiheit**
+:::

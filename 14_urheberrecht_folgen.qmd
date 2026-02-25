@@ -1,0 +1,146 @@
+---
+title: "Folgen von Urheberrechtsverletzungen"
+subtitle: "Einheit 14: Zivilrecht, Strafrecht und die Haftung von Plattformen"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: moodle-html
+---
+
+# Einleitung
+
+Was passiert eigentlich, wenn die schönen Regeln der letzten Einheiten missachtet werden? Wenn fremde Werke ohne Lizenz und ohne Schranke genutzt werden, bietet das Urheberrecht vielen Reaktionsmöglichkeiten. Das Urheberrecht ist kein zahnloser Tiger – es bietet ein Arsenal an Rechtsfolgen und Instrumenten, von der teuren anwaltlichen Abmahnung bis zum Besuch der Staatsanwaltschaft.
+
+# Das zivilrechtliche Anspruchssystem
+
+Das Zivilrecht bietet für den Verletzten Anpruchsgrundlagen und prozessuale Mittel gegen den Verletzer. Es geht hierbei primär um zwei Ziele: Den Stopp der Verletzung und den Ausgleich des Schadens.
+
+## Unterlassung und Beseitigung
+
+Die Ansprüche nach [§ 97 Abs. 1 UrhG](https://www.gesetze-im-internet.de/urhg/__97.html) sind die Klassiker der zivilrechtlichen Durchsetzung von Urheberrechtsverletzungen - im ersten Schritt oft durch eine anwaltliche Abmahnung. 
+
+*   **Beseitigung:** Den aktuellen Zustand beenden (z.B. das Foto von der Website löschen).
+*   **Unterlassung:** Ein Versprechen für die Zukunft, die Tat nie wieder zu begehen.
+
+::: {.details}
+#### Wichtig: Verschuldensunabhängigkeit
+Einer der häufigsten Irrtümer in der Praxis: "Ich wusste gar nicht, dass das Bild geschützt ist!" Für [§ 97 Abs. 1 UrhG](https://www.gesetze-im-internet.de/urhg/__97.html) ist das völlig egal. Wer objektiv gegen das Recht verstößt, haftet auf Unterlassung – auch ohne Vorsatz oder Fahrlässigkeit. Die Abmahnkosten trägt der Verletzer trotzdem.
+:::
+
+In der folgenden Übersicht sehen Sie, welche Ansprüche vom Verschulden abhängen und welche nicht:
+
+<iframe src="widgets/kapitel-14/widget-haftungs-check.html" 
+        width="100%" height="400px" frameborder="0"
+        title="Haftungs-Check: Verschulden vs. Verschuldensunabhängigkeit">
+</iframe>
+
+## Der Schadensersatz
+
+Schadensersatz nach [§ 97 Abs. 2 UrhG](https://www.gesetze-im-internet.de/urhg/__97.html) gibt es dagegen nur, wenn der Verletzer **schuldhaft** (vorsätzlich oder fahrlässig) gehandelt hat. Da der Schaden im Immaterialgüterrecht schwer zu greifen ist, hat der Urheber ein Wahlrecht zwischen drei Berechnungsarten.
+
+::: {.flip-card}
+#### Dreifache Schadensberechnung
+1. **Konkreter Schaden:** Nachgewiesener Verlust (selten).
+2. **Gewinnabschöpfung:** Was hat der Verletzer verdient?
+3. **Lizenzanalogie:** Was hätten vernünftige Parteien als Lizenzgebühr vereinbart? (Standardweg).
+:::
+
+Vergleichen Sie die verschiedenen Berechnungsarten:
+
+<iframe src="widgets/kapitel-14/widget-schadensberechnung.html" 
+        width="100%" height="450px" frameborder="0"
+        title="Simulator zur dreifachen Schadensberechnung">
+</iframe>
+
+::: {.case-study}
+#### Das "versehentliche" Blog-Foto
+Blogger B nutzt ein professionelles Foto einer Agentur für seinen Wander-Guide. Er dachte, "Internet-Bilder sind gratis". Die Agentur verlangt Unterlassung und Schadensersatz in Höhe von 500 € (übliche Lizenz).
+
+::: {.solution}
+B muss das Bild löschen und die Unterlassungserklärung abgeben (verschuldensunabhängig). Er haftet zudem auf Schadensersatz nach der **Lizenzanalogie** (§ 97 Abs. 2 UrhG), da er zumindest fahrlässig gehandelt hat – im Urheberrecht gilt eine strenge Prüfungspflicht für genutzte Inhalte.
+:::
+:::
+
+## Hilfsansprüche: Auskunft und Vernichtung
+
+Damit man überhaupt weiß, wie viel Schadensersatz man fordern kann, muss man wissen, was der andere getan hat.
+
+*   **Auskunftsanspruch ([§ 101 UrhG](https://www.gesetze-im-internet.de/urhg/__101.html)):** "Sag mir, wie oft du das Bild verkauft hast!"
+*   **Vernichtung ([§ 98 UrhG](https://www.gesetze-im-internet.de/urhg/__98.html)):** Bezieht sich auf physische Kopien (z.B. das Schreddern einer unberechtigten Buchauflage).
+
+# Strafrecht
+
+Urheberrechtsverletzungen können Straftaten gemäß [§ 106 UrhG](https://www.gesetze-im-internet.de/urhg/__106.html) sein. 
+
+> **Juristische Pointierung:** Die prominente Kampagne "Raubkopierer sind Verbrecher" ist dogmatisch unsauber. Gemäß [§ 12 StGB](https://www.gesetze-im-internet.de/stgb/__12.html) sind Verbrechen nur Taten mit einer Mindeststrafe von 1 Jahr. Urheberrechtsverletzungen sind meist **Vergehen**, da sie auch mit Geldstrafe bedroht sind.
+
+Ein wichtiger Mechanismus ist das **Strafantragserfordernis** ([§ 109 UrhG](https://www.gesetze-im-internet.de/urhg/__109.html)): Die Staatsanwaltschaft wird bei Urheberrechtsverstößen meist nur aktiv, wenn der Urheber explizit einen Strafantrag stellt.
+
+# Die Plattformhaftung 
+
+Denken Sie an die Einheiten zum Recht der Digitalen Dienste (6) und zu den Sorgfaltspflichten nach DSA (7) zurück: Danach stellt sich zunächst die Frage, inwieweit Plattformen für Urheberrechtsverletzungen ihrer Nutzer verantwortlich sind und ob auch in diesem Bereich die Haftungsprivilegien der DSA gelten. 
+
+Seit Einführung des [**Urheberrechts-Diensteanbieter-Gesetzes (UrhDaG)**](https://www.gesetze-im-internet.de/urhdag/BJNR121500021.html#BJNR121500021BJNG000100000) zur Umsetzung der sog. [DSM-Richtlinie der EU](https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32019L0790) treffen Plattformen im Urheberrecht besondere Pflichten - sonst haften sie:
+
+**Der Prüfungs-Flowchart nach UrhDaG:**
+
+1.  **Lizenzprüfung:** Hat die Plattform eine Lizenz für den Content?
+2.  **Upload-Check:** Falls nein, muss sie Blockierverlangen der Rechteinhaber schon beim Upload durchsetzen.
+3.  **Mutmaßlich erlaubte Inhalte (§ 9 UrhDaG):** Kurze Schnipsel oder vom Nutzer als "Schranke" markierte Inhalte (z.B. Zitat) werden nicht sofort gesperrt.
+4.  **Der "Red Button" (§ 14 Abs. 4 UrhDaG):** Bei hochempfindlichen Inhalten (Live-Sport, Kinostart) können Rechteinhaber eine sofortige Sperrung erzwingen, bis der Streit geklärt ist.
+
+Hier können Sie den Entscheidungsprozess einer Plattform nach dem UrhDaG in den wesentlichen Schritten durchspielen:
+
+<iframe src="widgets/kapitel-14/widget-urhdag-flow.html" 
+        width="100%" height="550px" frameborder="0"
+        title="UrhDaG Upload-Entscheidungs-Flowchart">
+</iframe>
+
+::: {.drag-exercise}
+Der *Red Button* dient dem Schutz *zeitkritischer Inhalte*, während die *mutmaßliche Erlaubnis* die *Nutzerfreiheit* (Memes, Zitate) sichert.
+:::
+
+# Methodik
+
+Bei der Prüfung von zivilrechtlichen Ansprüchen nach § 97 UrhG nutzen Sie dieses Schema:
+
+1.  **Schutzgegenstand:** Liegt ein Werk i.S.d. [§ 2 Abs. 2 UrhG](https://www.gesetze-im-internet.de/urhg/__2.html) vor (Persönliche geistige Schöpfung)?
+2.  **Berechtigung:** Ist der Kläger der Urheber oder Inhaber eines Nutzungsrechts?
+3.  **Verletzungshandlung:** In welches konkrete Recht wurde eingegriffen? (z. B. [§ 16 UrhG](https://www.gesetze-im-internet.de/urhg/__16.html) durch Kopieren, [§ 19a UrhG](https://www.gesetze-im-internet.de/urhg/__19a.html) durch Upload).
+4.  **Rechtfertigung:** 
+    *   Liegt eine vertragliche **Lizenz** vor (§§ 31 ff. UrhG)?
+    *   Greift eine **gesetzliche Schranke** (z. B. Privatkopie § 53, Zitat § 51)? Dazu mehr in der nächsten Einheit.  
+5.  **Anspruchsspezifische Merkmale:**
+    *   Unterlassung: Wiederholungsgefahr (Verschulden irrelevant).
+    *   Schadensersatz: Verschulden (Vorsatz/Fahrlässigkeit) + Schadensberechnung.
+
+# Lernkontrolle
+
+::: {.quick-check}
+Jemand nutzt ohne Erlaubnis ein Lied als Hintergrundmusik für ein privates Urlaubsvideo auf YouTube. Der Urheber mahnt ab. Kann der Nutzer argumentieren, er habe "nicht gewusst", dass das verboten ist, um die Unterlassungskosten zu vermeiden?
+
+- Ja, Unwissenheit schützt vor Strafe.
+- **Nein, der Unterlassungsanspruch ist verschuldensunabhängig.**
+- Ja, sofern er das Video sofort löscht.
+:::
+
+::: {.quick-check}
+Was ist die "Lizenzanalogie"?
+
+- Eine Analogie zum Patentrecht.
+- Eine Schätzung des Schadens basierend auf dem Aktienkurs.
+- **Die Zahlung dessen, was vernünftige Parteien als fairen Preis vereinbart hätten.**
+:::

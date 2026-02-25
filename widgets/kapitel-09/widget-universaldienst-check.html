@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universaldienst Check</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .header {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .input-row {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        input[type="range"] {
+            flex-grow: 1;
+            accent-color: #ff6a00;
+        }
+
+        .value {
+            width: 80px;
+            font-weight: bold;
+            color: #ff6a00;
+            text-align: right;
+        }
+
+        .result-box {
+            background: #f8f9fa;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+
+        .result-box.pass {
+            background: #e6fcf5;
+            border: 2px solid #28a745;
+        }
+
+        .result-box.fail {
+            background: #fff5f5;
+            border: 2px solid #dc3545;
+        }
+
+        .status {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .details {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .mini-bar {
+            height: 4px;
+            background: #eee;
+            margin-top: 5px;
+            position: relative;
+        }
+
+        .marker {
+            position: absolute;
+            top: -5px;
+            width: 2px;
+            height: 14px;
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Universaldienst-Anspruch (TKG)</div>
+
+        <div class="input-row">
+            <label>Download-Geschwindigkeit (Mbit/s)</label>
+            <div class="slider-container">
+                <input type="range" id="dl" min="0" max="50" value="5" step="0.5">
+                <span class="value" id="dl-val">5 Mbit/s</span>
+            </div>
+        </div>
+
+        <div class="input-row">
+            <label>Upload-Geschwindigkeit (Mbit/s)</label>
+            <div class="slider-container">
+                <input type="range" id="ul" min="0" max="10" value="1" step="0.1">
+                <span class="value" id="ul-val">1 Mbit/s</span>
+            </div>
+        </div>
+
+        <div class="input-row">
+            <label>Latenz (Ping in ms)</label>
+            <div class="slider-container">
+                <input type="range" id="lat" min="10" max="500" value="200" step="10">
+                <span class="value" id="lat-val">200 ms</span>
+            </div>
+        </div>
+
+        <div id="result" class="result-box fail">
+            <div id="status" class="status">Nicht erfüllt</div>
+            <div id="details" class="details">Der Anschluss liegt unter dem gesetzlichen Minimum.</div>
+        </div>
+    </div>
+
+    <script>
+        const dlS = document.getElementById('dl');
+        const ulS = document.getElementById('ul');
+        const latS = document.getElementById('lat');
+        const dlV = document.getElementById('dl-val');
+        const ulV = document.getElementById('ul-val');
+        const latV = document.getElementById('lat-val');
+        const res = document.getElementById('result');
+        const stat = document.getElementById('status');
+        const det = document.getElementById('details');
+
+        function update() {
+            const dl = parseFloat(dlS.value);
+            const ul = parseFloat(ulS.value);
+            const lat = parseFloat(latS.value);
+
+            dlV.textContent = dl + ' Mbit/s';
+            ulV.textContent = ul + ' Mbit/s';
+            latV.textContent = lat + ' ms';
+
+            const dlOk = dl >= 10;
+            const ulOk = ul >= 1.7;
+            const latOk = lat <= 150;
+
+            if (dlOk && ulOk && latOk) {
+                res.className = 'result-box pass';
+                stat.textContent = 'Gesetzlicher Anspruch erfüllt';
+                det.textContent = 'Dieser Anschluss entspricht den aktuellen Mindestanforderungen.';
+            } else {
+                res.className = 'result-box fail';
+                stat.textContent = 'Unterversorgt';
+                let reasons = [];
+                if (!dlOk) reasons.push('Download zu gering (< 10 Mbit/s)');
+                if (!ulOk) reasons.push('Upload zu gering (< 1.7 Mbit/s)');
+                if (!latOk) reasons.push('Latenz zu hoch (> 150 ms)');
+                det.innerHTML = 'Gründe für Unterversorgung:<br>• ' + reasons.join('<br>• ');
+            }
+        }
+
+        [dlS, ulS, latS].forEach(s => s.addEventListener('input', update));
+        update();
+    </script>
+</body>
+
+</html>

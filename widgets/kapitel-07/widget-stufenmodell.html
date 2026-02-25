@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Stufenmodell</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            box-sizing: border-box;
+            background: #fff;
+            color: #333;
+        }
+
+        .widget-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .pyramid {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .stage {
+            width: var(--width);
+            padding: 15px;
+            background: #f0f0f0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .stage:hover {
+            border-color: #ff6a00;
+            background: #fff5ee;
+            transform: scale(1.02);
+        }
+
+        .stage.active {
+            background: #ff6a00;
+            color: white;
+            border-color: #e65c00;
+        }
+
+        .stage.cumulative {
+            border-left: 5px solid #ff6a00;
+        }
+
+        #info-box {
+            margin-top: 30px;
+            padding: 20px;
+            min-height: 100px;
+            border-radius: 8px;
+            background: #f9f9f9;
+            border: 1px dashed #ccc;
+            text-align: left;
+        }
+
+        .stage-title {
+            display: block;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .stage-name {
+            display: block;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="widget-container">
+        <div class="pyramid">
+            <div class="stage" style="--width: 100%" onclick="showStage(1)" id="stage-1">
+                <span class="stage-title">Stufe 1</span>
+                <span class="stage-name">Alle Vermittlungsdienste</span>
+            </div>
+            <div class="stage" style="--width: 85%" onclick="showStage(2)" id="stage-2">
+                <span class="stage-title">Stufe 2</span>
+                <span class="stage-name">Hosting-Dienste</span>
+            </div>
+            <div class="stage" style="--width: 70%" onclick="showStage(3)" id="stage-3">
+                <span class="stage-title">Stufe 3</span>
+                <span class="stage-name">Online-Plattformen</span>
+            </div>
+            <div class="stage" style="--width: 55%" onclick="showStage(4)" id="stage-4">
+                <span class="stage-title">Stufe 4</span>
+                <span class="stage-name">VLOPs / VLOSEs</span>
+            </div>
+        </div>
+
+        <div id="info-box">
+            Klicken Sie auf eine Stufe, um die kumulativen Sorgfaltspflichten des DSA zu sehen.
+        </div>
+    </div>
+
+    <script>
+        const stages = {
+            1: {
+                title: "Alle Vermittlungsdienste",
+                duties: ["Kontaktstellen (Art. 11/12)", "Transparenz der AGB (Art. 14)", "Behördliche Anordnungen (Art. 9/10)", "Transparenzberichte (Art. 15)"]
+            },
+            2: {
+                title: "Hosting-Dienste (+ Stufe 1)",
+                duties: ["Notice & Action (Art. 16)", "Begründungspflicht (Art. 17)", "Meldung von Straftaten (Art. 18)"]
+            },
+            3: {
+                title: "Online-Plattformen (+ Stufe 1 & 2)",
+                duties: ["Beschwerdemanagement (Art. 20)", "Trusted Flaggers (Art. 22)", "Dark Patterns Verbot (Art. 25)", "Werbe-Transparenz (Art. 26)"]
+            },
+            4: {
+                title: "Sehr große Plattformen (Vollumfänglich)",
+                duties: ["Risikobewertungen (Art. 34)", "Unabhängige Audits (Art. 37)", "Algorithmen-Transparenz", "Direkte EU-Aufsicht"]
+            }
+        };
+
+        function showStage(n) {
+            // Update UI
+            document.querySelectorAll('.stage').forEach(s => s.classList.remove('active'));
+            document.getElementById(`stage-${n}`).classList.add('active');
+
+            // Show cumulative effect
+            for (let i = 1; i <= 4; i++) {
+                const el = document.getElementById(`stage-${i}`);
+                if (i <= n) el.classList.add('cumulative');
+                else el.classList.remove('cumulative');
+            }
+
+            // Update Info
+            const data = stages[n];
+            let html = `<strong>${data.title}:</strong><ul>`;
+            data.duties.forEach(d => {
+                html += `<li>${d}</li>`;
+            });
+            html += `</ul>`;
+            document.getElementById('info-box').innerHTML = html;
+        }
+    </script>
+</body>
+
+</html>

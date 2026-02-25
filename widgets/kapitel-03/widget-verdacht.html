@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkliste Verdachtsberichterstattung</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+
+        .widget-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid #eee;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: #fafafa;
+        }
+
+        .step:hover {
+            border-color: #ff6a00;
+            background: #fff5f0;
+        }
+
+        .step.active {
+            border-color: #ff6a00;
+            background: #fff5f0;
+            box-shadow: 0 4px 6px rgba(255, 106, 0, 0.1);
+        }
+
+        .checkbox {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            background: white;
+            flex-shrink: 0;
+        }
+
+        .step.active .checkbox {
+            background: #ff6a00;
+            border-color: #ff6a00;
+        }
+
+        .step.active .checkbox::after {
+            content: '✓';
+            color: white;
+            font-weight: bold;
+        }
+
+        .step-label {
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .info-panel {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            min-height: 80px;
+        }
+
+        .info-panel h3 {
+            margin: 0 0 10px 0;
+            font-size: 1rem;
+            color: #ff6a00;
+        }
+
+        .info-panel p {
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="widget-container">
+        <div id="steps">
+            <div class="step" onclick="showStep(0)">
+                <div class="checkbox"></div>
+                <div class="step-label">Mindestbestand an Beweistatsachen</div>
+            </div>
+            <div class="step" onclick="showStep(1)">
+                <div class="checkbox"></div>
+                <div class="step-label">Überwiegendes Informationsinteresse</div>
+            </div>
+            <div class="step" onclick="showStep(2)">
+                <div class="checkbox"></div>
+                <div class="step-label">Gelegenheit zur Stellungnahme</div>
+            </div>
+            <div class="step" onclick="showStep(3)">
+                <div class="checkbox"></div>
+                <div class="step-label">Keine Vorverurteilung (Diktion)</div>
+            </div>
+        </div>
+
+        <div class="info-panel" id="info">
+            <h3>Checkliste</h3>
+            <p>Klicken Sie auf ein Kriterium, um die medienrechtlichen Anforderungen zu verstehen.</p>
+        </div>
+    </div>
+
+    <script>
+        const data = [
+            { title: "Beweistatsachen", text: "Es darf nicht ins Blaue hinein berichtet werden. Es müssen greifbare Anhaltspunkte vorliegen, die über bloße Gerüchte hinausgehen." },
+            { title: "Info-Interesse", text: "Die Tat muss von einem gewissen Gewicht sein oder die Person im öffentlichen Fokus stehen. Reine Lokalkriminalität rechtfertigt meist keine Namensnennung." },
+            { title: "Stellungnahme", text: "Zwingend: Dem Betroffenen oder seinem Anwalt muss ausreichend Zeit gegeben werden, auf die Vorwürfe zu antworten. Die Antwort muss im Kern wiedergegeben werden." },
+            { title: "Keine Vorverurteilung", text: "Die Sprache muss neutral sein. Verwenden Sie 'mutmaßlicher Täter' statt 'Täter'. Entlastende Momente müssen ebenfalls erwähnt werden." }
+        ];
+
+        function showStep(index) {
+            const steps = document.querySelectorAll('.step');
+            steps.forEach((s, i) => {
+                s.classList.toggle('active', i === index);
+            });
+
+            const info = document.getElementById('info');
+            info.innerHTML = `<h3>${data[index].title}</h3><p>${data[index].text}</p>`;
+        }
+    </script>
+</body>
+
+</html>

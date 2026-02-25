@@ -1,0 +1,9 @@
+# Editor-Konfigurationen
+.vscode
+
+# Betriebssystem-Dateien
+.DS_Store
+Thumbs.db
+
+# Quarto / Render-Artefakte
+*_files/

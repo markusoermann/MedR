@@ -1,0 +1,149 @@
+---
+title: "Grundrechte im Medienrecht"
+subtitle: "Einheit 2: Kommunikationsgrundrechtliche Gewährleistungen"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+
+# --- Ausgabe-Formate ---
+format: handout-typst
+---
+
+# Die Funktion der Grundrechte im Medienrecht
+
+Wer glaubt, Grundrechte seien nur abstrakte Lyrik für Festtagsreden, irrt gewaltig. Im Medienrecht sind sie das schärfste Schwert und zugleich der stabilste Schild.
+
+## Abwehrrechte und objektive Wertentscheidung
+
+Im klassischen Sinne sind Grundrechte Abwehrrechte gegen den Staat. Sie ziehen Linien um den Freiheitsraum des Bürgers/der Bürgerin (und oft auch von juristischen Personen wie Unternehmen), die der Staat nicht überschreiten darf.
+
+Doch Grundrechte können mehr. Sie sind eine **objektive Wertentscheidung** der Verfassung. Das bedeutet: Das gesamte Recht – auch das Zivilrecht zwischen Privaten – muss im Lichte der Grundrechte ausgelegt werden. Es gibt keinen "grundrechtsfreien Raum". Es gibt damit auch keinen "rechtsfreien Raum" - auch nicht im Internet, wie früher oft zu lesen war.
+
+::: {.flip-card}
+#### Abwehrrecht (Status Negativus)
+Das Recht des Einzelnen, vom Staat zu verlangen, unverhältnismäßige Eingriffe in seine Freiheitssphäre zu unterlassen.
+:::
+
+## Die mittelbare Drittwirkung: Das Lüth-Urteil
+
+Ein entscheidender Moment der deutschen Rechtsgeschichte: Das **Lüth-Urteil** (BVerfGE 7, 198) von 1958. Erich Lüth rief zum Boykott eines Films von Veit Harlan auf, einem Regisseur aus der NS-Zeit. Harlan klagte auf Unterlassung.
+
+Die Lösung des Bundesverfassungsgerichts: Grundrechte binden zwar nur den Staat unmittelbar ([Art. 1 Abs. 3 GG](https://www.gesetze-im-internet.de/gg/art_1.html)), wirken unter Privaten aber **mittelbar**. 
+
+::: {.details}
+#### Exkurs: Wie wirken Grundrechte im Zivilrecht?
+Dies geschieht über sogenannte **Generalklauseln** und unbestimmte Rechtsbegriffe im BGB.
+- [§ 242 BGB](https://www.gesetze-im-internet.de/bgb/__242.html) (Treu und Glauben)
+- [§ 823 BGB](https://www.gesetze-im-internet.de/bgb/__823.html) (Widerrechtlichkeit als Tatbestandsmerkmal)
+Diese Begriffe dienen als "Einbruchstellen" für die verfassungsrechtlichen Wertungen, da sie so offen sind, dass sie durch die verfassungsrechtlichen Wertungen mit Inhalt gefüllt werden können und müssen.
+:::
+
+# Der Ausgangspunkt: Das Grundgesetz
+
+Grundsätzlich gilt: Die spezielleren Grundrechte (Lex Specialis) verdrängen das allgemeinere Grundrecht. 
+
+## Die Kommunikationsfreiheiten ([Art. 5 Abs. 1 GG](https://www.gesetze-im-internet.de/gg/art_5.html))
+
+Der Artikel 5 gewährt nicht nur ein Grundrecht, sondern ein ganzes Bündel von Grundrechten. Es ist das Fundament unserer Medienordnung – ein liberales Bollwerk. Er schützt nicht nur das "Was" der Kommunikation (Meinung), sondern auch das "Wie" (Presse, Rundfunk, Film):
+
+1.  **Meinungsfreiheit:** Schützt Werturteile und Stellungnahmen. Wichtig: Bewusst unwahre Tatsachenbehauptungen sind *nicht* geschützt. Wer lügt, kann sich laut Bundesverfassungsgericht nicht auf die Meinungsfreiheit berufen.
+2.  **Informationsfreiheit:** Das Recht, sich aus allgemein zugänglichen Quellen ungehindert zu unterrichten.
+3.  **Pressefreiheit:** Schützt das Medium Presse und alle Tätigkeiten, die notwenig sind, um journalstisch-redaktionelle Publikationen zu erstellen und zu verbreiten - also den klassischen Printjournalismus und seine digitalen Äquivalente.
+4.  **Rundfunkfreiheit:** Schützt die Institution des Rundfunks (linear und teils non-linear). Dazu später mehr.
+5.  **Filmfreiheit:** Schützt die Produktion und Verbreitung von Filmen.
+
+::: {.drag-exercise}
+Die Meinungsfreiheit schützt *Werturteile*, während die Informationsfreiheit den Zugang zu *allgemein zugänglichen Quellen* garantiert. Die Institution der freien Medien wird oft als *Vierte Gewalt* in der Demokratie bezeichnet.
+:::
+
+::: {.flip-card}
+#### Meinung vs. Tatsache
+**Meinungen** sind Werturteile, geprägt durch das Element der Stellungnahme. Sie müssen nicht "richtig" sein. **Tatsachen** sind dem Beweis zugänglich. Bewusst unwahre Tatsachen ("Lügen", "Desinformationen") sind *nicht* vom Schutzbereich gedeckt.
+:::
+
+In der Praxis ist die Abgrenzung oft schwierig. Testen Sie Ihr Urteilsvermögen:
+
+<iframe src="widgets/kapitel-02/widget-meinung-tatsache.html" 
+        width="100%" height="300px" frameborder="0"
+        title="Interaktiver Check: Meinung oder Tatsache?">
+</iframe>
+
+## Das Zensurverbot ([Art. 5 Abs. 1 Satz 3 GG](https://www.gesetze-im-internet.de/gg/art_5.html))
+
+"Eine Zensur findet nicht statt." Klingt absolut, meint aber rechtstechnisch nur die **Vorzensur**. Das heißt, es ist verboten, eine Pflicht zur Vorlage von Werken vor Veröffentlichung bei einer Behörde einzuführen. Die Moderation von rechtswidrigen Inhalten durch Plattformanbieter ist also keine Zensur im Sinne des Grundgesetzes. 
+
+::: {.quick-check}
+Was ist Zensur im Sinne des Grundgesetzes?
+
+- Das nachträgliche Verbot eines Mediums durch ein Gericht.
+- Die Moderation von Postings in Social Media durch die Plattformanbieter.
+- **Die Verpflichtung, Werke vor Veröffentlichung einer Behörde zur Genehmigung vorzulegen.**
+:::
+
+# Schranken und Schranken-Schranken
+
+Freiheit ist kein absoluter Freifahrtschein, zu tun und zu lassen, was immer man will. Freiheit in der liberal-demokratisch verfassten Gesellschaft ist eine Freiheit, die mit Verantwortung für die Gemeinschaft und die Mitmenschen einhergeht. Grundrechte haben daher Grenzen ("Schranken"), und diese Grenzen haben wiederum rechtsstaatliche Bedingungen - die sogenannten Schranken-Schranken. So ist sichergestellt, das der Gebrauch von grundrechtlichen Freiheiten nicht übermäßig zu Lasten anderer geht und dass die freiheitliche Grundordnung nicht ausgehöhlt wird.
+
+## Die Schrankentrias ([Art. 5 Abs. 2 GG](https://www.gesetze-im-internet.de/gg/art_5.html))
+
+Jeder staatliche Eingriff in ein Grundrecht bedarf einer Rechtfertigung. Erste Voraussetzung ist nach dem **Vorbehalt des Gesetzes**, dass dieser Eingriff auf einer gesetzlichen Grundlage beruhen muss, die einer Schranke des Grundrechts entspricht. 
+
+Die Schranken für die Kommunikationsfreiheiten sind:
+- Die **allgemeinen Gesetze** (z. B. das StGB oder BGB). Das sind Gesetze, die nicht speziell dazu erlassen wurden, um eine bestimmte Meinung oder Medienberichterstattung einzuschränken.
+- Die gesetzlichen Bestimmungen zum **Schutze der Jugend**.
+- Das Recht der **persönlichen Ehre** als Ausdruck des Allgemeinen Persönlichkeitsrechts. Dieses wird etwa durch die Straftatbestände der Beleidigung, üblen Nachrede oder Verleumdung und die zivilrechtlichen Ansprüche gegen Ehrverletzungen geschützt. Im Medienrecht ist dies von besonderer Bedeutung, da die Kommunikationsfreiheiten und der Ehrschutz oft in einem Spannungsverhältnis stehen.
+
+## Die Wechselwirkungslehre
+
+Ein einfaches Gesetz darf das rechtshierarchisch höherstehende Grundrecht nicht völlig aushöhlen. Die Einschränkung muss daher ihrerseits im Lichte des Grundrechts ausgelegt werden. Dies nennen Jurist/-innen die **Wechselwirkungslehre**. Das Gesetz schränkt das Grundrecht ein, aber das Grundrecht wirkt auf die Auslegung des Gesetzes zurück.
+
+## Die Verhältnismäßigkeitsprüfung als Kern der Schranken-Schranken
+
+Das Gesetz muss verhältnismäßig sein. Das heißt, es muss 
+
+- geeignet sein, den mit ihm angestrebten Zweck zu erreichen,
+
+- erforderlich sein, um den angestrebten Zweck zu erreichen (es darf also kein milderes, weniger eingreifendes aber gleich geeignetes Mittel zur Zielerreichung geben) 
+
+- und angemessen sein, um den angestrebten Zweck zu erreichen (die Intensität des Eingriffs darf nicht außer Verhältnis zum angestrebten Zweck stehen). 
+
+Gleiches gilt für die Einzelmaßnahmen, die auf dem Gesetz beruhen. Gerade hier in der Verhältnismäßigkeitsprüfung spielt oft die Musik im Medienrecht.
+
+# Methodik: Der Weg zur Lösung
+
+Wenn Sie einen Fall analysieren, müssen Sie zunächst erkennen, wer gegen wen vorgeht. 
+
+## Schema A: Staatlicher Eingriff
+1. **Schutzbereich:** Ist das Verhalten des Grundrechtsträgers grundrechtlich geschützt?
+2. **Eingriff:** Erschwert eine staatliche Maßnahme das geschützte Verhalten des Grundrechtsträgers?
+3. **Rechtfertigung:** Beruht die Maßnahme auf einem Gesetz? Ist die Schranke (Gesetz) verfassungsgemäß? (vor allem Verhältnismäßigkeit, Wechselwirkungslehre) Ist die Einzelmaßnahme verhältnismäßig?
+
+## Schema B: Mittelbare Drittwirkung (Privat vs. Privat)
+1. **Anspruchsnorm:** Z. B. [§ 823 Abs. 1 BGB](https://www.gesetze-im-internet.de/bgb/__823.html).
+2. **Kollidierende Grundrechte:** z.B. Medienfreiheit vs. Allgemeines Persönlichkeitsrecht.
+3. **Praktische Konkordanz:** Abwägung der Interessen im Einzelfall.
+
+::: {.flip-card}
+#### Praktische Konkordanz
+Der Grundsatz, dass im Falle einer Grundrechtskollision beide Rechte so weit wie möglich zur Geltung kommen müssen, ohne dass eines das andere komplett verdrängt.
+:::
+
+In der Fallbearbeitung hilft dieser basale Navigator, die richtige Prüfungsstruktur zu identifizieren:
+
+<iframe src="widgets/kapitel-02/widget-pruefschema.html" 
+        width="100%" height="450px" frameborder="0"
+        title="Interaktiver Prüfschema-Navigator">
+</iframe>
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Haftungs-Check</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .step {
+            display: none;
+        }
+
+        .step.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .options {
+            display: grid;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        button {
+            background: #f0f0f0;
+            color: #333;
+            border: 2px solid #ddd;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            text-align: left;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            border-color: #ff6a00;
+            background: #fff5ee;
+        }
+
+        .result-box {
+            padding: 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        .safe {
+            background: #e6f4ea;
+            color: #1e7e34;
+            border: 1px solid #c3e6cb;
+        }
+
+        .danger {
+            background: #feeceb;
+            color: #d93025;
+            border: 1px solid #f5c6cb;
+        }
+
+        .reset-btn {
+            background: #ff6a00;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Step 1 -->
+        <div class="step active" id="step1">
+            <h3>1. Art des Inhalts</h3>
+            <p>Handelt es sich um eigene Inhalte oder wurden diese von Nutzern bereitgestellt?</p>
+            <div class="options">
+                <button onclick="goTo('result-content')">Eigene Inhalte (Content Provider)</button>
+                <button onclick="goTo('step2')">Fremde Inhalte (Nutzer-Uploads)</button>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step" id="step2">
+            <h3>2. "Zu eigen machen"</h3>
+            <p>Werden die Inhalte redaktionell geprüft, verändert oder im eigenen Layout als eigene präsentiert?</p>
+            <div class="options">
+                <button onclick="goTo('result-content')">Ja, wir treten als Autor/Herausgeber auf</button>
+                <button onclick="goTo('step3')">Nein, wir sind rein technischer Vermittler</button>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step" id="step3">
+            <h3>3. Kenntis von Rechtswidrigkeit</h3>
+            <p>Haben Sie Kenntnis von einem konkreten rechtswidrigen Inhalt (z.B. durch eine Meldung)?</p>
+            <div class="options">
+                <button onclick="goTo('step4')">Ja, eine Meldung ("Notice") liegt vor</button>
+                <button onclick="goTo('result-safe')">Nein, bisher keine Kenntnis</button>
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step" id="step4">
+            <h3>4. Reaktion ("Action")</h3>
+            <p>Haben Sie nach Kenntniserlangung unverzüglich gehandelt, um den Inhalt zu entfernen/sperren?</p>
+            <div class="options">
+                <button onclick="goTo('result-safe')">Ja, zügige Entfernung/Sperrung erfolgte</button>
+                <button onclick="goTo('result-danger')">Nein oder zu langsam reagiert</button>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div class="step" id="result-content">
+            <div class="result-box danger">
+                ⚠️ VOLLHAFTUNG (Content Provider)<br>
+                Sie haften wie ein Verleger vollumfänglich für diese Inhalte. Das DSA-Haftungsprivileg greift hier
+                nicht.
+            </div>
+            <button class="reset-btn" onclick="reset()">Neu prüfen</button>
+        </div>
+
+        <div class="step" id="result-safe">
+            <div class="result-box safe">
+                ✅ HAFTUNGSPRIVILEG (Art. 6 DSA)<br>
+                Sie sind als Hosting-Provider geschützt. Zivilrechtliche Schadensersatz- oder strafrechtliche Ansprüche
+                sind ausgeschlossen.
+            </div>
+            <button class="reset-btn" onclick="reset()">Neu prüfen</button>
+        </div>
+
+        <div class="step" id="result-danger">
+            <div class="result-box danger">
+                ⚠️ HAFTUNG EX-POST<br>
+                Durch die Untätigkeit nach Kenntnisnahme haben Sie das Privileg des Art. 6 DSA verloren. Eine Haftung
+                für den fremden Inhalt ist nun möglich.
+            </div>
+            <button class="reset-btn" onclick="reset()">Neu prüfen</button>
+        </div>
+    </div>
+
+    <script>
+        function goTo(id) {
+            document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+        function reset() {
+            goTo('step1');
+        }
+    </script>
+</body>
+
+</html>

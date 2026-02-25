@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schranken-Check</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: #333;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            background: #f0f0f0;
+            border: 2px solid #ddd;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        button.active {
+            background: #ff6a00;
+            color: white;
+            border-color: #e65f00;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #ff6a00;
+            min-height: 200px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .req-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .req-list li {
+            margin-bottom: 8px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .req-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #ff6a00;
+            font-weight: bold;
+        }
+
+        .warning {
+            font-size: 0.85rem;
+            color: #d32f2f;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="controls">
+        <button class="active" onclick="show('privat')">Privatkopie</button>
+        <button onclick="show('zitat')">Zitatrecht</button>
+        <button onclick="show('panorama')">Panoramafreiheit</button>
+        <button onclick="show('parodie')">Parodie/Pastiche</button>
+    </div>
+
+    <div id="display" class="card">
+        <!-- Content injected by JS -->
+    </div>
+
+    <script>
+        const data = {
+            privat: {
+                title: "Privatkopie (§ 53 Abs. 1 UrhG)",
+                reqs: [
+                    "Nur für privaten Gebrauch",
+                    "Kein (un-)mittelbarer Erwerbszweck",
+                    "Vorlage darf nicht offensichtlich rechtswidrig sein",
+                    "Geringe Stückzahl (bis zu 7 Exemplare)"
+                ],
+                warn: "Achtung: Dies gilt nicht für Software/Datenbanken (Spezialregeln!)."
+            },
+            zitat: {
+                title: "Zitatrecht (§ 51 UrhG)",
+                reqs: [
+                    "Belegfunktion (innere Auseinandersetzung)",
+                    "Umfang durch Zweck gerechtfertigt",
+                    "Zwingende Quellenangabe (§ 63 UrhG)",
+                    "Änderungsverbot (§ 62 UrhG)"
+                ],
+                warn: "Bebilderung ≠ Zitat! Ohne eigenen Text kein Zitat."
+            },
+            panorama: {
+                title: "Panoramafreiheit (§ 59 UrhG)",
+                reqs: [
+                    "Werk an öffentlichen Straßen/Plätzen",
+                    "Bleibend (auf Dauer angelegt)",
+                    "Nur Außenansicht erlaubt",
+                    "Kommerzielle Nutzung der Bilder zulässig"
+                ],
+                warn: "Drohnenaufnahmen oder Leitern können die Panoramafreiheit verletzen, wenn sie 'Hindernisse' überwinden."
+            },
+            parodie: {
+                title: "Parodie, Karikatur & Pastiche (§ 51a UrhG)",
+                reqs: [
+                    "Nutzung zum Zweck der Parodie, Karikatur oder des Pastiches",
+                    "Innerer Abstand zum Original erkennbar",
+                    "Eigene künstlerische Aussage oder kritische Auseinandersetzung",
+                    "Keine unangemessene Beeinträchtigung der Urheberinteressen"
+                ],
+                warn: "Ein 'Pastiche' erlaubt auch die Nutzung von Versatzstücken (z.B. Memes, Remixes), solange ein kreativer Eigenanteil vorliegt."
+            }
+        };
+
+        function show(key) {
+            const item = data[key];
+            const div = document.getElementById('display');
+
+            // Update buttons
+            document.querySelectorAll('button').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('onclick').includes(`'${key}'`)) btn.classList.add('active');
+            });
+
+            div.innerHTML = `
+                <h2>${item.title}</h2>
+                <ul class="req-list">
+                    ${item.reqs.map(r => `<li>${r}</li>`).join('')}
+                </ul>
+                <div class="warning"><strong>Wichtig:</strong> ${item.warn}</div>
+            `;
+        }
+
+        show('privat');
+    </script>
+</body>
+
+</html>

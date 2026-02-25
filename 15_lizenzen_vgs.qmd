@@ -1,0 +1,131 @@
+---
+title: "Lizenzen und Verwertungsgesellschaften"
+subtitle: "Einheit 15: Verträge, Creative Commons und kollektive Rechtewahrnehmung"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: handout-typst
+---
+
+# Einleitung: Die Monetarisierung kreativer Leistungen
+
+Ein Urheberrecht zu haben ist das eine. Davon leben zu können, das andere. Da das Urheberrecht im deutschen Recht untrennbar mit der Person des Schöpfers verknüpft und damit unübertragbar ist, führt der Weg zur wirtschaftlichen Verwertung über das Lizenzrecht. Wir klären heute, wie man Rechte "vermietet", ohne sie zu verlieren, und welches praktische Problem Verwertungsgesellschaften wie die GEMA für die Kreativen lösen.
+
+# Die Rechtseinräumung (Lizenzverträge)
+
+Erinnern wir uns an [§ 29 Abs. 1 UrhG](https://www.gesetze-im-internet.de/urhg/__29.html): Das Urheberrecht ist nicht übertragbar. Sie können Ihr Werk nicht "verkaufen" wie ein gebrauchtes Auto. Sie können lediglich **Nutzungsrechte** einräumen.
+
+## Terminologie: Verwertungsrecht vs. Nutzungsrecht
+
+Zunächst müssen wir ein paar grundlegende Begriffe klären:
+
+*   **Verwertungsrechte:** Die Stammrechte des Urhebers (z. B. § 16, § 17, § 19a UrhG). 
+*   **Nutzungsrecht:** Das "Tochterrecht", das vertraglich eingeräumt wird. Ein Verlag nutzt das Werk, aber er "verwertet" es nicht im Sinne des Stammrechtsinhabers.
+*   **Lizenz:** Der Begriff ist im Gesetz kaum zu finden, beschreibt aber faktisch die Einräumung von Nutzungsrechten.
+
+## Die „Stufenleiter der Gestattungen“
+
+Nicht jede Erlaubnis ist sofort ein Vertrag. Wir unterscheiden nach der Intensität der rechtlichen Bindung drei Stufen:
+
+1.  **Einwilligung:** Oft einseitig und widerruflich (ein bloßes "Ja, du darfst das verlinken").
+2.  **Schuldrechtliche Gestattung:** Ein bloßer Anspruch zwischen zwei Personen.
+3.  **Konstitutive Rechtseinräumung:** Ein echtes, rechtlich wie Eigentum geschütztes ("dinglich wirkendes") Nutzungsrecht. Das ist die "Gold-Standard-Lizenz".
+
+## Einfache vs. Ausschließliche Nutzungsrechte
+
+Die Unterscheidung zwischen **einfachen** und **ausschließlichen** Nutzungsrechten nach [§ 31 Abs. 2/3 UrhG](https://www.gesetze-im-internet.de/urhg/__31.html) ist sehr wichtig für die Gestaltung von Lizenzverträgen:
+
+::: {.flip-card}
+#### Einfaches Nutzungsrecht (§ 31 Abs. 2 UrhG)
+Der Inhaber darf das Werk nutzen, aber der Urheber darf es weiterhin selbst nutzen und auch anderen Personen weitere einfache Rechte einräumen. (Beispiel: Software-Abo, Stockfoto).
+:::
+
+::: {.flip-card}
+#### Ausschließliches Nutzungsrecht (§ 31 Abs. 3 UrhG)
+Der Inhaber erhält das Exklusivrecht. Er darf das Werk unter Ausschluss aller anderen Personen – auch des Urhebers! – nutzen. Nur er hat das Recht, eigenständig gegen Dritte zu klagen.
+:::
+
+Vergleichen Sie die Auswirkungen der beiden Lizenzmodelle in der folgenden Grafik:
+
+<iframe src="widgets/kapitel-15/widget-lizenz-vergleich.html" 
+        width="100%" height="400px" frameborder="0"
+        title="Interaktiver Vergleich: Einfaches vs. Ausschließliches Nutzungsrecht">
+</iframe>
+
+## Die Zweckübertragungstheorie
+
+Dies ist "Rettungsring" für Urheber bei unklaren Verträgen. Wenn nicht ausdrücklich geregelt ist, welche Nutzungsarten übertragen werden, bestimmt sich der Umfang nach dem **Zweck des Vertrages**, [§ 31 Abs. 5 UrhG](https://www.gesetze-im-internet.de/urhg/__31.html).
+
+> **Merksatz:** Im Zweifel bleiben alle Rechte beim Urheber, die für die Erfüllung des konkreten Vertragszwecks nicht zwingend nötig sind. Wer eine Lizenz für Print kauft, bekommt nicht automatisch die Online-Rechte dazu.
+
+# Creative Commons (CC) 
+
+Für die "Open Economy" sind individuelle Verhandlungen zu langsam. Creative Commons bietet standardisierte Lizenzmodule an, für die Sie sich als Urheber entscheiden können, um schnell darüber zu entscheiden, wie ihr Werk genutzt werden darf.
+
+**Der CC-Baukasten:**
+
+*   **BY (Namensnennung):** Pflicht bei fast allen CC-Lizenzen.
+*   **ND (No Derivatives):** Keine Bearbeitung erlaubt.
+*   **NC (Non-Commercial):** Nur für nicht-kommerzielle Zwecke. **Achtung:** In der Praxis extrem streitanfällig – was ist "kommerziell"?
+*   **SA (Share Alike):** Das "Copyleft". Wer bearbeitet, muss unter der gleichen Lizenz weitergeben.
+
+Schauen Sie sich doch einmal den CC-Lizenz-Finder an unter: [Creative Commons License Chooser](https://creativecommons.org/choose/)
+
+# Verwertungsgesellschaften – Kollektives Inkasso
+
+Eine Komponistin kann nicht in jeden Club der Welt checken, ob gerade ihr Song läuft. Hier kommen die **Verwertungsgesellschaften (VG)** ins Spiel. Sie verwalten Rechte treuhänderisch für ihre Mitglieder.
+
+## Funktionsweise und VGG
+
+Urheber schließen einen **Wahrnehmungsvertrag** mit der Verwertungsgesellschaft. Die Gesellschaft sammelt das Geld bei den Nutzern (z.B. Radios, Clubs, Hardware-Hersteller) ein und schüttet es nach einem Verteilungsplan an die Mitglieder aus.
+
+Ein wichtiger Schutz für Nutzer ist der **Kontrahierungszwang (§ 34 VGG)**: Da die VGs oft Monopolisten sind, müssen sie jedem Nutzer zu angemessenen Bedingungen eine Lizenz geben. Sie dürfen niemanden willkürlich ausschließen.
+
+## Die wichtigsten Player in Deutschland
+
+*   **GEMA:** Musik (Komponisten & Texter).
+*   **GVL:** Ausübende Künstler und Labels.
+*   **VG Wort:** Texter, Autoren, Journalisten.
+*   **VG Bild-Kunst:** Fotografen, Designer, Filmer.
+
+# Lernkontrolle
+
+::: {.case-study}
+#### Der "Bestseller-Paragraph"
+Kameramann Jost Vacano erhielt für den Film "Das Boot" ursprünglich eine Pauschale von ca. 100.000 DM als Vergütung. Der Film wurde ein Welterfolg. Vacano klagte Jahrzehnte später auf eine Beteiligung.
+
+::: {.solution}
+Hier greift [§ 32a UrhG](https://www.gesetze-im-internet.de/urhg/__32a.html) (Fairness-Paragraph/Bestseller-Paragraph). Bei einem auffälligen Missverhältnis zwischen Vergütung und Ertrag hat der Urheber einen Anspruch auf weitere Beteiligung. Vacano wurden nachträglich erhebliche Summen zugesprochen.
+:::
+:::
+
+::: {.quick-check}
+Darf ein Urheber, der ein **ausschließliches** Nutzungsrecht eingeräumt hat, sein Werk selbst noch nutzen?
+
+- Ja, er bleibt schließlich der Urheber.
+- **Nein, es sei denn, dies wurde im Vertrag explizit vorbehalten.**
+- Ja, aber nur für private Zwecke.
+:::
+
+::: {.quick-check}
+Ein Nutzer sieht ein Foto unter der Lizenz "CC BY-NC-ND". Er baut das Bild in seine Firmen-Website ein, nennt aber den Fotografen. Ist das zulässig?
+
+- Ja, er hat BY (Namensnennung) erfüllt.
+- **Nein, die kommerzielle Nutzung (NC) auf einer Firmen-Website ist verboten.**
+- Ja, solange er das Bild nicht bearbeitet (ND).
+:::
+
+Und damit sind wir am Ende der Lerneinheiten zum Urheber- und Medienrecht angekommen. **Viel Erfolg für die Prüfung!**

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrhDaG Upload-Flow</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .flow-container {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .step {
+            padding: 15px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            background: #fdfdfd;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .step.active {
+            border-color: #ff6a00;
+            background: #fff9f5;
+        }
+
+        .step.decision {
+            border-radius: 50px;
+            background: #f0f0f0;
+        }
+
+        .step::after {
+            content: '↓';
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ccc;
+            font-size: 1.2rem;
+            display: none;
+        }
+
+        .step.has-link::after {
+            display: block;
+        }
+
+        .result-box {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 12px;
+            width: 100%;
+            text-align: center;
+            font-weight: 700;
+            display: none;
+        }
+
+        .allowed {
+            background: #e8f5e9;
+            color: #2e7d32;
+            display: block;
+        }
+
+        .blocked {
+            background: #ffebee;
+            color: #c62828;
+            display: block;
+        }
+
+        .review {
+            background: #fff3e0;
+            color: #e65100;
+            display: block;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 8px 16px;
+            border-radius: 4px;
+            border: none;
+            background: #ff6a00;
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button.secondary {
+            background: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flow-container" id="flow">
+        <div id="s1" class="step active desc">Nutzer lädt Inhalt hoch</div>
+        <div id="q1" class="step decision">Hat die Plattform eine Lizenz?</div>
+        <div class="btn-group" id="ctrl1">
+            <button onclick="go('allowed', 'Inhalt wird veröffentlicht (Lizenz vorhanden)')">Ja</button>
+            <button class="secondary" onclick="next('q2')">Nein</button>
+        </div>
+
+        <div id="q2" class="step decision" style="display:none">Gibt es ein Blockierverlangen (Filter-Treffer)?</div>
+        <div class="btn-group" id="ctrl2" style="display:none">
+            <button class="secondary"
+                onclick="go('allowed', 'Inhalt wird veröffentlicht (kein Filter-Treffer)')">Nein</button>
+            <button onclick="next('q3')">Ja</button>
+        </div>
+
+        <div id="q3" class="step decision" style="display:none">Mutmaßlich erlaubt (§ 9 UrhDaG)? <br><small>(Zitat,
+                Parodie, Pastiche, < 15 Sek. etc.)</small>
+        </div>
+        <div class="btn-group" id="ctrl3" style="display:none">
+            <button onclick="go('review', 'Upload vorläufig erlaubt (mutmaßlich rechtmäßig)')">Ja</button>
+            <button onclick="next('q4')">Nein</button>
+        </div>
+
+        <div id="q4" class="step decision" style="display:none">Hat Rechteinhaber "Red Button" gedrückt?</div>
+        <div class="btn-group" id="ctrl4" style="display:none">
+            <button onclick="go('blocked', 'Sofortige Blockierung (Echtzeit/Sensibel)')">Ja</button>
+            <button onclick="go('blocked', 'Inhalt wird blockiert')">Nein</button>
+        </div>
+    </div>
+
+    <div id="result" class="result-box"></div>
+    <button id="reset" onclick="location.reload()" style="margin-top:20px; display:none">Neu starten</button>
+
+    <script>
+        function next(id) {
+            document.querySelectorAll('.btn-group').forEach(b => b.style.display = 'none');
+            const el = document.getElementById(id);
+            el.style.display = 'block';
+            el.classList.add('active');
+            document.getElementById('ctrl' + id.charAt(1)).style.display = 'flex';
+        }
+
+        function go(type, text) {
+            document.getElementById('flow').style.opacity = '0.3';
+            document.querySelectorAll('.btn-group').forEach(b => b.style.display = 'none');
+            const res = document.getElementById('result');
+            res.className = 'result-box ' + type;
+            res.innerText = text;
+            document.getElementById('reset').style.display = 'inline-block';
+        }
+    </script>
+</body>
+
+</html>

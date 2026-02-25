@@ -1,0 +1,142 @@
+---
+title: "Telekommunikationsrecht"
+subtitle: "Einheit 9: Infrastruktur, Netzneutralität und Kundenschutz"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: handout-typst
+---
+
+# Einleitung: Die Autobahnen der Informationsgesellschaft
+
+Nun betrachten wir die Infrastruktur der digitalen Welt. Während wir uns bisher mit den Inhalten (Medienrecht) und den Plattformen (DSA/DMA) beschäftigt haben, blicken wir nun "unter den Asphalt". Das Telekommunikationsrecht regelt die "Datenautobahnen" – die Kabel, Funkwellen und Satellitenlinks –, ohne die kein TikTok-Video und keine E-Mail ihr Ziel erreichen würde.
+
+# Grundlagen und Abgrenzung
+
+Bevor wir in die Paragrafen des [Telekommunikationsgesetzes (TKG)](http://www.gesetze-im-internet.de/tkg_2021/index.html) eintauchen, müssen wir eine scharfe begriffliche Grenze ziehen. 
+
+## Technik vs. Inhalt: Die logische Trennung
+
+Der wichtigste Grundsatz lautet: Das Telekommunikationsrecht regelt den **Transport**, nicht die **Fracht**. 
+
+*   **Telekommunikation (TKG):** Der rein technische Vorgang des Aussendens, Übermittelns und Empfangens von Signalen.
+*   **Telemedien (MStV) und Digitale Dienste (DDG):** Die darüber transportierten Inhalte und Dienste (Streaming, Shopping, Blogs).
+
+Testen Sie Ihr Verständnis der Ebenentrennung:
+
+<iframe src="widgets/kapitel-09/widget-tkg-ddg-split.html" 
+        width="100%" height="320px" frameborder="0"
+        title="TKG vs. DDG Zuordnung">
+</iframe>
+
+
+::: {.details}
+#### Das Beispiel VoIP
+Bei Voice-over-IP (VoIP) – also Telefonie über das Internet – handelt es sich primär um einen Signaltransport. Daher fällt dieser Dienst in den Anwendungsbereich des TKG.
+:::
+
+## Vom Staatsmonopol zum Regulierungsrecht
+
+Wer heute zwischen Vodafone, Telekom und O2 wählt, vergisst leicht, dass bis Ende der 1980er Jahre die "Gelbe Post" das unumschränkte Monopol auf Telekommunikationsdienste innehatte. 
+
+Die Infrastruktur galt als **natürliches Monopol**: Es schien ökonomisch unsinnig, mehrere Kupferkabel in jedes Haus zu legen. Dann kam der Bruch: Die Märkte wurden in der gesamten EU liberalisiert. Das Ziel des durch EU-Richtlinien geprägten TKG ist seither die Förderung des Wettbewerbs. Da die Telekom als Ex-Monopolist jedoch noch sehr häufig über die "letzte Meile" (das Kabel bis in Ihren Keller) verfügt, unterliegt sie einer **asymmetrischen Regulierung**.
+
+# Der rechtliche Rahmen und die Marktregulierung
+
+Das TKG ist kein rein deutsches Gewächs. Es ist die Umsetzung des [Europäischen Kodex für die elektronische Kommunikation (RL (EU) 2018/1972)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32018L1972).
+
+Die **Bundesnetzagentur** in Bonn ist die zentrale Regulierungsbehörde. Sie greift immer dann ein, wenn der Markt versagt. Der Prozess ist streng formalisiert:
+
+1.  **Marktanalyse:** Wer hat "beträchtliche Marktmacht"?
+
+2.  **Abhilfemaßnahmen:** Wenn Wettbewerb fehlt, werden dem Marktmächtigen Pflichten auferlegt.
+
+### Instrumente der Regulierung
+
+Um fairen Wettbewerb zu ermöglichen, nutzt die BNetzA scharfe Werkzeuge:
+
+*   **Zugangsregulierung:** Der Marktmächtige, sprich die Telekom, muss Wettbewerbern erlauben, ihre Leitungen mitzunutzen (gegen Entgelt).
+*   **Entgeltregulierung:** Die Preise für diese Mitnutzung müssen oft von der BNetzA genehmigt werden und kostenorientiert sein.
+*   **Diskriminierungsverbot:** Der Netzbetreiber darf seine eigenen Töchter nicht bevorzugen.
+
+::: {.flip-card}
+#### Beträchtliche Marktmacht
+Eine Stellung, die es einem Unternehmen erlaubt, sich in beträchtlichem Umfang unabhängig von Wettbewerbern, Kunden und Verbrauchern zu verhalten.
+:::
+
+# Netzneutralität: Gleiches Recht für alle Datenpakete
+
+Ein Eckpfeiler des freien Internets ist die **Netzneutralität**. Sie ist in der [Netzneutralitätsverordnung (VO (EU) 2015/2120)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32015R2120) verankert.
+
+Provider dürfen den Datenverkehr danach grundsätzlich nicht drosseln, blockieren oder bestimmte Datenpakete bevorzugen – egal ob die Daten von einem kleinen Blog oder von Netflix kommen. 
+
+Das Prinzip der Netzneutralität besagt: "Alle Datenpakete müssen bei der Übertragung grundsätzlich gleichbehandelt werden." Man nennt dies auch den Best-Effort-Ansatz - der Provider soll sich redlich bemühen, alle Pakete gleich zu behandeln. 
+
+Für Spezialdienste sieht die Netzneutralitätsverordnung Ausnahmen vor. So dürfen Provider beispielsweise für Dienste wie VoIP besondere Qualitäten garantieren, wenn dies technisch notwendig ist. Denn hier würde sonst der Dienst unter Umständen nicht funktionieren. 
+
+# Verbraucher- und Kundenschutz
+
+Die Rechte der Endnutzer wurden durch die große TKG-Novelle 2021 massiv gestärkt. 
+
+## Das Recht auf "schnelles" Internet
+
+Jeder Haushalt hat nun einen rechtlichen Anspruch auf eine **Telekommunikations-Grundversorgung mit Internet (Universaldienst)**. 
+
+::: {.drag-exercise}
+Die Mindestwerte für den Universaldienst betragen aktuell im Download *10 Mbit/s*, im Upload *1,7 Mbit/s* und bei der Latenz maximal *150 Millisekunden*.
+:::
+
+Prüfen Sie hier, ob die Mindestanforderungen bei einem konkreten Anschluss erfüllt sind:
+
+<iframe src="widgets/kapitel-09/widget-universaldienst-check.html" 
+        width="100%" height="480px" frameborder="0"
+        title="Universaldienst-Rechner">
+</iframe>
+
+## Rechte beim Anbieterwechsel
+
+Wer umzieht oder einfach den Anbieter wechseln will (Cloud-Switching/Provider-Switching), wird geschützt:
+*   **Minderungsrecht:** Ist die Leitung dauerhaft langsamer als versprochen, sinkt der Preis per Gesetz.
+*   **Rufnummernmitnahme:** Sie dürfen Ihre Rufnummer zum neuen Anbieter mitnehmen.
+*   **Roam-like-home:** Im EU-Ausland telefonieren und surfen Sie zu Inlandspreisen ([VO (EU) 2022/612](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32022R0612)).
+
+# Fernmeldegeheimnis und Datenschutz
+
+Hinter den technischen Signalen stehen menschliche Schicksale. Das Grundgesetz schützt die Vertraulichkeit der Kommunikation in [Art. 10 GG](http://www.gesetze-im-internet.de/gg/art_10.html).
+
+## Das Fernmeldegeheimnis
+
+Schutzgegenstand des Fernmeldegeheimnisses ist nicht nur, **was** gesagt wird (Inhalt), sondern auch **wer** mit **wem** und **wann** (Verkehrsdaten). Konkretisiert wird dies im [TDDDG (ehemals TTDSG)](http://www.gesetze-im-internet.de/ttdsg/index.html).
+
+## Vorratsdatenspeicherung: Ein Dauerbrenner
+
+Darf der Staat verlangen, dass alle Verkehrsdaten pauschal für Monate gespeichert werden? Das Bundesverfassungsgericht und der EuGH sagen regelmäßig: **Nur bei konkreter Gefahr und sehr restriktiv.** Eine anlasslose Speicherung aller Bürgerdaten ("anlasslose Vorratsdatenspeicherung") ist mit den Grundrechten kaum vereinbar.
+
+# Lernkontrolle
+
+::: {.quick-check}
+Ein Nutzer bemerkt über Wochen, dass sein 100-Mbit-Anschluss am Abend nur 15 Mbit liefert. Welche Handhabe bietet das TKG 2021?
+
+- Er muss den vollen Preis zahlen, da "bis zu" im Vertrag steht.
+- Er hat nur ein Sonderkündigungsrecht.
+- **Er hat ein gesetzliches Minderungsrecht und kann den monatlichen Preis reduzieren.**
+- Er kann die Bundesnetzagentur zur Enteignung des Providers auffordern.
+:::
+
+::: {.details}
+#### Kernbotschaft
+Das Telekommunikationsrecht sichert den Wettbewerb auf der Infrastrukturebene, schützt die Neutralität des Netzes und garantiert uns Bürgern einen digitalen Mindeststandard sowie Vertraulichkeit.
+:::

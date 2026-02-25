@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Preferencing Visualizer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background-color: #ff6a00;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(26px);
+        }
+
+        .result-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            height: 320px;
+        }
+
+        .result-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            margin-bottom: 10px;
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: absolute;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .own-brand {
+            border: 2px solid #ff6a00;
+            background: #fff9f5;
+        }
+
+        .rank {
+            font-weight: bold;
+            color: #ff6a00;
+            margin-right: 15px;
+            width: 20px;
+        }
+
+        .label {
+            flex-grow: 1;
+        }
+
+        .score {
+            font-size: 0.8rem;
+            color: #666;
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .badge {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            background: #ff6a00;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="controls">
+            <span><strong>DMA-Konformität</strong> (Self-Preferencing Verbot)</span>
+            <label class="switch">
+                <input type="checkbox" id="dmaToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="result-list" id="list">
+            <!-- Results injected here -->
+        </div>
+    </div>
+
+    <script>
+        const data = [
+            { id: 1, name: "Gatekeeper Musik-Dienst", score: 85, isOwn: true },
+            { id: 2, name: "Premium Streamer (Konkurrenz)", score: 98, isOwn: false },
+            { id: 3, name: "Indie-Radio (Konkurrenz)", score: 92, isOwn: false },
+            { id: 4, name: "Budget Audio (Konkurrenz)", score: 78, isOwn: false }
+        ];
+
+        const list = document.getElementById('list');
+        const toggle = document.getElementById('dmaToggle');
+
+        function render() {
+            const isDMA = toggle.checked;
+
+            // Sort logic
+            const sorted = [...data].sort((a, b) => {
+                if (!isDMA) {
+                    if (a.isOwn) return -1;
+                    if (b.isOwn) return 1;
+                }
+                return b.score - a.score;
+            });
+
+            list.innerHTML = '';
+            sorted.forEach((item, index) => {
+                const div = document.createElement('div');
+                div.className = `result-item ${item.isOwn ? 'own-brand' : ''}`;
+                div.style.top = `${index * 75}px`;
+
+                div.innerHTML = `
+                    <span class="rank">${index + 1}</span>
+                    <span class="label">${item.name} ${item.isOwn ? '<span class="badge">Eigener Dienst</span>' : ''}</span>
+                    <span class="score">Relevanz: ${item.score}%</span>
+                `;
+                list.appendChild(div);
+            });
+        }
+
+        toggle.addEventListener('change', render);
+        render();
+    </script>
+</body>
+
+</html>

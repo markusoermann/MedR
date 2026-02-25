@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressums-Logik</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fafafa;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #eee;
+        }
+
+        .selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .chip {
+            padding: 8px 16px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: 0.2s;
+        }
+
+        .chip:hover {
+            border-color: #ff6a00;
+        }
+
+        .chip.active {
+            background: #ff6a00;
+            color: white;
+            border-color: #ff6a00;
+        }
+
+        .result-panel {
+            background: white;
+            border: 2px solid #ff6a00;
+            border-radius: 8px;
+            padding: 20px;
+            min-height: 120px;
+        }
+
+        .result-panel h4 {
+            margin: 0 0 10px 0;
+            color: #ff6a00;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .law-ref {
+            font-size: 0.75rem;
+            font-weight: bold;
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p style="font-size: 0.85rem; font-weight: bold; margin-bottom: 15px;">Welche Art von Angebot liegt vor?</p>
+        <div class="selector">
+            <div class="chip" onclick="show('privat', this)">Private Homepage</div>
+            <div class="chip" onclick="show('shop', this)">Online-Shop / E-Commerce</div>
+            <div class="chip" onclick="show('blog', this)">Journalistischer Blog</div>
+            <div class="chip" onclick="show('influencer', this)">Influencer (mit Werbung)</div>
+        </div>
+
+        <div class="result-panel" id="res">
+            <p style="color: #999; text-align: center; padding-top: 20px;">Wählen Sie einen Dienst aus.</p>
+        </div>
+    </div>
+
+    <script>
+        const data = {
+            privat: {
+                title: "Keine Impressumspflicht",
+                text: "Rein persönliche oder familiäre Zwecke sind befreit. Sobald aber Werbung (z.B. Banner) geschaltet wird, endet die Ausnahme!",
+                law: "§ 18 Abs. 1 MStV"
+            },
+            shop: {
+                title: "Vollständige Impressumspflicht (DDG)",
+                text: "Als kommerzieller digitaler Dienst sind umfassende Angaben nötig: Vertretungsberechtigte, Registereintrag, USt-ID, etc.",
+                law: "§ 5 DDG"
+            },
+            blog: {
+                title: "Journalistische Impressumspflicht",
+                text: "Zusätzlich zu den Basisdaten muss ein inhaltlich Verantwortlicher (mit Vorname, Name und Anschrift) benannt werden.",
+                law: "§ 18 Abs. 2 MStV"
+            },
+            influencer: {
+                title: "Kommerzielle Kennzeichnungspflicht",
+                text: "Da geschäftsmäßig gehandelt wird, ist ein DDG-Impressum sowie die klare Trennung von Werbung und Inhalt zwingend.",
+                law: "§ 5 DDG & § 22 MStV"
+            }
+        };
+
+        function show(key, el) {
+            document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+            el.classList.add('active');
+            const item = data[key];
+            document.getElementById('res').innerHTML = `
+                <h4>${item.title}</h4>
+                <p style="margin:0; font-size:0.9rem;">${item.text}</p>
+                <div class="law-ref">${item.law}</div>
+            `;
+        }
+    </script>
+</body>
+
+</html>

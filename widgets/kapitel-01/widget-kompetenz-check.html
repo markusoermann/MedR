@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompetenz-Finder: Bund vs. Länder</title>
+    <style>
+        :root {
+            --thws-orange: #ff5f00;
+            --thws-blue: #00305e;
+            --bund-color: #c0392b;
+            --land-color: #27ae60;
+            --thws-light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .game-container {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .card-area {
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            perspective: 1000px;
+        }
+
+        .task-card {
+            background: var(--thws-light);
+            border: 2px solid var(--thws-blue);
+            padding: 20px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            transition: all 0.3s;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.1s, filter 0.2s;
+            font-size: 1rem;
+            flex: 1;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .btn-bund {
+            background-color: var(--bund-color);
+        }
+
+        .btn-land {
+            background-color: var(--land-color);
+        }
+
+        .feedback {
+            margin-top: 25px;
+            min-height: 60px;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .correct {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .wrong {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .score {
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="game-container">
+        <div class="score" id="score">Frage 1 von 6</div>
+
+        <div class="card-area">
+            <div class="task-card" id="task-card">Urheberrecht</div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn-bund" onclick="check('Bund')">Bund</button>
+            <button class="btn-land" onclick="check('Länder')">Länder</button>
+        </div>
+
+        <div class="feedback" id="feedback">
+            Wer ist zuständig? Entscheiden Sie schnell!
+        </div>
+
+        <button id="next-btn" class="hidden" style="margin-top:20px; background: var(--thws-blue);"
+            onclick="nextQuestion()">Nächste Frage</button>
+    </div>
+
+    <script>
+        const questions = [
+            { q: "Urheberrecht", a: "Bund", text: "Korrekt! Art. 73 Abs. 1 Nr. 9 GG weist dem Bund die ausschließliche Gesetzgebungszuständigkeit zu." },
+            { q: "Rundfunk-Inhalte", a: "Länder", text: "Richtig! Die Kulturhoheit (Art. 70 GG) macht die Regulierung von Inhalten zur Ländersache." },
+            { q: "Telekommunikation", a: "Bund", text: "Genau. Die Technik (Netze, Frequenzen) regelt der Bund gemäß Art. 73 Abs. 1 Nr. 7 GG (TKG)." },
+            { q: "Medienstaatsvertrag", a: "Länder", text: "Ja! Da die Länder zuständig sind, schließen sie diesen Vertrag untereinander ab." },
+            { q: "Sicherung der Meinungsvielfalt", a: "Länder", text: "Richtig. Pluralitätssicherung im privaten Rundfunk ist klassische Länderaufgabe." },
+            { q: "LTE-Frequenzen", a: "Bund", text: "Korrekt. Die Frequenzverwaltung gehört zur Technik-Zuständigkeit des Bundes." }
+        ];
+
+        let current = 0;
+        let finished = false;
+
+        function check(choice) {
+            if (finished) return;
+
+            const q = questions[current];
+            const feedback = document.getElementById('feedback');
+            const nextBtn = document.getElementById('next-btn');
+
+            if (choice === q.a) {
+                feedback.className = "feedback correct";
+                feedback.innerText = q.text;
+            } else {
+                feedback.className = "feedback wrong";
+                feedback.innerText = "Leider falsch. " + q.text;
+            }
+
+            nextBtn.classList.remove('hidden');
+            finished = true;
+        }
+
+        function nextQuestion() {
+            current++;
+            if (current >= questions.length) {
+                current = 0;
+                // High score logic or restart? For now, just reset
+            }
+
+            document.getElementById('task-card').innerText = questions[current].q;
+            document.getElementById('score').innerText = `Frage ${current + 1} von ${questions.length}`;
+            document.getElementById('feedback').className = "feedback";
+            document.getElementById('feedback').innerText = "Wer ist zuständig?";
+            document.getElementById('next-btn').classList.add('hidden');
+            finished = false;
+        }
+    </script>
+
+</body>
+
+</html>

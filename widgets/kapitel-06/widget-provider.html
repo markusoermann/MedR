@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Provider-Filter</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .box {
+            width: 80%;
+            padding: 15px;
+            border: 2px solid #eee;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .box:hover {
+            border-color: #ff6a00;
+            transform: scale(1.02);
+        }
+
+        .box.active {
+            border-color: #ff6a00;
+            background: #fff5f0;
+        }
+
+        .box h4 {
+            margin: 0 0 5px 0;
+            color: #ff6a00;
+        }
+
+        .box p {
+            margin: 0;
+            font-size: 0.85rem;
+            display: none;
+        }
+
+        .box.active p {
+            display: block;
+        }
+
+        .arrow {
+            font-size: 1.5rem;
+            color: #ddd;
+        }
+
+        .badge {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .badge-safe {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .badge-danger {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flow">
+            <div class="box" onclick="this.classList.toggle('active')">
+                <span class="badge badge-danger">Vollhaftung</span>
+                <h4>Content Provider</h4>
+                <p>Eigene Inhalte (Blogger, News-Seite). Haftet nach BGB/StGB ohne Filter.</p>
+            </div>
+            <div class="arrow">↓</div>
+            <div class="box" onclick="this.classList.toggle('active')">
+                <span class="badge badge-safe">Privilegiert</span>
+                <h4>Hosting-Provider</h4>
+                <p>Speichert fremde Inhalte (Cloud, YouTube). Haftet erst ab Kenntnis (Notice & Action).</p>
+            </div>
+            <div class="arrow">↓</div>
+            <div class="box" onclick="this.classList.toggle('active')">
+                <span class="badge badge-safe">Privilegiert</span>
+                <h4>Access-Provider</h4>
+                <p>Reine Durchleitung (Telekom, WLAN). Sehr weitgehende Haftungsbefreiung.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

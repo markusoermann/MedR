@@ -1,0 +1,116 @@
+---
+title: "Grundlagen des Urheberrechts"
+subtitle: "Einheit 11: Schöpferprinzip, Werkbegriff und Schutzvoraussetzungen"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: moodle-html
+---
+
+# Einleitung: Das Kapital der Kreativen
+
+Warum darf man ein Foto nicht einfach kopieren? Warum ist die Idee für einen Roman über einen Zauberschüler frei, der konkrete Text aber geschützt? Das Urheberrecht ist das "Eigentumsrecht der Kreativen". Es schützt nicht die körperliche Sache (das Buch im Regal), sondern den unsichtbaren geistigen Gehalt, der darin steckt.
+
+# Was ist das Urheberrecht?
+
+Das Urheberrecht ist Teil des sogenannten **Geistigen Eigentums** (Intellectual Property). Es steht gleichberechtigt neben dem gewerblichen Rechtsschutz, wie dem Patentrecht (für technische Erfindungen) oder dem Markenrecht. Zusammenfassend spricht man auch von Immaterialgüterrechten.
+
+# Die Doppelfunktion des Urheberrechts
+
+Nach [§ 11 UrhG](http://www.gesetze-im-internet.de/urhg/__11.html) dient das Urhebergesetz zwei zentralen Zielen:
+
+1.  **Persönlichkeitsrechtlicher Schutz:** Das Werk wird als Ausdruck der Persönlichkeit des Schöpfers gesehen ("Das Werk ist mein Baby"). Der Urheber darf entscheiden, ob sein Name genannt wird und er kann sich gegen Entstellungen wehren. Diese Rechte sind unveräußerlich.
+2.  **Ökonomischer Schutz (Verwertungsrechte):** Das Urheberrecht sichert dem Schöpfer die wirtschaftlichen Früchte seiner Arbeit. Es ermöglicht einen Markt für Kunst, Musik und Literatur, indem es "Trittbrettfahrer" (Free Rider) ausschließt.
+
+> Das deutsche Urheberrecht folgt der **monistischen Theorie**: Persönlichkeits- und Verwertungsrechte sind untrennbar miteinander verbunden. Man kann das eine nicht ohne das andere haben.
+
+::: {.details}
+#### Historischer Exkurs: Vom Privileg zum Recht
+In der Antike gab es kein Urheberrecht. Künstler waren Handwerker. Erst die Erfindung des Buchdrucks und die anschließende "Nachdruckdebatte" der Aufklärung führten zum modernen Verständnis. Das heutige UrhG von 1965 ist eine Reaktion auf die Massenmedien – und wird heute durch die digitale Transformation erneut auf die Probe gestellt.
+:::
+
+# Das Schöpferprinzip: Der Mensch im Mittelpunkt
+
+Einer der Grundsätze des deutschen Rechts ist das **Schöpferprinzip** ([§ 7 UrhG](http://www.gesetze-im-internet.de/urhg/__7.html)): Urheber ist der Schöpfer des Werkes.
+
+*   **Entstehung durch Realakt:** Es gibt keine Urheberrolle oder ein Register. In der Sekunde, in der Sie den Auslöser der Kamera drücken oder eine Zeile Code schreiben, entsteht der Schutz. Ein Copyright-Vermerk (©) ist in Deutschland juristisch nicht nötig, aber nützlich für die Beweislage.
+*   **Nur natürliche Personen:** Das Urheberrecht können nur natürliche Personen innehaben. Eine GmbH oder eine Behörde kann niemals Urheber sein. Dies gilzt auch für eine KI.
+*   **Unübertragbarkeit:** Nach [§ 29 Abs. 1 UrhG](http://www.gesetze-im-internet.de/urhg/__29.html) ist das Urheberrecht als Ganzes nicht übertragbar. Sie können es nicht "verkaufen". Sie können Dritten lediglich **Nutzungsrechte** ("Lizenzen") einräumen.
+
+::: {.flip-card}
+#### Nutzungsrecht vs. Urheberrecht
+Das Urheberrecht bleibt beim Schöpfer. Das Nutzungsrecht ist die Erlaubnis für Dritte, das Werk auf eine bestimmte Weise (z.B. Abdruck in einer Zeitung) zu verwenden.
+:::
+
+# Der Schutzgegenstand: Was ist ein "Werk"?
+
+Nicht alles, was wir erstellen, ist rechtlich geschützt. Die Einkaufsliste oder das Selfie vom Mittagessen fallen oft aus dem Raster. Damit ein Erzeugnis ein Werk im Sinne des [§ 2 Abs. 2 UrhG](http://www.gesetze-im-internet.de/urhg/__2.html) ist, muss es eine **persönliche geistige Schöpfung** sein.
+
+Um die Schutzfähigkeit zu prüfen, nutzen wir in der juristischen Subsumtion **vier** kumulative Voraussetzungen:
+
+1.  **Persönliche Schöpfung:** Das Werk muss von einem Menschen stammen. Affen oder Algorithmen (KI) ohne menschliche Steuerung können keine Urheber sein.
+2.  **Geistiger Inhalt:** Es muss eine geistige Anstrengung oder ein kommunikativer Gehalt vorliegen. Ein bloßes handwerkliches Tätigwerden oder eine rein physische sportliche Leistung (z. B. ein geniales Tor im Fußball) hat keinen ausreichenden kommunikativen Gehalt.
+3.  **Formgebung:** Gedanken sind frei. Erst wenn die Idee die "Werkstatt des Kopfes" verlässt und in der Außenwelt wahrnehmbar wird (Skizze, Text, Ton), greift der Schutz. **Wichtig**: Bloße Ideen, Konzepte, Motive oder wissenschaftliche Erkenntnisse sind als solche nicht geschützt – sie müssen frei bleiben, um den kulturellen und wissenschaftlichen Fortschritt nicht zu blockieren.
+4.  **Individualität (Schöpfungshöhe):** Dies ist die wichtigste Hürde. Das Werk muss sich vom Alltäglichen abheben. Es muss die "eigentümliche Note" des Schöpfers tragen.
+
+::: {.drag-exercise}
+Das Konzept der *Kleinen Münze* bedeutet, dass auch Werke mit sehr geringem kreativen Gehalt geschützt sind. In Deutschland ist die Hürde für die Schöpfungshöhe recht *niedrig* angesetzt.
+:::
+
+# Abgrenzungen: Ideen vs. Ausgestaltung
+
+Das Urheberrecht schützt niemals die Idee, sondern immer nur die **konkrete Ausgestaltung**. 
+
+*   **Idee:** "Ein Junge besucht eine Zauberschule" – Diese Idee ist frei.
+*   **Ausgestaltung:** Der konkrete Text von J.K. Rowling – Dieser ist geschützt.
+
+# Exkurs: Das Plagiat
+
+Wir müssen streng zwischen zwei Welten unterscheiden:
+*   **Urheberrechtsverletzung:** Jemand nutzt geschützte Teile eines Werkes ohne Erlaubnis. Das zieht Schadensersatz und Unterlassungsklagen nach sich.
+*   **Wissenschaftsethisches Plagiat:** Jemand gibt fremde Gedanken als eigene aus, ohne die Quelle zu nennen. Das ist primär ein Verstoß gegen die Prüfungsordnung, kann aber auch eine Urheberrechtsverletzung sein, wenn der Text noch geschützt ist.
+
+Simulation: Welche rechtlichen Folgen drohen?
+
+<iframe src="widgets/kapitel-11/widget-plagiarism-check.html" 
+        width="100%" height="400px" frameborder="0"
+        title="Plagiat-Simulator">
+</iframe>
+
+::: {.case-study}
+#### Der Fall des alten Textes
+Ein Student übernimmt wörtlich Passagen aus einem Werk von Immanuel Kant (verstorben 1804) für seine Hausarbeit, ohne dies zu kennzeichnen.
+
+::: {.solution}
+Eine **Urheberrechtsverletzung** liegt nicht vor, da die Schutzfrist (70 Jahre nach dem Tod des Urhebers) längst abgelaufen ist. Das Werk ist **gemeinfrei**. Dennoch handelt es sich um ein **schweres wissenschaftliches Fehlverhalten** (Plagiat), das zum Nichtbestehen der Prüfung führt.
+:::
+:::
+
+# Lernkontrolle
+
+::: {.quick-check}
+Ein Angestellter schreibt im Auftrag seines Arbeitgebers ein Skript. Wer ist Urheber nach deutschem Recht?
+
+- Der Arbeitgeber, weil er dafür bezahlt hat.
+- **Der Angestellte, da nur natürliche Personen schöpfen können.**
+- Niemand, da es sich um eine Dienstleistung handelt.
+- Die KI, sofern sie zur Hilfe genommen wurde.
+:::
+
+::: {.details}
+#### Kernbotschaft
+Das Urheberrecht entsteht automatisch durch den Schöpfungsakt eines Menschen. Es schützt die persönliche Bindung zum Werk und ermöglicht dessen wirtschaftliche Verwertung.
+:::

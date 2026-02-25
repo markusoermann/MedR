@@ -1,0 +1,128 @@
+---
+title: "Regulierung, Aufsicht und Presserecht"
+subtitle: "Einheit 4: Formen der Governance im Medienbereich"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: moodle-html
+---
+
+# Aufsicht, Regulierung und Selbstregulierung
+
+Wer regelt die Medien? In Deutschland ist die Antwort – wie so oft – föderal und kompliziert. Es ist ein Mehrebenensystem, das sicherstellen soll, dass niemand zu viel Macht über die Inhalte der Medien bekommt.
+
+## Die wichtigsten Akteure
+
+Die technische Infrastruktur (Kabel, Funkfrequenzen) ist Bundes- und EU-Sache. Die **Bundesnetzagentur (BNetzA)** reguliert hier den Wettbewerb. Doch sobald es um *Inhalte* geht, schlägt die Stunde der Länder (Kulturhoheit). Es gibt keine "Bundesmedienbehörde" in Berlin. Stattdessen haben wir **14 staatsfern organisierte Landesmedienanstalten (LMA)** mit Zuständdikeiten für den Rundfunk, für Plattformen und mediale Internetangebote. Für bundesweite Themen gibt es spezialisierte gemeinsame Kommissionen dieser Landesmedienanstalten:
+
+- **ZAK:** Zulassung und Aufsicht (Wer darf senden?).
+- **KEK:** Meinungsmacht-Wächter (Verhindert Monopole im Medienbereich).
+- **KJM:** Jugendschutz (Pornografie, Gewalt).
+
+::: {.flip-card}
+#### Staatsferne
+Ein Verfassungsgrundsatz aus den Mediengrundrechten des Art. 5 Abs. 1 S. 2 GG, der besagt, dass der Staat keinen direkten Einfluss auf die Inhalte der Medien nehmen darf. 
+:::
+
+## Selbstregulierung und regulierte Selbstregulierung
+
+Warum regulieren sich Medien oft selbst? Weil staatliche Regulierung und Aufsicht bei Inhalten immer die Gefahr der Beeinflussung birgt. Wir unterscheiden dabei zwei Formen:
+
+1. **Selbstregulierung:** Die Branche gibt sich Regeln und kontrolliert sie (z. B. der **Presserat** mit dem Pressekodex). Freiwillig, ohne staatliches Druckmittel.
+
+2. **Regulierte Selbstregulierung:** Der Staat setzt den Rahmen (und hat damit den "Heavy Stick" des Verwaltungsaktes in der Hinterhand), aber die Kontrolle und Prüfung im Einzelfall übernehmen private Stellen (z. B. im Jugendschutz).
+
+::: {.details}
+#### Die Wächter des Jugendschutzes
+Im Bereich der regulierten Selbstregulierung des Jugendschutzes finden wir die bekannten Prüfzeichen und die damit verbundenen Organisationen:
+- **FSK:** Filme (Kino/DVD).
+- **USK:** Computerspiele.
+- **FSF:** Fernsehen.
+- **FSM:** Internetinhalte.
+:::
+
+# Das Presserecht
+
+Das Presserecht ist die "Old Academy" des Medienrechts. Viele seiner Prinzipien wurden direkt in das digitale Zeitalter für journalistische Blogs und Online-Magazine exportiert - mit einigen Updates aber nicht ohne Probleme und Bugs.
+
+## Anwendungsbereich
+
+Presse ist laut Landespressegesetzen alles, was zur Verbreitung bestimmt ist und massenhaft vervielfältigt wird. 
+
+::: {.quick-check}
+Was fällt unter den Pressebegriff?
+
+- **Zeitungen und Zeitschriften.**
+- **Plakate und Flugblätter.**
+- Ein privater Liebesbrief.
+- **Tonträger und Bildträger zur Massenverbreitung.**
+:::
+
+## Institutionelle Garantien
+
+Die Presse genießt Privilegien, um ihre Funktion als "Vierte Gewalt" und "Public Watchdog" in der liberalen Demokratie zu erfüllen:
+
+- **Zulassungsfreiheit:** Jeder darf eine Zeitung gründen. Keine Lizenz nötig.
+- **Auskunftsanspruch:** Behörden müssen Fragen der Presse grundsätzlich beantworten.
+- **Informantenschutz:** Journalisten dürfen Quellen verschweigen (ziet sich etwa im Zeugnisverweigerungsrecht, [§ 53 StPO](https://www.gesetze-im-internet.de/stpo/__53.html)).
+
+::: {.case-study}
+#### Das Gemeindeblatt-Problem
+Eine Gemeinde gibt ein Hochglanzmagazin heraus, das wie eine Lokalzeitung aussieht und die Politik des Bürgermeisters feiert.
+
+::: {.solution}
+Verstoß gegen das Gebot der **Staatsferne**. Der Staat darf keine eigene Presse betreiben, die den privaten Pressemarkt verdrängt oder verzerrt. Gemeindliche Blätter müssen sich auf rein amtliche Mitteilungen beschränken.
+:::
+:::
+
+## Presserechtliche Pflichten
+
+Freiheit verpflichtet. Wer publiziert, muss sich an folgende Pflichten halten:
+
+- **Sorgfaltspflicht:** Jede Nachricht muss vor Veröffentlichung geprüft werden. Wer ungeprüfte Gerüchte druckt, haftet.
+- **Impressumspflicht:** Jedes Medium braucht eine "Adresse zum Verklagen". Transparenz ist zwingend.
+- **Trennungsgebot:** Werbung muss als solche erkennbar sein. Es muss klar sein, was redaktioneller Inhalt und was Werbung ist.
+
+# Die Gegendarstellung
+
+Ein scharfes Schwert des Betroffenen einer kritischen Berichterstattung ist die **Gegendarstellung**. 
+
+::: {.flip-card}
+#### Gegendarstellung
+Ein Anspruch, der das Medium zwingt, die Sachverhaltsdarstellung des Betroffenen ohne eigenen Kommentar an gleicher Stelle abzudrucken.
+:::
+
+::: {.quick-check}
+Wann kann eine Gegendarstellung verlangt werden?
+
+- Bei einer bösen Kritik ("Der Film ist schlecht").
+- **Bei einer unwahren Tatsachenbehauptung ("Der Schauspieler war betrunken").**
+- Bei einer unliebsamen politischen Meinung.
+:::
+
+# Lernkontrolle
+
+::: {.drag-exercise}
+Das System, bei dem sich die Branche unter staatlicher Aufsicht selbst kontrolliert, nennt man *regulierte Selbstregulierung*. Der *Presserat* überwacht den Pressekodex auf Basis rein freiwilliger Selbstkontrolle. Journalisten haben ein *Zeugnisverweigerungsrecht*, um ihre Quellen zu schützen.
+:::
+
+::: {.quick-check}
+Darf die Presse Dokumente veröffentlichen, die illegal kopiert wurden?
+
+- Grundsätzlich nein, das ist Informationshehlerei.
+- **Ja, wenn das Informationsinteresse der Öffentlichkeit überwiegt.**
+- Nur wenn die Polizei zustimmt.
+:::

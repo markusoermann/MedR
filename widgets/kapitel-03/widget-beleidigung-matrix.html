@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beleidigungsfähigkeit</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .card {
+            border: 2px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .card:hover {
+            border-color: #ff6a00;
+            transform: translateY(-2px);
+        }
+
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1rem;
+            color: #ff6a00;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 0.85rem;
+            display: none;
+        }
+
+        .card.active {
+            border-color: #ff6a00;
+            background: #fff5f0;
+        }
+
+        .card.active p {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="card" onclick="toggle(this)">
+            <h3>Natürliche Personen</h3>
+            <p>Jeder Mensch ist beleidigungsfähig, unabhängig von Alter oder Zurechnungsfähigkeit.</p>
+        </div>
+        <div class="card" onclick="toggle(this)">
+            <h3>Verstorbene</h3>
+            <p>Kein grundrechtlicher Ehrschutz mehr, aber postmortaler Achtungsanspruch aus Art. 1 I GG.</p>
+        </div>
+        <div class="card" onclick="toggle(this)">
+            <h3>Personengruppen</h3>
+            <p>Nur wenn die Gruppe überschaubar und abgrenzbar ist (Kollektivbeleidigung).</p>
+        </div>
+        <div class="card" onclick="toggle(this)">
+            <h3>Juristische Personen</h3>
+            <p>Können in ihrem sozialen Geltungsanspruch verletzt werden (z.B. GmbH, Vereine).</p>
+        </div>
+    </div>
+    <script>
+        function toggle(el) {
+            el.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

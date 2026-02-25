@@ -1,0 +1,126 @@
+---
+title: "Recht der Digitalen Dienste"
+subtitle: "Einheit 6: DDG, DSA und die Verantwortlichkeit im Netz"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: moodle-html
+---
+
+# Grundlagen: Vom TMG zum DDG und DSA
+
+Nun befassen wir uns mit Kernelementen des Internetrechts. Was wir früher als "Multimediarecht" oder "Telemedienrecht" bezeichneten, heißt heute **Recht der Digitalen Dienste**. Die alten nationalen Zöpfe (wie das Telemediengesetz TMG) wurden weitgehend abgeschnitten und durch ein mächtiges europäisches Regelwerk ersetzt: den [**Digital Services Act (DSA)**](https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu) und das ergänzende nationale [**Digitale-Dienste-Gesetz (DDG)**](https://www.gesetze-im-internet.de/ddg/).
+
+Zwei Prinzipien prägen den digitalen Binnenmarkt in der EU:
+
+- **Zulassungsfreiheit:** Wer einen Blog, einen Shop oder eine App startet, braucht keine Zulassung durch staatliche Organe.
+
+- **Herkunftslandprinzip:** Ein Anbieter muss grundsätzlich nur die Gesetze seines Sitzlandes (innerhalb der EU) beachten. Das ist der "Reisepass" für digitale Dienstleistungen.
+
+::: {.flip-card}
+#### DDG/DSA vs. MStV
+Eine wichtige Trennung: Während DDG und DSA die **wirtschaftlichen und technischen** Spielregeln festlegen, kümmert sich der Medienstaatsvertrag (MStV) um die **Inhalte** (z. B. journalistische Sorgfalt).
+:::
+
+# Transparenzpflichten
+
+Wer im Netz Dienste anbietet, erzeugt Haftungsrisiken und darf daher kein Phantom bleiben. Transparenz ist hier das Gebot der Stunde.
+
+## Das Impressum: Die "Adresse zum Verklagen"
+
+Ein Impressum dient nicht der Schikane, sondern dem Rechts- und Verbraucherschutz. Wir unterscheiden zwei Schienen:
+
+1.  **Die wirtschaftliche Schiene (§ 5 / § 6 DDG):** Wer Geld verdient (Shop, Affiliate-Links, Influencer), muss Ross und Reiter nennen.
+2.  **Die journalistische Schiene (§ 18 MStV):** Wer Inhalte mit Meinungsrelevanz anbietet (Blogs, Online-Magazine), muss zudem einen inhaltlich Verantwortlichen benennen.
+
+Welches Impressum brauchen Sie?
+
+<iframe src="widgets/kapitel-06/widget-impressum.html" 
+        width="100%" height="400px" frameborder="0"
+        title="Impressums-Logik für digitale Dienste">
+</iframe>
+
+
+::: {.details}
+#### Impressum für Social Media Kanäle?
+Auch auf TikTok, Instagram oder LinkedIn gilt: Wer das Profil geschäftsmäßig nutzt, braucht ein Impressum. Dieses muss "leicht erkennbar, unmittelbar erreichbar und ständig verfügbar" sein (die sog. "Zwei-Klick-Regel").
+:::
+
+## Das Trennungsgebot
+
+Werbung muss wie Werbung aussehen. Schleichwerbung ist ein absolutes No-Go. Sowohl DDG als auch MStV verlangen eine strikte Trennung von kommerziellen Inhalten und redaktionellem Teil.
+
+# Haftung: Das Provider-Regime
+
+Wer haftet für den Hass-Post, das illegale Foto oder die Urheberrechtsverletzung? Hier wird der DSA zum entscheidenden Filter.
+
+## Die Filterfunktion des DSA
+
+Bevor wir prüfen, ob jemand nach dem BGB oder StGB haftet, schauen wir in den DSA. Er fungiert als Schutzschild für Anbieter von Online-Diensten. Das (nicht unumstrittene) Argument: Würden Anbieter von Diensten, die im Internet Inhalte vermitteln oder speichern, für jeden rechtswidrigen Inhalt, den Nutzer hochladen, sofort haften, dann würde die Entwicklung des Internets und der digitalen Dienste massiv behindert. 
+
+## Die Diensteklassen
+
+Das Gesetz teilt Anbieter nach ihrem Risiko und ihrer Funktion ein:
+
+- **Content Provider (Inhalteanbieter):** Stellt eigene Inhalte bereit (z. B. ein Verlag).**Haftung: Vollumfänglich.**
+- **Access Provider (Vermittlung):** Leitet Daten nur durch (z. B. Telekom). 
+**Haftung: Keine**, solange sie die Daten nicht verändern oder auswählen.
+- **Hosting-Dienste (Speicherung):** Speichern fremde Inhalte (z. B. YouTube, Meta, Cloud-Speicher).
+**Haftung: Privilegiert**, solange keine Kenntnis von Rechtswidrigkeit besteht.
+
+Visualisierung der Provider-Haftungskaskade:
+
+<iframe src="widgets/kapitel-06/widget-provider.html" 
+        width="100%" height="400px" frameborder="0"
+        title="DSA Provider-Haftungsfilter">
+</iframe>
+
+
+::: {.flip-card}
+#### Überwachungsverbot
+Provider dürfen laut DSA nicht dazu gezwungen werden, alle Daten ihrer Nutzer proaktiv zu scannen. Es gibt keine allgemeine Überwachungspflicht.
+:::
+
+## "Notice and Action"
+
+Das Haftungsprivileg für Hosting-Provider ist kein Freibrief. Sobald der Anbieter von rechtswidrigen Inhalten erfährt (etwa durch eine "Notice" eines Nutzers), muss er unverzüglich handeln ("Action") und diese Inhalte sperren oder entfernen.
+
+# Das "Zu eigen machen" als Haftungsfalle
+
+Wenn ein Portalbetreiber fremde Inhalte prüft, redaktionell aufbereitet oder im eigenen Layout so präsentiert, dass sie wie eigene wirken, macht er sie sich **zu eigen**. Das bedeutet, dass er die Privilegierung als Hoster verliert und wie ein Inhalteanbietervoll haftet.
+
+::: {.case-study}
+#### Der Chefkoch-Fall
+Ein Rezepte-Portal prüfte Nutzerfotos vor der Veröffentlichung und versah sie mit einem eigenen Logo. 
+
+::: {.solution}
+Resultat: Das Portal haftete voll als **Content Provider**, nicht mehr als privilegierter Hoster. Wer fremde Inhalte wie eigene behandelt, muss auch wie für eigene haften.
+:::
+:::
+
+# Lernkontrolle
+
+::: {.drag-exercise}
+Während ein *Content Provider* für alle Inhalte voll haftet, genießen *Hosting-Dienste* ein Haftungsprivileg, solange sie keine Kenntnis von Rechtswidrigkeit haben. Sobald sie informiert werden, müssen Sie nach dem Grundsatz von *Notice and Action* aktiv werden. Eine allgemeine *Überwachungspflicht* der Nutzerdaten durch die Provider enthält der DSA nicht.
+:::
+
+::: {.quick-check}
+Ein Bäcker betreibt ein offenes WLAN für seine Kunden. Ein Gast begeht darüber eine Urheberrechtsverletzung. Haftet der Bäcker?
+
+- Ja, er ist als Access Provider immer verantwortlich.
+- **Nein, er ist nach dem DSA privilegiert, solange er die Daten nicht selbst verändert.**
+- Nur wenn er kein Passwort vergeben hat (historische Störerhaftung).
+:::

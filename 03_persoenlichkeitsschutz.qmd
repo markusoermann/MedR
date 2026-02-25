@@ -1,0 +1,143 @@
+---
+title: "Grundlagen des Persönlichkeitsschutzes"
+subtitle: "Einheit 3: Das Allgemeine Persönlichkeitsrecht (APR)"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+
+# --- Ausgabe-Formate ---
+format: handout-typst
+---
+
+# Einführung und rechtliche Verankerung
+
+Während die Meinungs- und Pressefreiheit den Medienschaffenden einen großen Freiraum garantieren, ist das **Allgemeine Persönlichkeitsrecht (APR)** die "Notbremse" zum Schutz derjenigen, die Gegenstand der Kommunikation sind. Es ist die wichtigste – und oft einzige – Handhabe von Betroffenen gegen verletzende mediale Berichterstattung oder öffentlichen Meinungsäußerung.
+
+## Die Funktion des APR
+
+In der digitalen Gesellschaft, in der jeder Blogpost und jeder Tweet eine globale Reichweite entfalten kann, schützt das APR den Einzelnen vor allem vor zwei Gefahren:
+
+1.  Dem unerwünschten Eindringen in das Privatleben.
+
+2.  Der Verfälschung oder Entstellung der Person in der Öffentlichkeit.
+
+## Verfassungsrechtliche Herleitung
+
+Das APR steht nicht ausdrücklich im Grundgesetz. Es ist ein "Richterrecht", das das Bundesverfassungsgericht aus einer Kombination von Grundrechten hergeleitet hat:
+
+> **Art. 2 Abs. 1 GG** (Freie Entfaltung) + **Art. 1 Abs. 1 GG** (Menschenwürde) = **APR**.
+
+Zusätzlich wird es durch das Völkerrecht gestärkt, insbesondere durch [Art. 8 Abs. 1 EMRK](https://dejure.org/gesetze/MRK/8.html) (Achtung des Privatlebens).
+
+::: {.flip-card}
+#### Rahmenrecht
+Das APR ist ein Rahmenrecht. Das bedeutet: Seine Reichweite steht nicht absolut fest. Ob eine Verletzung vorliegt, kann nur durch eine umfassende **Güter- und Interessenabwägung** im Einzelfall ermittelt werden.
+:::
+
+# Ausprägungen und Schutzbereiche
+
+Die Rechtsprechung hat das APR in Dimensionen und wie eine Zwiebel in verschiedene Schutzschichten unterteilt.
+
+## Das Recht der Selbstbewahrung (Sphärentheorie)
+
+Dieses Recht garantiert den Rückzug aus der Öffentlichkeit. Hier greift die berühmte **Sphärentheorie** des BVerfG:
+
+1.  **Intimsphäre:** Der unantastbare Kern (Gefühlswelt, Sexualität). Schutz: Absolut - hier wird nicht weiter abgewogen.
+2.  **Privatsphäre:** Das Leben im familiären oder häuslichen Kreis. Schutz: Stark, Abwägung nötig.
+3.  **Sozialsphäre:** Interaktion mit der Außenwelt (Beruf, Politik). Schutz: Schwächer.
+4.  **Öffentlichkeitssphäre:** Verhalten im Rampenlicht. Schutz: Gering.
+
+<iframe src="widgets/kapitel-03/widget-sphaeren.html" 
+        width="100%" height="550px" frameborder="0"
+        title="Spährentheorie">
+</iframe>
+
+::: {.details}
+#### Exkurs: Die "Selbstöffnung"
+Wer seine Privatsphäre selbst vermarktet (z. B. durch "Homestorys" in Hochglanzmagazinen), verringert seinen Schutzanspruch. Wer die Tür selbst aufmacht, kann sich später schwerer darüber beschweren, dass jemand sich jemand für das dahinter interessiert und darüber berichtet.
+:::
+
+## Recht der Selbstdarstellung und Selbstbestimmung
+
+-   **Selbstdarstellung:** Schutz vor verfälschten Interviews oder unterschobenen Äußerungen. Sie sollen entscheiden, wie Sie wirken.
+-   **Selbstbestimmung:** Dazu gehört das Recht auf **informationelle Selbstbestimmung** (Datenschutz) und das Recht auf Kenntnis der eigenen Abstammung.
+
+# Spezifische medienrechtliche Problemfelder
+
+## Verdachtsberichterstattung
+
+Darf man über jemanden berichten, der "nur" verdächtigt wird aber noch nicht rechtskärftig verurteilt ist? Ja, aber die Hürden sind hoch. Ein "medialer Pranger" soll verhindert werden.
+
+::: {.quick-check}
+Welche Pflichten gelten bei der Verdachtsberichterstattung?
+
+- **Einhaltung der Unschuldsvermutung (keine Vorverurteilung).**
+- **Einholung einer Stellungnahme des Betroffenen.**
+- **Vorliegen eines Mindestbestands an Beweistatsachen.**
+- Sofortige Nennung des vollen Namens bei jedem Delikt.
+:::
+
+Journalist/-innen müssen daher eine "mentale Checkliste" abarbeiten, bevor sie mit einem Verdacht an die Öffentlichkeit gehen:
+
+<iframe src="widgets/kapitel-03/widget-verdacht.html" 
+        width="100%" height="450px" frameborder="0"
+        title="Checkliste: Anforderungen an die Verdachtsberichterstattung">
+</iframe>
+
+## Ehrschutz
+
+Der Schutz der persönlichen Ehre ist eine weitere sehr wichtige Funktion des APR und eine eigene Schranke des Art. 5 Abs. 2 GG. Ehrsschutz findet im einfachen Recht auf zwei Ebenen statt:
+
+1. **Strafrecht:** [§ 185 StGB](https://www.gesetze-im-internet.de/stgb/__185.html) (Beleidigung), [§ 186 StGB](https://www.gesetze-im-internet.de/stgb/__186.html) (Üble Nachrede) und [§ 187 StGB](https://www.gesetze-im-internet.de/stgb/__187.html) (Verleumdung).
+
+2. **Zivilrecht:** Unterlassung ([§ 1004 BGB](https://www.gesetze-im-internet.de/bgb/__1004.html) analog) und Schadensersatz ([§ 823 BGB](https://www.gesetze-im-internet.de/bgb/__823.html)).
+
+Diese Gesetze, die die Kommunikationsfreiheiten einschränken, müssen nach der **Wechselwirkungslehre** in der Praxis im Lichte des Grundrechts ausgelegt werden. Es ist ein ständiges Hin und Her zwischen Norm und Verfassung.
+
+## Grenze der Abwägung: Schmähkritik
+
+Es gibt aber auch beim Ehrschutz eine Situation, in der die Abwägung endet (wie beim Eingriff in die Intimsphäre): Die **Schmähkritik**. Hier steht nicht mehr die Sache im Vordergrund, sondern die reine Vernichtung der Person.
+
+Das folgende "Thermometer" zeigt, wann die Grenze überschritten wird:
+
+<iframe src="widgets/kapitel-03/widget-schmaehkritik.html" 
+        width="100%" height="380 px" frameborder="0"
+        title="Schmähkritik-Thermometer">
+</iframe>
+
+## "Das Recht auf Vergessenwerden"
+
+Niemand muss sich vergangene Verfehlungen ewig vorhalten lassen. Das BVerfG hat im Urteil "Recht auf Vergessen I" klargestellt, dass Online-Archive bei veränderter Sachlage (z. B. späterer Freispruch) angepasst werden müssen.
+
+## Postmortales Persönlichkeitsrecht
+
+Das APR endet mit dem Tod. Aber: Die **Menschenwürde** ([Art. 1 Abs. 1 GG](https://www.gesetze-im-internet.de/gg/art_1.html)) wirkt fort. Zudem sind kommerzielle Aspekte (z. B. das Recht am eigenen Bild) nach [§ 1922 BGB](https://www.gesetze-im-internet.de/bgb/__1922.html) vererblich.
+
+# Zivilrechtliche Durchsetzung
+
+Wenn das APR verletzt wurde, schlägt die Stunde der zivilrechtlichen Ansprüche. Das APR wirkt hier über die zivilrechtlichen Generalschlüssel des [§ 823 BGB](https://www.gesetze-im-internet.de/bgb/__823.html) (Ehrschutz/Persönlichkeit als "sonstiges Recht") und des [§ 1004 BGB](https://www.gesetze-im-internet.de/bgb/__1004.html) (Unterlassung).
+
+## Die wichtigsten Ansprüche
+
+1.  **Unterlassung ([§ 1004 BGB](https://www.gesetze-im-internet.de/bgb/__1004.html) analog):** "Hör auf damit!"
+2.  **Gegendarstellung ([§ 20 MStV](https://www.gesetze-im-internet.de/mstv/__20.html)):** "Meine Version der Geschichte."
+3.  **Berichtigung/Widerruf ([§ 823 BGB analog](https://www.gesetze-im-internet.de/bgb/__823.html)):** "Du hast mich durch eine falsche Aussage verletzt - stelle das richtig!"
+4.  **Geldentschädigung ([§ 823 BGB](https://www.gesetze-im-internet.de/bgb/__823.html)):** "Das war so schlimm, dass nur Geld den Schmerz (oder den kalkulierten Rechtsbruch) lindert."
+
+## Eine kleine Übung zum Abschluss
+
+::: {.drag-exercise}
+In der Abwägung beim APR gilt: Je tiefer der Eingriff, desto unwahrscheinlicher ist eine Rechtfertigung. Das APR ist ein *Rahmenrecht*, weshalb die Rechtswidrigkeit stets positiv festgestellt werden muss. Bei der Verdachtsberichterstattung ist eine *Stellungnahme* des Betroffenen zwingend erforderlich.
+:::

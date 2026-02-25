@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meinung vs. Tatsache</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+
+        .widget-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .statement-card {
+            border: 2px solid #eee;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+            background: #fafafa;
+            transition: all 0.3s;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.1s;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .btn-opinion {
+            background: #ff6a00;
+            color: white;
+        }
+
+        .btn-fact {
+            background: #333;
+            color: white;
+        }
+
+        .feedback {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+            font-size: 0.95rem;
+        }
+
+        .feedback.correct {
+            background: #e6ffed;
+            border: 1px solid #c6ffda;
+            color: #155724;
+        }
+
+        .feedback.wrong {
+            background: #fff5f5;
+            border: 1px solid #ffd5d5;
+            color: #721c24;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="widget-container">
+        <div id="statement" class="statement-card">Laden...</div>
+        <div class="btn-group">
+            <button class="btn-opinion" onclick="check('opinion')">Meinung</button>
+            <button class="btn-fact" onclick="check('fact')">Tatsache</button>
+        </div>
+        <div id="feedback" class="feedback"></div>
+    </div>
+
+    <script>
+        const data = [
+            { text: "Der neue Film von Harlan ist unerträglich.", type: "opinion", note: "Ein Werturteil. Es kommt auf das persönliche Dafürhalten an." },
+            { text: "Der Regisseur hat im Jahr 1940 diesen Film gedreht.", type: "fact", note: "Ein objektiv überprüfbarer Vorgang der Vergangenheit." },
+            { text: "Dieser Politiker ist ein Idiot.", type: "opinion", note: "Eine herabsetzende Meinung (aber noch keine Schmähkritik, da politischer Kontext)." },
+            { text: "Das Restaurant hat gestern um 22 Uhr geschlossen.", type: "fact", note: "Ein beweisbarer Fakt." },
+            { text: "Die Berichterstattung ist voreingenommen.", type: "opinion", note: "Wertung der journalistischen Arbeit." }
+        ];
+
+        let current = 0;
+
+        function update() {
+            document.getElementById('statement').textContent = data[current].text;
+            document.getElementById('feedback').style.display = 'none';
+        }
+
+        function check(choice) {
+            const feedback = document.getElementById('feedback');
+            const item = data[current];
+            const isCorrect = choice === item.type;
+
+            feedback.style.display = 'block';
+            feedback.className = isCorrect ? 'feedback correct' : 'feedback wrong';
+            feedback.innerHTML = `<strong>${isCorrect ? 'Richtig!' : 'Falsch.'}</strong><br>${item.note}`;
+
+            setTimeout(() => {
+                current = (current + 1) % data.length;
+                if (isCorrect) setTimeout(update, 2000);
+            }, 100);
+        }
+
+        update();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Haftung: Logik-Flow</title>
+    <style>
+        :root {
+            --thws-orange: #ff6a00;
+            --text-dark: #333333;
+            --step-bg: #f8f9fa;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .flow-step {
+            background: var(--step-bg);
+            border: 2px solid #eee;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .flow-step.active {
+            border-color: var(--thws-orange);
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .step-number {
+            position: absolute;
+            left: -15px;
+            top: 20px;
+            background: var(--thws-orange);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .step-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        .options {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .option-btn {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+            background: white;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .option-btn:hover {
+            border-color: var(--thws-orange);
+        }
+
+        .option-btn.selected {
+            background: var(--thws-orange);
+            color: white;
+            border-color: var(--thws-orange);
+        }
+
+        .result-box {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            background: #e7f1ff;
+            border-left: 6px solid #0056b3;
+            display: none;
+        }
+
+        .result-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #0056b3;
+        }
+
+        .law-tag {
+            display: inline-block;
+            background: #0056b3;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-bottom: 10px;
+        }
+
+        .reset-btn {
+            background: none;
+            border: none;
+            color: var(--thws-orange);
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 0.85rem;
+            margin-top: 15px;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="step1" class="flow-step active">
+            <div class="step-number">1</div>
+            <div class="step-title">Was wurde beschädigt?</div>
+            <div class="options">
+                <button class="option-btn" onclick="select(1, 'phys', this)">Körper / Eigentum</button>
+                <button class="option-btn" onclick="select(1, 'pure', this)">Rein. Vermögen / Recht</button>
+            </div>
+        </div>
+
+        <div id="step2" class="flow-step" style="opacity: 0.5; pointer-events: none;">
+            <div class="step-number">2</div>
+            <div class="step-title">Liegt ein Produktfehler vor?</div>
+            <div class="options">
+                <button class="option-btn" onclick="select(2, 'yes', this)">Ja (Systemfehler)</button>
+                <button class="option-btn" onclick="select(2, 'no', this)">Nein (Sorgfaltspflichtverstoß)</button>
+            </div>
+        </div>
+
+        <div id="result" class="result-box">
+            <div id="law-tag" class="law-tag"></div>
+            <div id="res-title" class="result-title"></div>
+            <div id="res-desc" style="font-size: 0.9rem; line-height: 1.4;"></div>
+        </div>
+
+        <button class="reset-btn" onclick="reset()">Simulation zurücksetzen</button>
+    </div>
+
+    <script>
+        let state = { s1: null, s2: null };
+
+        function select(step, value, btn) {
+            // UI Update for buttons
+            const parent = btn.parentElement;
+            parent.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+
+            state['s' + step] = value;
+
+            if (step === 1) {
+                document.getElementById('step2').style.opacity = '1';
+                document.getElementById('step2').style.pointerEvents = 'auto';
+                document.getElementById('step2').classList.add('active');
+                document.getElementById('step1').classList.remove('active');
+                document.getElementById('result').style.display = 'none';
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            const res = document.getElementById('result');
+            const tag = document.getElementById('law-tag');
+            const title = document.getElementById('res-title');
+            const desc = document.getElementById('res-desc');
+
+            res.style.display = 'block';
+
+            if (state.s1 === 'phys' && state.s2 === 'yes') {
+                tag.textContent = "Produkthaftungsrichtlinie (PLD)";
+                title.textContent = "Gefährdungshaftung";
+                desc.textContent = "Der Hersteller des KI-Systems haftet verschuldensunabhängig für den Defekt der Software. Sie müssen kein Verschulden nachweisen, lediglich den Fehler und den Schaden.";
+            } else if (state.s1 === 'phys' && state.s2 === 'no') {
+                tag.textContent = "KI-Haftungsrichtlinie";
+                title.textContent = "Beweislastumkehr";
+                desc.textContent = "Es wird vermutet, dass der Sorgfaltspflichtverstoß des Betreibers/Anbieters den Schaden verursacht hat. Der Beklagte muss das Gegenteil beweisen.";
+            } else if (state.s1 === 'pure') {
+                tag.textContent = "KI-Haftungsrichtlinie / BGB";
+                title.textContent = "Verschuldenshaftung";
+                desc.textContent = "Bei reinen Vermögensschäden oder Diskriminierung greift die Beweislastumkehr der KI-Haftungsrichtlinie, sofern gegen Pflichten des AI Acts verstoßen wurde.";
+            } else {
+                // Default fallback
+                tag.textContent = "KI-Haftungsrichtlinie";
+                title.textContent = "Einzelfallprüfung";
+                desc.textContent = "Hier greift die vermutete Kausalität, wenn eine Sorgfaltspflicht aus dem AI Act verletzt wurde.";
+            }
+
+            document.getElementById('step2').classList.remove('active');
+        }
+
+        function reset() {
+            state = { s1: null, s2: null };
+            document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+            document.getElementById('step2').style.opacity = '0.5';
+            document.getElementById('step2').style.pointerEvents = 'none';
+            document.getElementById('step2').classList.remove('active');
+            document.getElementById('step1').classList.add('active');
+            document.getElementById('result').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

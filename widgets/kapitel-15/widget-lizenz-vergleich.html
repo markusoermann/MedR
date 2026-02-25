@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutzungsrechte Vergleich</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #ffffff;
+            color: #333;
+            text-align: center;
+        }
+
+        .toggle-container {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background-color: #ff6a00;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(26px);
+        }
+
+        .scene {
+            display: flex;
+            justify-content: space-around;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            height: 200px;
+            align-items: center;
+        }
+
+        .actor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80px;
+            transition: opacity 0.3s;
+        }
+
+        .actor-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .actor-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .work {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 3rem;
+        }
+
+        .access-line {
+            position: absolute;
+            height: 2px;
+            background: #ff6a00;
+            transform-origin: left center;
+            transition: all 0.5s;
+            z-index: -1;
+        }
+
+        .status-badge {
+            margin-top: 5px;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 10px;
+            background: #eee;
+        }
+
+        .status-badge.allowed {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .status-badge.denied {
+            background: #ffebee;
+            color: #c62828;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toggle-container">
+        <span>Einfaches Recht</span>
+        <label class="switch">
+            <input type="checkbox" id="mode-toggle" onchange="update()">
+            <span class="slider"></span>
+        </label>
+        <span><strong>Ausschließliches Recht</strong></span>
+    </div>
+
+    <div class="scene">
+        <div class="work">📖</div>
+
+        <div class="actor" id="urheber">
+            <div class="actor-icon">🎨</div>
+            <div class="actor-label">Urheber</div>
+            <div class="status-badge" id="u-status">Erlaubt</div>
+        </div>
+
+        <div class="actor" id="lizenznehmer1">
+            <div class="actor-icon">🏢</div>
+            <div class="actor-label">Verwerter A</div>
+            <div class="status-badge allowed">Erlaubt</div>
+        </div>
+
+        <div class="actor" id="lizenznehmer2">
+            <div class="actor-icon">🏠</div>
+            <div class="actor-label">Verwerter B</div>
+            <div class="status-badge" id="b-status">Erlaubt</div>
+        </div>
+    </div>
+
+    <div id="explanation"
+        style="margin-top: 20px; font-size: 0.9rem; color: #666; max-width: 500px; margin-left: auto; margin-right: auto;">
+        Bei einem einfachen Nutzungsrecht können mehrere Personen (und der Urheber) das Werk parallel nutzen.
+    </div>
+
+    <script>
+        function update() {
+            const isExclusive = document.getElementById('mode-toggle').checked;
+            const uStatus = document.getElementById('u-status');
+            const bStatus = document.getElementById('b-status');
+            const exp = document.getElementById('explanation');
+            const actorB = document.getElementById('lizenznehmer2');
+
+            if (isExclusive) {
+                uStatus.innerText = "Gesperrt";
+                uStatus.className = "status-badge denied";
+                bStatus.innerText = "Gesperrt";
+                bStatus.className = "status-badge denied";
+                actorB.style.opacity = "0.3";
+                exp.innerText = "Beim ausschließlichen Recht hat Verwerter A das Monopol. Sogar der Urheber darf sein Werk nicht mehr selbst nutzen (außer es wurde anders vereinbart).";
+            } else {
+                uStatus.innerText = "Erlaubt";
+                uStatus.className = "status-badge allowed";
+                bStatus.innerText = "Erlaubt";
+                bStatus.className = "status-badge allowed";
+                actorB.style.opacity = "1";
+                exp.innerText = "Bei einem einfachen Nutzungsrecht können mehrere Personen (und der Urheber) das Werk parallel nutzen.";
+            }
+        }
+    </script>
+</body>
+
+</html>
