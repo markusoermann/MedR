@@ -1,0 +1,111 @@
+---
+title: "Der Rechtsrahmen für Künstliche Intelligenz"
+subtitle: "Einheit 10: AI Act, Haftungsregime und Urheberrecht"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: moodle-html
+---
+
+# Einleitung
+
+ Nach eigener Aussage hat die Europäische Union mit der [KI-Verordnung (VO (EU) 2024/1689)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689) – besser bekannt als **AI Act** – den weltweit ersten umfassenden Rechtsrahmen für Künstliche Intelligenz geschaffen. Ihr Ziel: Innovation fördern und dabei gleichzeitig die gesellschaftlichen Risiken von KI präventiv verringern. 
+
+# Die KI-Verordnung (AI Act)
+
+Der AI Act ist keine klassische Verbotsgesetzgebung, sondern folgt einer Logik, die wir aus dem Produktsicherheitsrecht - also Vorgaben für die Herstellung von Produkten wie medizinischen Geräten, Fahrzeugen oder Spielzeugen - kennen. Er reguliert nicht die Technologie an sich, sondern ihre Anwendung.
+
+## Der risikobasierte Ansatz
+
+Das Herzstück der Verordnung ist die Einstufung in Risikoklassen. Je tiefer die KI in unsere Grundrechte eingreift oder je höher das Risiko für gesellschaftliche Schäden ist, desto dicker wird das Pflichtenheft.
+
+1.  **Inakzeptables Risiko (Verbotene Praktiken):** Hier versteht die EU keinen Spaß. Praktiken mit KI, wie menschliches Verhalten zu manipulieren, "Social Scoring" nach Pekinger Vorbild oder Emotionen am Arbeitsplatz zu erkennen sind schlicht verboten (Art. 5 KI-VO).
+2.  **Hohes Risiko (Strenge Auflagen):** Das ist die "Champions League" der Regulierung. Wer KI für die Kreditwürdigkeitsprüfung, im Personalmanagement (CV-Scanning) oder in der kritischen Infrastruktur als Steuerungs- oder Entscheidungssystem einsetzt, muss hohe Hürden nehmen (Risikomanagement, Datengovernance, menschliche Aufsicht).
+3.  **Begrenztes Risiko (Transparenz):** Hier geht es vor allem darum, dass wir nicht mit und von KI getäuscht werden. Chatbots oder Deepfakes müssen als solche erkennbar sein (Art. 50 KI-VO).
+4.  **Minimales Risiko:** Spam-Filter oder KI in Videospielen bleiben weitgehend unreguliert.
+
+Prüfen Sie hier, in welche Risikoklasse verschiedene KI-Anwendungen fallen:
+
+<iframe src="widgets/kapitel-10/widget-risk-check.html" 
+        width="100%" height="520px" frameborder="0"
+        title="KI-Risikoklassen-Check">
+</iframe>
+
+::: {.details}
+#### Was ist ein "KI-System"?
+Die Definition nach Art. 3 Nr. 1 KI-VO orientiert sich am OECD-Standard: Ein System, das für explizite oder implizite Ziele Ergebnisse wie Vorhersagen, Empfehlungen oder Entscheidungen erzeugt, die physische oder virtuelle Umgebungen beeinflussen. Es geht also um **Autonomie** und **Anpassungsfähigkeit**.
+:::
+
+## Anbieter <-> Betreiber
+
+Die Rollenverteilung im AI Act ist entscheidend für die Pflichtenverteilung:
+
+*   **Anbieter (Provider):** Derjenige, der das System entwickelt oder in Verkehr bringt. Er trägt die Hauptlast der Dokumentationspflichten.
+*   **Betreiber (Deployer):** Derjenige, der das System im beruflichen Kontext einsetzt. Er muss die Betriebsanleitung beachten und die menschliche Aufsicht sicherstellen.
+
+Simulation: Wann wird ein Betreiber rechtlich zum Anbieter?
+
+<iframe src="widgets/kapitel-10/widget-role-switch.html" 
+        width="100%" height="650px" frameborder="0"
+        title="Anbieter vs. Betreiber Rollenwechsel">
+</iframe>
+
+> **Vorsicht, Falle:** Ein Betreiber kann rechtlich zum Anbieter "aufsteigen", wenn er das System so wesentlich verändert, dass es plötzlich in eine höhere Risikoklasse rutscht oder er es unter seinem eigenen Namen vermarktet.
+
+::: {.flip-card}
+#### KI-Kompetenz (AI Literacy)
+Seit Februar 2025 verpflichtet Art. 4 KI-VO Unternehmen dazu, sicherzustellen, dass das mit KI arbeitende Personal ein ausreichendes Maß von KI-Kompetenz hat. In der Praxis hat diese Pflicht zu viel Unsicherheit geführt.
+:::
+
+# GPAI: Die Multitools der Informatik
+
+Systeme mit allgemeinem Verwendungszweck (General Purpose AI), wie LLMs, passen nicht in das Schema der Risikostufen, da sich ihr Verwendungszweck nicht im Vorfeld festlegen lässt. Sie können alles – vom Gedichteschreiben bis zum Programmieren von Schadcode. 
+
+Für diese Modelle gelten spezielle Transparenzpflichten und – bei sehr rechenintensiven Modellen (> 10^25 FLOPs) von **systemischen Risiko** – erweiterte Sorgfaltspflichten. Hier muss der Anbieter Modellbewertungen und Cybersicherheitsmaßnahmen nachweisen.
+
+# Die Reform der Haftung: Wenn die KI Schaden anrichtet
+
+Klassisches Schadensersatzrecht stößt bei "Black Box" KI-Systemen an Grenzen. Wie beweist man, dass ein Programmierfehler schuld war, wenn das System selbstständig lernt?
+
+Die neue **Produkthaftungsrichtlinie (PLD)** stellt klar: Software ist ein Produkt. Wer eine fehlerhafte KI-Software in Verkehr bringt, haftet verschuldensunabhängig für Körper- und Sachschäden. Wer den Schaden hat, braucht also keinen Vorsatz mehr nachzuweisen.
+
+Erkunden Sie die Haftungslogik bei verschiedenen Schadensszenarien:
+
+<iframe src="widgets/kapitel-10/widget-liability-flow.html" 
+        width="100%" height="550px" frameborder="0"
+        title="KI-Haftung Logik-Flow">
+</iframe>
+
+
+::: {.case-study}
+#### Fall: Die diskriminierende HR-KI
+Ein Unternehmen setzt eine KI ein, die über Einstellungen entscheidet und die systematisch Bewerberinnen aussortiert, weil sie in der Trainingsphase nur Daten erfolgreicher männlicher Manager erhalten hat.
+
+::: {.solution}
+Hier liegt ein Verstoß gegen die Datengovernance-Pflichten des AI Act vor (Hochrisiko-Anwendung).
+:::
+:::
+
+# Lernkontrolle
+
+::: {.quick-check}
+Ein Startup nutzt einen Standard-LLM-Chatbot für den Kundensupport auf seiner Website. In welche Risikoklasse fällt dies primär und welche Pflicht besteht?
+
+- Hohes Risiko; es muss eine KI-Ethikkommission gegründet werden.
+- **Begrenztes Risiko; der Nutzer muss informiert werden, dass er mit einer KI spricht.**
+- Inakzeptables Risiko; Kundensupport durch KI ist verboten.
+- Minimales Risiko; es bestehen keinerlei Pflichten.
+:::

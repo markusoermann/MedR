@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiat-Simulator</title>
+    <style>
+        :root {
+            --thws-orange: #ff6a00;
+            --legal: #0056b3;
+            --ethic: #d32f2f;
+        }
+
+        body {
+            margin: 0;
+            padding: 15px;
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: 0 auto;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .header {
+            background: #f8f9fa;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            font-weight: bold;
+        }
+
+        .scenario-box {
+            padding: 20px;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-style: italic;
+            color: #444;
+        }
+
+        .actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            background: #eee;
+        }
+
+        button {
+            border: none;
+            padding: 15px;
+            background: white;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background: #f0f0f0;
+            color: var(--thws-orange);
+        }
+
+        .result-area {
+            display: none;
+            padding: 20px;
+            animation: fadeIn 0.4s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            color: white;
+            font-size: 0.75rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .tag.legal {
+            background: var(--legal);
+        }
+
+        .tag.ethic {
+            background: var(--ethic);
+        }
+
+        .result-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .result-text {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #555;
+        }
+
+        .reset {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #f8f9fa;
+            border: none;
+            border-top: 1px solid #eee;
+            cursor: pointer;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Szenario-Check: Was liegt vor?</div>
+
+        <div id="quest" class="scenario-box">
+            Sie kopieren einen Text aus Wikipedia für Ihre Hausarbeit, ändern ein paar Wörter und nennen keine Quelle.
+        </div>
+
+        <div id="btns" class="actions">
+            <button onclick="check('wiki')">Wikipedia-Kopie</button>
+            <button onclick="check('kant')">Kant-Zitat (1804)</button>
+            <button onclick="check('gut')">Eigene Idee, fremder Text</button>
+            <button onclick="check('clean')">Korrektes Zitat</button>
+        </div>
+
+        <div id="result" class="result-area">
+            <div id="tags"></div>
+            <div id="res-title" class="result-title"></div>
+            <div id="res-desc" class="result-text"></div>
+        </div>
+
+        <button class="reset" onclick="location.reload()">Neustart</button>
+    </div>
+
+    <script>
+        const scenarios = {
+            wiki: {
+                tags: ['legal', 'ethic'],
+                title: "Doppel-Verstoß",
+                desc: "Wikipedia-Autoren sind Urheber. Ohne Erlaubnis/Zitierung verletzen Sie das Urheberrecht UND die wissenschaftliche Redlichkeit. Achtung: Exmatrikulationsgefahr!"
+            },
+            kant: {
+                tags: ['ethic'],
+                title: "Wissenschaftliches Plagiat",
+                desc: "Kant ist seit über 70 Jahren tot (gemeinfrei). Keine Urheberrechtsverletzung, aber ein klarer Verstoß gegen die Prüfungsordnung (Täuschungsversuch)."
+            },
+            gut: {
+                tags: ['legal'],
+                title: "Urheberrechtsverletzung",
+                desc: "Auch wenn Sie die Idee hatten: Die konkrete sprachliche Ausformung eines anderen ist geschützt. Sie dürfen den Text nicht ungefragt übernehmen."
+            },
+            clean: {
+                tags: [],
+                title: "Alles korrekt! ✓",
+                desc: "Sie nutzen das Zitatrecht (§ 51 UrhG) und halten sich an die gute wissenschaftliche Praxis. Sicher durch die Prüfung."
+            }
+        };
+
+        function check(id) {
+            const s = scenarios[id];
+            document.getElementById('btns').style.display = 'none';
+            document.getElementById('quest').style.display = 'none';
+            const res = document.getElementById('result');
+            res.style.display = 'block';
+
+            const tags = document.getElementById('tags');
+            tags.innerHTML = '';
+            s.tags.forEach(t => {
+                const span = document.createElement('span');
+                span.className = 'tag ' + t;
+                span.textContent = t === 'legal' ? 'URHEBERRECHTSVERLETZUNG' : 'WISS. PLAGIAT';
+                tags.appendChild(span);
+            });
+
+            document.getElementById('res-title').textContent = s.title;
+            document.getElementById('res-desc').textContent = s.desc;
+        }
+    </script>
+</body>
+
+</html>

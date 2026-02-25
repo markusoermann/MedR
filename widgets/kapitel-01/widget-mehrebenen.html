@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehrebenensystem des Medienrechts</title>
+    <style>
+        :root {
+            --thws-orange: #ff5f00;
+            --thws-blue: #00305e;
+            --thws-light: #f4f4f4;
+            --level-int: #2c3e50;
+            --level-eu: #2980b9;
+            --level-bund: #c0392b;
+            --level-land: #27ae60;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            background: white;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .pyramid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .level {
+            width: 100%;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, filter 0.2s;
+            border-radius: 4px;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .level:hover {
+            transform: scale(1.02);
+            filter: brightness(1.1);
+        }
+
+        .level-int {
+            background-color: var(--level-int);
+            width: 60%;
+        }
+
+        .level-eu {
+            background-color: var(--level-eu);
+            width: 75%;
+        }
+
+        .level-bund {
+            background-color: var(--level-bund);
+            width: 90%;
+        }
+
+        .level-land {
+            background-color: var(--level-land);
+            width: 100%;
+        }
+
+        .info-box {
+            background-color: var(--thws-light);
+            border-left: 5px solid var(--thws-blue);
+            padding: 15px;
+            border-radius: 4px;
+            min-height: 120px;
+            transition: all 0.3s;
+        }
+
+        .info-title {
+            color: var(--thws-blue);
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .info-content {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .tag {
+            display: inline-block;
+            background: white;
+            color: var(--thws-blue);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="pyramid">
+            <div class="level level-int" onclick="showInfo('int')">Völkerrecht (Europarat)</div>
+            <div class="level level-eu" onclick="showInfo('eu')">Europäische Union</div>
+            <div class="level level-bund" onclick="showInfo('bund')">Bundesrecht (Deutschland)</div>
+            <div class="level level-land" onclick="showInfo('land')">Landesrecht (Staatsverträge)</div>
+        </div>
+
+        <div class="info-box" id="info-box">
+            <div class="info-title" id="info-title">Klicken Sie auf eine Ebene</div>
+            <div class="info-content" id="info-content">Erfahren Sie mehr über die Hierarchie der Rechtsquellen im
+                Medienrecht.</div>
+        </div>
+    </div>
+
+    <script>
+        const data = {
+            int: {
+                title: "Völkerrecht & Europarat",
+                color: "#2c3e50",
+                content: "Zentral ist die <b>EMRK</b> (Europäische Menschenrechtskonvention). Art. 10 schützt die Meinungsäußerungsfreiheit. Wirkweise in Deutschland: Rang eines einfachen Bundesgesetzes, aber völkerrechtsfreundliche Auslegung durch Gerichte geboten.",
+                tags: ["EMRK", "Völkerrecht"]
+            },
+            eu: {
+                title: "Europäische Union (Unionsrecht)",
+                color: "#2980b9",
+                content: "Dominiert durch Verordnungen (unmittelbar geltend) wie den <b>DSA</b> (Plattformen), die <b>DSGVO</b> (Daten) oder den <b>AI Act</b>. Die EU nutzt ihre Binnenmarktkompetenz, um digitale Märkte zu harmonisieren.",
+                tags: ["DSA", "DMA", "DSGVO", "AI Act"]
+            },
+            bund: {
+                title: "Bund (Deutschland)",
+                color: "#c0392b",
+                content: "Zuständig für die <b>technische Übertragung</b> (Telekommunikation/TKG) und das <b>Urheberrecht</b> (UrhG). Das Grundgesetz (Art. 5) bildet den verfassungsrechtlichen Rahmen.",
+                tags: ["Art. 5 GG", "TKG", "UrhG"]
+            },
+            land: {
+                title: "Länder (Staatsverträge)",
+                color: "#27ae60",
+                content: "Herzstück der <b>Inhaltsregulierung</b> aufgrund der Kulturhoheit. Um Einheitlichkeit zu wahren, schließen die Länder Staatsverträge wie den <b>Medienstaatsvertrag (MStV)</b> ab. Auch Landespressegesetze gehören hierher.",
+                tags: ["MStV", "Pressegesetze", "Jugendschutz"]
+            }
+        };
+
+        function showInfo(id) {
+            const item = data[id];
+            const box = document.getElementById('info-box');
+            const title = document.getElementById('info-title');
+            const content = document.getElementById('info-content');
+
+            box.style.borderLeftColor = item.color;
+            title.innerText = item.title;
+            title.style.color = item.color;
+
+            let html = item.content + "<br>";
+            item.tags.forEach(tag => {
+                html += `<span class="tag" style="border: 1px solid ${item.color}">${tag}</span> `;
+            });
+            content.innerHTML = html;
+        }
+    </script>
+
+</body>
+
+</html>

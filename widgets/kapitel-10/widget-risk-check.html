@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Act Risikoklassen-Check</title>
+    <style>
+        :root {
+            --thws-orange: #ff6a00;
+            --text-dark: #333333;
+            --bg-light: #f8f9fa;
+            --unacceptable: #d32f2f;
+            --high: #f57c00;
+            --limited: #fbc02d;
+            --minimal: #388e3c;
+        }
+
+        body {
+            margin: 0;
+            padding: 15px;
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: var(--text-dark);
+            background: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .widget-container {
+            width: 100%;
+            max-width: 600px;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .scenario-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .scenario-card {
+            padding: 12px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50px;
+        }
+
+        .scenario-card:hover {
+            border-color: var(--thws-orange);
+            background: #fff5ed;
+        }
+
+        .scenario-card.active {
+            border-color: var(--thws-orange);
+            background: var(--thws-orange);
+            color: white;
+            font-weight: 600;
+        }
+
+        .result-panel {
+            border-radius: 8px;
+            padding: 20px;
+            min-height: 120px;
+            transition: background 0.3s;
+            text-align: center;
+            display: none;
+        }
+
+        .risk-label {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .risk-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .risk-desc {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .unacceptable {
+            background: #ffebee;
+            border-left: 5px solid var(--unacceptable);
+        }
+
+        .unacceptable .risk-label {
+            background: var(--unacceptable);
+        }
+
+        .high {
+            background: #fff3e0;
+            border-left: 5px solid var(--high);
+        }
+
+        .high .risk-label {
+            background: var(--high);
+        }
+
+        .limited {
+            background: #fffde7;
+            border-left: 5px solid var(--limited);
+        }
+
+        .limited .risk-label {
+            background: var(--limited);
+            color: #333;
+        }
+
+        .minimal {
+            background: #e8f5e9;
+            border-left: 5px solid var(--minimal);
+        }
+
+        .minimal .risk-label {
+            background: var(--minimal);
+        }
+
+        .hint {
+            text-align: center;
+            color: #777;
+            font-size: 0.85rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="widget-container">
+        <div class="scenario-grid">
+            <div class="scenario-card" onclick="selectScenario(this, 's1')">Social Scoring</div>
+            <div class="scenario-card" onclick="selectScenario(this, 's2')">CV-Scanning (HR)</div>
+            <div class="scenario-card" onclick="selectScenario(this, 's3')">Kreditprüfung</div>
+            <div class="scenario-card" onclick="selectScenario(this, 's4')">Support Chatbot</div>
+            <div class="scenario-card" onclick="selectScenario(this, 's5')">Müllsortierung-KI</div>
+            <div class="scenario-card" onclick="selectScenario(this, 's6')">Deepfake-Generator</div>
+        </div>
+
+        <div id="result-panel" class="result-panel">
+            <div id="risk-badge" class="risk-label"></div>
+            <div id="risk-title" class="risk-title"></div>
+            <div id="risk-desc" class="risk-desc"></div>
+        </div>
+
+        <div id="placeholder-hint" class="hint">Wählen Sie eine KI-Anwendung aus, um die Risikoklasse zu prüfen.</div>
+    </div>
+
+    <script>
+        const scenarios = {
+            s1: {
+                title: "Inakzeptables Risiko",
+                label: "Verboten",
+                desc: "Bewertung von sozialem Verhalten durch Behörden oder manipulative Systeme. Gemäß Art. 5 KI-VO in der EU strikt untersagt.",
+                class: "unacceptable"
+            },
+            s2: {
+                title: "Hohes Risiko",
+                label: "Reguliert",
+                desc: "KI im Personalmanagement (Recruiting). Erfordert strenges Risikomanagement, Datengovernance und menschliche Aufsicht.",
+                class: "high"
+            },
+            s3: {
+                title: "Hohes Risiko",
+                label: "Reguliert",
+                desc: "Bewertung der Kreditwürdigkeit. Fällt unter Anhang III und unterliegt strengen Dokumentations- und Transparenzpflichten.",
+                class: "high"
+            },
+            s4: {
+                title: "Begrenztes Risiko",
+                label: "Transparenz",
+                desc: "Interaktion mit Menschen. Der Nutzer muss darüber informiert werden, dass er mit einer Maschine kommuniziert (Art. 50).",
+                class: "limited"
+            },
+            s5: {
+                title: "Minimales Risiko",
+                label: "Keine Pflichten",
+                desc: "Industrielle KI ohne direkten Grundrechtseingriff. Keine spezifischen Auflagen durch den AI Act, Verhaltenskodizes freiwillig.",
+                class: "minimal"
+            },
+            s6: {
+                title: "Begrenztes Risiko",
+                label: "Kennzeichnung",
+                desc: "Generative KI. Inhalte müssen als KI-generiert oder manipuliert gekennzeichnet werden (Watermarking/Labeling).",
+                class: "limited"
+            }
+        };
+
+        function selectScenario(element, id) {
+            // UI Reset
+            document.querySelectorAll('.scenario-card').forEach(c => c.classList.remove('active'));
+            element.classList.add('active');
+
+            const panel = document.getElementById('result-panel');
+            const data = scenarios[id];
+
+            panel.style.display = 'block';
+            panel.className = 'result-panel ' + data.class;
+
+            document.getElementById('risk-badge').textContent = data.label;
+            document.getElementById('risk-title').textContent = data.title;
+            document.getElementById('risk-desc').textContent = data.desc;
+            document.getElementById('placeholder-hint').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

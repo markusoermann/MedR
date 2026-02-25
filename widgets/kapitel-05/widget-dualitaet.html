@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duales System Explorer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 2px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            background: #eee;
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: none;
+            transition: 0.2s;
+        }
+
+        .tab.active {
+            background: #ff6a00;
+            color: white;
+        }
+
+        .content {
+            border: 2px solid #ff6a00;
+            border-radius: 0 8px 8px 8px;
+            padding: 20px;
+            background: #fafafa;
+            min-height: 180px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 15px;
+            align-items: start;
+        }
+
+        .label {
+            font-weight: bold;
+            font-size: 0.75rem;
+            color: #ff6a00;
+            text-transform: uppercase;
+            padding-top: 4px;
+        }
+
+        .val {
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .highlight {
+            color: #ff6a00;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab active" onclick="show('orr', this)">Öffentlich-Rechtlich</button>
+            <button class="tab" onclick="show('privat', this)">Privat-Kommerziell</button>
+        </div>
+        <div class="content" id="display">
+            <div class="grid">
+                <div class="label">Auftrag</div>
+                <div class="val"><span class="highlight">Grundversorgung</span> für alle. Information, Bildung, Kultur.
+                </div>
+                <div class="label">Finanzen</div>
+                <div class="val">Primär über den <span class="highlight">Rundfunkbeitrag</span> (staatsfern über KEF).
+                </div>
+                <div class="label">Vielfalt</div>
+                <div class="val"><span class="highlight">Binnenpluralismus</span>: Gesellschaftliche Gruppen
+                    kontrollieren intern (Rundfunkrat).</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const data = {
+            orr: `
+                <div class="grid">
+                    <div class="label">Auftrag</div>
+                    <div class="val"><span class="highlight">Grundversorgung</span> für alle. Information, Bildung, Kultur und Unterhaltung.</div>
+                    <div class="label">Finanzen</div>
+                    <div class="val">Primär über den <span class="highlight">Rundfunkbeitrag</span> (staatsfern über KEF ermittelt).</div>
+                    <div class="label">Vielfalt</div>
+                    <div class="val"><span class="highlight">Binnenpluralismus</span>: Gesellschaftliche Gruppen kontrollieren intern (Rundfunkrat).</div>
+                </div>
+            `,
+            privat: `
+                <div class="grid">
+                    <div class="label">Auftrag</div>
+                    <div class="val">Gewinnerzielung durch Erfüllung von <span class="highlight">Nutzerpräferenzen</span>.</div>
+                    <div class="label">Finanzen</div>
+                    <div class="val">Finanzierung durch <span class="highlight">Werbung</span> und Abonnements (Pay-TV).</div>
+                    <div class="label">Vielfalt</div>
+                    <div class="val"><span class="highlight">Außenpluralismus</span>: Vielfalt entsteht durch Wettbewerb vieler Anbieter (Überwachung durch KEK).</div>
+                </div>
+            `
+        };
+
+        function show(key, btn) {
+            document.getElementById('display').innerHTML = data[key];
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

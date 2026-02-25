@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haftungs-Check: Verschulden</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: #333;
+            text-align: center;
+        }
+
+        .toggle-container {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background-color: #ff6a00;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(26px);
+        }
+
+        .items {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .item {
+            padding: 15px;
+            border-radius: 8px;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .item.active {
+            background: #e8f5e9;
+            border-left: 5px solid #2e7d32;
+        }
+
+        .item.inactive {
+            opacity: 0.4;
+            background: #ffebee;
+            border-left: 5px solid #c62828;
+            text-decoration: line-through;
+        }
+
+        .status-icon {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toggle-container">
+        <span>Unbewusst / Ohne Verschulden</span>
+        <label class="switch">
+            <input type="checkbox" id="v-toggle" onchange="update()">
+            <span class="slider"></span>
+        </label>
+        <span><strong>Vorsatz / Fahrlässigkeit</strong></span>
+    </div>
+
+    <div class="items">
+        <div id="i1" class="item active">
+            <span>Unterlassungsanspruch (§ 97 I UrhG)</span>
+            <span class="status-icon">✓</span>
+        </div>
+        <div id="i2" class="item active">
+            <span>Beseitigungsanspruch (§ 97 I UrhG)</span>
+            <span class="status-icon">✓</span>
+        </div>
+        <div id="i3" class="item inactive">
+            <span>Schadensersatz (§ 97 II UrhG)</span>
+            <span class="status-icon">✗</span>
+        </div>
+        <div id="i4" class="item inactive">
+            <span>Strafbarkeit (§ 106 UrhG)</span>
+            <span class="status-icon">✗</span>
+        </div>
+    </div>
+
+    <script>
+        function update() {
+            const hasV = document.getElementById('v-toggle').checked;
+            const i3 = document.getElementById('i3');
+            const i4 = document.getElementById('i4');
+
+            if (hasV) {
+                i3.className = 'item active';
+                i3.querySelector('.status-icon').innerText = '✓';
+                i4.className = 'item active';
+                i4.querySelector('.status-icon').innerText = '✓';
+            } else {
+                i3.className = 'item inactive';
+                i3.querySelector('.status-icon').innerText = '✗';
+                i4.className = 'item inactive';
+                i4.querySelector('.status-icon').innerText = '✗';
+            }
+        }
+    </script>
+</body>
+
+</html>

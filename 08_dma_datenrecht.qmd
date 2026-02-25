@@ -1,0 +1,164 @@
+---
+title: "Digital Markets Act und Datenwirtschaftsrecht"
+subtitle: "Einheit 8: DMA, DA und DGA"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: handout-typst
+---
+
+# Einleitung
+
+Während wir uns schon mit der Haftung und den Sorgfaltspflichten von Plattformen (Digital Services Act) beschäftigt haben, wechseln wir nun die Perspektive: weg von der Moderation von Inhalten, hin zur Marktmacht und ihrer zentralen Ressource – den Daten.
+
+Diese Einheit behandelt zwei Säulen, die das Ziel verfolgen, das "digitale Ökosystem" Europas nicht nur sicherer, sondern vor allem fairer und wettbewerbsfähiger zu gestalten. Wir blicken zuerst auf den **Digital Markets Act (DMA)**, das scharfe Schwert gegen die Übermacht der Tech-Giganten, und widmen uns anschließend dem neuen **Datenwirtschaftsrecht (Data Act & DGA)**, das die Frage klärt, wem die Früchte der vernetzten Welt eigentlich zustehen.
+
+# Der Digital Markets Act (DMA) – Bändigung der „Gatekeeper“?
+
+Wenn der [DSA](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32022R2065) das Grundgesetz für Inhalte ist, dann ist der [Digital Markets Act (VO (EU) 2022/1925)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32022R1925) das scharfe, den Markt regelnde Kartellrecht des 21. Jahrhunderts. 
+
+## Zielsetzung und regulatorischer Paradigmenwechsel
+
+Im klassischen Wettbewerbsrecht, etwa im deutschen [Gesetz gegen Wettbewerbsbeschränkungen (GWB)](http://www.gesetze-im-internet.de/gwb/index.html), agierten die Behörden oft wie eine Feuerwehr, die erst ausrückt, wenn das Haus bereits lichterloh brennt. Man sprach von der *Ex-post-Regulierung*: Erst musste ein Missbrauch nachgewiesen werden, dann folgten jahrelange Verfahren. In der schnelllebigen Plattformökonomie führt dies oft dazu, dass Wettbewerber bereits vom Markt gefegt wurden, bevor das letzte Urteil rechtskräftig war (**"Tipping-Effekt"**).
+
+Der DMA bricht mit dieser Tradition und etabliert eine **Ex-ante-Regulierung**. Er stellt Verhaltensregeln auf, *bevor* der Schaden eintritt. Sein Ziel ist die Gewährleistung unfairer und bestreitbarer Märkte.
+
+::: {.flip-card}
+#### Tipping-Effekt
+Der Punkt, an dem eine Plattform aufgrund von Netzeffekten so groß wird, dass der Markt "kippt" und ein Wettbewerb faktisch nicht mehr möglich ist.
+:::
+
+## Die Adressaten: Wer sind die „Gatekeeper“?
+
+Der DMA ist kein Gesetz für das sympathische Start-up aus Unterfranken. Er zielt exzellent präzise auf die sogenannten **Gatekeeper (Torwächter)**. Das sind Unternehmen, die einen "zentralen Plattformdienst" betreiben und als unverzichtbare Schnittstelle zwischen gewerblichen Nutzern und Endnutzer/-innen fungieren.
+
+Die EU-Kommission benennt diese Akteure anhand harter quantitativer Kriterien:
+
+*   **Finanzkraft:** Ein Jahresumsatz in der EU von mind. 7,5 Mrd. € oder ein Börsenwert von mind. 75 Mrd. € in den letzten drei Jahren.
+*   **Reichweite:** Mehr als 45 Millionen monatlich aktive Endnutzer in der EU.
+*   **Dauerhaftigkeit:** Die Kriterien wurden in den letzten drei Geschäftsjahren erfüllt.
+
+Prüfen Sie mit dem folgenden interaktiven Rechner, ob ein Unternehmen die quantitativen Schwellenwerte für einen Gatekeeper-Status erreicht:
+
+<iframe src="widgets/kapitel-08/widget-gatekeeper-check.html" 
+        width="100%" height="450px" frameborder="0"
+        title="Gatekeeper Schwellenwert-Rechner">
+</iframe>
+
+
+::: {.details}
+#### Aktuell benannte Gatekeeper
+Bisher hat die Kommission u.a. Alphabet (Google), Amazon, Apple, Meta, Microsoft und ByteDance (TikTok) als Gatekeeper eingestuft. Interessant ist hierbei, dass nicht das gesamte Unternehmen "reguliert" wird, sondern spezifische Dienste (z.B. Google Search, iOS, Facebook, Amazon Marketplace).
+:::
+
+## Die Verhaltenspflichten: Das „Sündenregister“ der Tech-Giganten
+
+In den Art. 5 und 6 des DMA findet sich ein Katalog von rund 20 Geboten und Verboten. Hier zeigt der DMA seine Zähne. Diese sind abgeleitet aus wettbewerbsschädlichen Verhaltensweisen, die in der Vergangenheit immer wieder beobachtet werden konnten.
+
+Die dahinterliegende Idee ist einfach: Gatekeeper dürfen ihre Marktmacht nicht nutzen, um eigene Dienste zu bevorzugen oder den Zugang für Dritte zu vermauern.
+
+Die wichtigsten Regeln im Überblick:
+
+1.  **Verbot des Self-Preferencing:** Apple darf in den Suchergebnissen des App Stores nicht heimlich Apple Music gegenüber Spotify bevorzugen. Ranking-Algorithmen müssen fair sein.
+2.  **Verbot der Daten-Kopplung:** Meta darf Daten von Facebook nicht ohne explizite Einwilligung mit Daten von WhatsApp oder Instagram zusammenführen.
+3.  **Interoperabilität:** Messenger-Dienste müssen sich öffnen. Ein Signal-Nutzer soll (theoretisch) in der Lage sein, eine Nachricht an einen WhatsApp-Nutzer zu senden, ohne die App wechseln zu müssen.
+4.  **Auswahlfreiheit:** Wer ein Android-Smartphone kauft, muss Chrome deinstallieren können. Vorinstallierte "Bloatware" soll der Vergangenheit angehören.
+
+Visualisierung: So wirkt sich das Verbot der Selbstbevorzugung auf die Darstellung von Suchergebnissen aus:
+
+<iframe src="widgets/kapitel-08/widget-self-preferencing.html" 
+        width="100%" height="450px" frameborder="0"
+        title="Self-Preferencing Visualizer">
+</iframe>
+
+::: {.quick-check}
+Welches Verbot verhindert, dass eine Suchmaschine ihre eigenen Shopping-Ergebnisse über die der Konkurrenz stellt?
+
+- Interoperabilitätsgebot
+- **Verbot des Self-Preferencing (Selbstbevorzugung)**
+- Auswahlfreiheitsgebot
+- Daten-Kopplungsverbot
+:::
+
+## Durchsetzung: Wenn es teuer wird
+
+Die EU-Kommission ist die alleinige "Sheriffin" des DMA. Die Sanktionen sind drakonisch gestaltet, um auch Billionen-Konzerne zu beeindrucken:
+*   Geldbußen bis zu **10 %** des weltweiten Gesamtumsatzes.
+*   Im Wiederholungsfall bis zu **20 %**.
+
+Zusätzlich gibt es das **Private Enforcement**: Wettbewerber oder Verbraucher können vor nationalen Gerichten klagen. 
+
+::: {.case-study}
+#### Fall: Das Android-Setup (LG Mainz, Urt. v. 12.08.2025, Az. 12 HK O 32/24)
+Das Landgericht Mainz untersagte Google, den Dienst "Gmail" bei der Ersteinrichtung von Android-Smartphones derart zu bevorzugen, dass alternative E-Mail-Anbieter faktisch keine Chance auf Wahrnehmung hatten. Dies zeigt: Der DMA wirkt nicht nur in Brüssel, sondern auch in der Rheinhessen.
+:::
+
+# Datenwirtschaftsrecht – Das Gold des 21. Jahrhunderts
+
+Verlassen wir die Plattformen und blicken auf die Rohstoffe. Mit dem Internet of Things (IoT) – vom smarten Thermomix bis zum vernetzten Tesla – entstehen Datenmengen, die bisher oft ungenutzt in "Datensilos" der Hersteller liegen und nur von diesen genutzt werden können.
+
+## Das Ende des Mythos vom „Dateneigentum“
+
+Ein häufiger Irrglaube lautet: "Meine Daten gehören mir." Juristisch ist das eine Sackgasse. 
+*   **Informationen sind keine "Sachen"** im Sinne des [§ 90 BGB](http://www.gesetze-im-internet.de/bgb/__90.html). 
+*   Es gibt daher auch kein "Eigentum" an Daten nach dem Vorbild des Sacheigentums. 
+
+Das Datenwirtschaftsrecht fragt daher nicht: "Wem gehören die Daten?", sondern: **"Wer darf die Daten nutzen und die Wertschöpfung aus den Daten generieren?"**
+
+::: {.flip-card}
+#### DSGVO vs. Data Act
+Die [DSGVO](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679) dient dem Schutz der Grundrechte des Einzelnen auf informationelle Selbstbestimmung bzw. Privatsphäre. Der [Data Act](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023R2854) dient der wirtschaftlichen Nutzung der Daten.
+:::
+
+## Der Data Governance Act (DGA) – Vertrauen durch Neutralität
+
+Der [Data Governance Act (VO (EU) 2022/868)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32022R0868) schafft den organisatorischen Rahmen. Er schafft einen Rechtsrahmen für **Datenintermediäre** (neutrale Treuhänder), die den Datenaustausch zwischen Unternehmen vermitteln, ohne selbst Profit aus den Daten zu schlagen. Zudem wird der **Datenaltruismus** gefördert: Die freiwillige Spende von Daten für das Gemeinwohl (z.B. Krebsforschung).
+
+## Der Data Act (DA) – Das Recht auf den Daten-Zugang
+
+Der [Data Act (Datenverordnung)](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023R2854) soll das "Betriebssystem" der Datenökonomie sein.
+
+### Access by Design
+Hersteller von vernetzten Produkten müssen diese so bauen, dass der Nutzer (B2C oder B2B) standardmäßig und unkompliziert auf die generierten Daten zugreifen kann. Man darf den Zugang nicht hinter komplizierten Menüs verstecken.
+
+### Der Anspruch auf Datenweitergabe
+Der Clou: Der Nutzer kann verlangen, dass der Dateninhaber (z.B. BMW) die Daten direkt an einen Dritten (z.B. die freie Werkstatt an der Ecke oder ein innovatives Start-up) übermittelt. 
+
+*   **Schutz vor Konkurrenz:** Der Dritte darf die Daten aber nicht nutzen, um ein exaktes Konkurrenzprodukt zu dem des Herstellers zu bauen.
+*   **Schutz von Geschäftsgeheimnissen:** Der Dateninhaber kann die Herausgabe verweigern, wenn ein "schwerer wirtschaftlicher Schaden" durch die Offenlegung technischer Details droht (enge Ausnahme!).
+
+### Cloud-Switching (Anbieterwechsel)
+Kapitel VIII des Data Act verpflichtet Cloud-Anbieter (AWS, Azure, Google Cloud), den Umzug zu einem anderen Anbieter technisch zu ermöglichen. Wechselgebühren werden schrittweise auf Null gesenkt.
+
+::: {.drag-exercise}
+Der *Data Governance Act* regelt primär den Rahmen für den Datenaustausch, während der *Data Act* konkrete Zugriffsrechte für Nutzer von *IoT-Geräten* schafft.
+:::
+
+# Lernkontrolle
+
+::: {.quick-check}
+Ein Autohersteller weigert sich, einer unabhängigen Werkstatt Zugriff auf die Diagnosedaten eines Kundenfahrzeugs zu geben, obwohl der Kunde dies ausdrücklich wünscht. Welcher Rechtsakt gibt dem Kunden hier primär eine Handhabe?
+
+- DSGVO (Art. 15 Auskunftsrecht)
+- Digital Markets Act (DMA)
+- **Data Act (DA)**
+- Digital Services Act (DSA)
+:::
+
+::: {.details}
+#### Zusammenfassung zum Mitnehmen
+Der DMA bricht die Macht der Großen (**Gatekeeper**), um faire Märkte zu sichern. Der Data Act bricht die Macht der Hersteller (**Dateninhaber**), um die Nutzung von Maschinendaten zu demokratisieren. Beides folgt dem europäischen Weg: Wettbewerb durch rechtsstaatlich geregelte Offenheit.
+:::

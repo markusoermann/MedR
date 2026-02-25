@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schadensberechnung Simulator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .slider-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: #eee;
+            outline: none;
+            accent-color: #ff6a00;
+        }
+
+        .val-display {
+            color: #ff6a00;
+            font-weight: 700;
+        }
+
+        .results {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-top: 4px solid #ddd;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card.active {
+            border-top-color: #ff6a00;
+            background: #fff5ed;
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(255, 106, 0, 0.15);
+        }
+
+        .card h4 {
+            margin: 0 0 10px 0;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #666;
+        }
+
+        .amount {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #333;
+        }
+
+        .hint {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #888;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="slider-group">
+            <label>Übliche Lizenzgebühr (Lizenzanalogie): <span class="val-display" id="liz-val">500</span> €</label>
+            <input type="range" id="liz-slider" min="100" max="5000" step="50" value="500">
+        </div>
+
+        <div class="slider-group">
+            <label>Gewinn des Verletzers (Gewinnabschöpfung): <span class="val-display" id="gew-val">1200</span>
+                €</label>
+            <input type="range" id="gew-slider" min="0" max="10000" step="100" value="1200">
+        </div>
+
+        <div class="slider-group">
+            <label>Eigener nachgewiesener Schaden: <span class="val-display" id="sch-val">200</span> €</label>
+            <input type="range" id="sch-slider" min="0" max="5000" step="50" value="200">
+        </div>
+
+        <div class="results">
+            <div class="card" id="card-sch">
+                <h4>Konkreter Schaden</h4>
+                <div class="amount" id="amt-sch">200 €</div>
+            </div>
+            <div class="card" id="card-gew">
+                <h4>Gewinnabschöpfung</h4>
+                <div class="amount" id="amt-gew">1200 €</div>
+            </div>
+            <div class="card" id="card-liz">
+                <h4>Lizenzanalogie</h4>
+                <div class="amount" id="amt-liz">500 €</div>
+            </div>
+        </div>
+
+        <p class="hint">Der Urheber hat das Wahlrecht und wird in der Regel den höchsten Betrag fordern.</p>
+    </div>
+
+    <script>
+        const sliders = {
+            liz: document.getElementById('liz-slider'),
+            gew: document.getElementById('gew-slider'),
+            sch: document.getElementById('sch-slider')
+        };
+        const displays = {
+            liz: document.getElementById('liz-val'),
+            gew: document.getElementById('gew-val'),
+            sch: document.getElementById('sch-val')
+        };
+        const amounts = {
+            liz: document.getElementById('amt-liz'),
+            gew: document.getElementById('amt-gew'),
+            sch: document.getElementById('amt-sch')
+        };
+        const cards = {
+            liz: document.getElementById('card-liz'),
+            gew: document.getElementById('card-gew'),
+            sch: document.getElementById('card-sch')
+        };
+
+        function update() {
+            const v = {
+                liz: parseInt(sliders.liz.value),
+                gew: parseInt(sliders.gew.value),
+                sch: parseInt(sliders.sch.value)
+            };
+
+            // Update labels
+            displays.liz.innerText = v.liz;
+            displays.gew.innerText = v.gew;
+            displays.sch.innerText = v.sch;
+
+            // Update amounts
+            amounts.liz.innerText = v.liz + ' €';
+            amounts.gew.innerText = v.gew + ' €';
+            amounts.sch.innerText = v.sch + ' €';
+
+            // Highlight max
+            const maxVal = Math.max(v.liz, v.gew, v.sch);
+            cards.liz.classList.toggle('active', v.liz === maxVal);
+            cards.gew.classList.toggle('active', v.gew === maxVal);
+            cards.sch.classList.toggle('active', v.sch === maxVal);
+        }
+
+        Object.values(sliders).forEach(s => s.addEventListener('input', update));
+        update();
+    </script>
+</body>
+
+</html>

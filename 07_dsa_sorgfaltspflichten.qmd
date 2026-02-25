@@ -1,0 +1,141 @@
+---
+title: "Sorgfaltspflichten nach dem DSA"
+subtitle: "Einheit 7: Compliance, Risikomanagement und Digitales Hausrecht von Online-Plattformen"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: moodle-html
+---
+
+# Der gestufte Ansatz der Sorgfaltspflichten
+
+Der [Digital Services Act (DSA)](https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu) verfolgt keinen "One-Size-Fits-All"-Ansatz, sondern ein risikobasiertes, kumulatives Modell. Die Logik dahinter ist bestechend simpel: Je größer die gesellschaftliche Hebelwirkung eines Dienstes ist, desto engmaschiger soll das Netz der Sorgfaltspflichten geknüpft sein, die der Dienstenabieter erfüllen muss, um die Gesellschaft vor negativen Auswirkungen des Dienstes zu schützen.
+
+Die folgende Visualisierung zeigt, wie die Pflichten mit der Größe und Bedeutung des Dienstes anwachsen:
+
+<iframe src="widgets/kapitel-07/widget-stufenmodell.html" 
+        width="100%" height="600px" frameborder="0"
+        title="DSA Stufenmodell der Sorgfaltspflichten">
+</iframe>
+
+
+## Stufe 1: Grundpflichten für alle Vermittlungsdienste
+
+Jeder Anbieter, der Informationen im Netz vermittelt, muss ein Minimum an rechtsstaatlicher Hygiene wahren. Dazu gehören:
+
+*   **Behördenkommunikation (Art. 9, 10 DSA):** Auf staatliche Anordnungen gegen rechtswidrige Inhalte muss zügig reagiert werden.
+*   **Erreichbarkeit (Art. 11, 12 DSA):** Kontaktstellen für Behörden und Nutzer sind keine Kür, sondern Pflicht.
+*   **Transparenz der AGB (Art. 14 DSA):** Nutzer sollen verstehen, wie die Inhaltemoderation funktioniert.
+*   **Transparenzberichte (Art. 15 DSA):** Ein regelmäßige Zusammenfassung der Moderationspraxis ist zwingend (außer für Kleinstunternehmen).
+
+::: {.flip-card}
+#### Transparenzberichte (Art. 15 DSA)
+Anbieter müssen offenlegen, wie viele Inhalte sie gelöscht haben und welche automatisierten Verfahren dabei zum Einsatz kamen.
+:::
+
+## Stufe 2: Zusätzliche Pflichten für Hosting-Dienste
+
+Wer Daten für Nutzer speichert, hat weitergehende Pflichten im Hinblick auf die bereitgestellten Inhalte.
+
+*   **Notice and Action (Art. 16 DSA):** Hosting-Dienste müssen ein Meldeverfahren bereitstellen. Eine konkrete Meldung führt zur positiven Kenntnis und löst die Pflicht zum zügigen Handeln aus.
+*   **Begründungspflicht (Art. 17 DSA):** Wer löscht, muss dies dem betroffenen Nutzer gegenüber präzise rechtfertigen.
+*   **Strafverfolgung (Art. 18 DSA):** Bei Verdacht auf schwere Straftaten muss der Anbieter die Behörden proaktiv informieren.
+
+::: {.drag-exercise}
+Das Verfahren von *Notice and Action* gemäß Art. 16 DSA ersetzt das alte, eher informelle *Notice and Takedown*. Durch eine ausreichend konkrete Meldung erlangt der Anbieter *positive Kenntnis*, was seine *Haftungsprivilegierung* gefährdet, wenn er nicht unverzüglich handelt, die Inhalte prüft und gegebenenfalls moderiert..
+:::
+
+## Stufe 3: Zusätzliche Pflichten für Online-Plattformen
+
+Plattformen (z.B. soziale Netzwerke) unterliegen aufgrund ihrer Multiplikatorrolle weitreichenderen Pflichten (Ausnahme: Art. 19 DSA für kleine Unternehmen).
+
+*   **Beschwerdemanagement (Art. 20 DSA):** Ein internes System muss gegen Fehlentscheidungen bei Löschungen schützen.
+*   **Trusted Flaggers (Art. 22 DSA):** Meldungen von zertifizierten Vertrauenspersonen oder -organisationen genießen Vorrang.
+*   **Schutz vor Missbrauch (Art. 23 DSA):** "Wiederholungstäter" müssen nach Vorwarnung gesperrt werden.
+*   **Dark Patterns-Verbot (Art. 25 DSA):** Die Benutzeroberfläche darf Nutzer nicht manipulieren.
+
+::: {.details}
+#### Was sind Dark Patterns?
+Gemäß Art. 25 DSA dürfen Plattformen ihre Interfaces nicht so gestalten, dass die Entscheidungsfreiheit der Nutzer beeinträchtigt wird – etwa durch verwirrende Menüführungen bei Kündigungen oder die optische Bevorzugung von datenschutzunfreundlichen Einstellungen.
+:::
+
+## Stufe 4: Sehr große Plattformen (VLOPs / VLOSEs)
+
+Dienste mit mehr als 45 Millionen aktiven Nutzern in der EU gelten als systemisch relevant und unterstehen der direkten Aufsicht der EU-Kommission. Sie müssen systemische Risiken (Desinformation, Grundrechtsverletzungen) bewerten und durch unabhängige Audits prüfen lassen.
+
+# Konfliktlösung und "Digitales Hausrecht"
+
+Ein zentrales Spannungsfeld ergibt sich, wenn Plattformen Inhalte löschen, die zwar legal sind, aber gegen interne Community-Standards verstoßen. Das "digitale Hausrecht" der Plattformen wird durch den DSA gestärkt, ist aber nicht grenzenlos.
+
+Die Entscheidung einer Plattform zur Löschung ist kein rein privater Akt. Hier prallt die **Meinungsfreiheit des Nutzers** (Art. 11 GrCh, Art. 5 GG) auf die **Berufsausübungsfreiheit des Platformbetreibers** (Art. 16 GrCh, Art. 12 GG). Es bedarf also einer **Abwägung**. Die Standards der Plattform dürfen daher nicht willkürlich sein, sondern müssen objektiv und überprüfbar ausgestaltet werden
+
+::: {.case-study}
+#### Der Overblocking-Konflikt
+Ein Nutzer postet eine pointierte, aber rechtlich zulässige Kritik an einer politischen Maßnahme. Die Plattform löscht den Beitrag unter Berufung auf ihre "Richtlinien gegen Hassrede".
+
+::: {.solution}
+Dank Art. 17 DSA (Begründungspflicht) und Art. 20 DSA (Beschwerdemanagement) kann der Nutzer nun prozessual gegen diese Entscheidung vorgehen. Ein zivilrechtlicher Anspruch auf Wiederherstellung besteht, wenn die Löschung unzulässig war (vertragswidrig nach dem Nutzungsvertrag).
+:::
+:::
+
+# Methodik: Prüfungsaufbau für die Fallanalyse in der Zusammenfassung
+
+In der Fallbearbeitung fungiert der DSA regelmäßig als entscheidender Weichensteller.
+
+## I. Vorprüfung der Verantwortlichkeit (DSA-Filter)
+
+1.  **Diensteanbieter-Eigenschaft:** Handelt es sich um einen Anbieter im Sinne des Art. 3 DSA?
+2.  **Dienste-Typ:** Einstufung als Content-Provider, Access-Provider, Caching oder Hosting (Art. 3, 4, 5, 6 DSA). **Vorsicht:** "Zu eigen machen" prüfen!
+3.  **Haftungsprivilegierungen:** Greifen die Bedingungen (z.B. Art. 6 DSA für Hosting)? Wurde das Notice-and-Action-Verfahren korrekt durchgeführt?
+
+Und jetzt noch einmal als interaktiver Filter zum Durchklicken:
+
+<iframe src="widgets/kapitel-07/widget-dsa-filter.html" 
+        width="100%" height="250px" frameborder="0"
+        title="Interaktiver DSA Haftungs-Filter">
+</iframe>
+
+## II. Prüfung der nationalen Anspruchsgrundlage
+
+Wenn das DSA-Privileg nicht greift oder nur Unterlassungsansprüche im Raum stehen, erfolgt die Prüfung nach nationalem Recht (z.B. [§ 823 BGB](https://www.gesetze-im-internet.de/bgb/__823.html), [§ 1004 BGB analog](https://www.gesetze-im-internet.de/bgb/__1004.html), [§ 97 UrhG](https://www.gesetze-im-internet.de/urhg/__97.html)).
+
+::: {.details}
+#### Störerhaftung vs. DDG
+Beachten Sie [§ 7 Abs. 3 DDG](https://www.gesetze-im-internet.de/ddg/__7.html): Access-Provider sind auch vor Unterlassungsansprüchen weitgehend geschützt. Bei Hosting-Diensten bleibt die Unterlassungsklage bei Verletzung zumutbarer Prüfpflichten jedoch möglich.
+:::
+
+# Lernkontrolle
+
+::: {.quick-check}
+Welche Rechtsfolge tritt ein, wenn sich ein Hosting-Dienstleister fremde Inhalte "zu eigen macht"?
+
+- Er muss lediglich einen Transparenzbericht veröffentlichen.
+- **Er verliert seine Haftungsprivilegierung und haftet wie ein Inhalteanbieter.**
+- Er muss den Nutzer unverzüglich sperren.
+:::
+
+::: {.flip-card}
+#### Trusted Flaggers
+Zertifizierte Stellen, deren Meldungen von Online-Plattformen prioritär behandelt werden müssen.
+:::
+
+::: {.quick-check}
+Ein Nutzer postet häufig offensichtlich rechtswidrige Inhalte. Wie sieht die Sanktion des DSA aus?
+
+- Die Plattform muss den Nutzer sofort lebenslang sperren.
+- **Die Plattform muss den Nutzer nach vorheriger Warnung für einen angemessenen Zeitraum suspendieren.**
+- Die Plattform muss ein Bußgeld von 6% des Umsatzes zahlen.
+:::

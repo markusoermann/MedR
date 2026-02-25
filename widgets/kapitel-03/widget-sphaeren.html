@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphärentheorie des APR</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .widget-wrapper {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .bullseye {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto 30px;
+            cursor: pointer;
+        }
+
+        .sphere {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            border: 2px solid white;
+        }
+
+        .s-public {
+            width: 300px;
+            height: 300px;
+            background: #ffe0cc;
+            z-index: 1;
+        }
+
+        .s-social {
+            width: 220px;
+            height: 220px;
+            background: #ffc299;
+            z-index: 2;
+        }
+
+        .s-private {
+            width: 140px;
+            height: 140px;
+            background: #ff944d;
+            z-index: 3;
+        }
+
+        .s-intimate {
+            width: 60px;
+            height: 60px;
+            background: #ff6a00;
+            z-index: 4;
+        }
+
+        .sphere:hover {
+            filter: brightness(0.9);
+            box-shadow: 0 0 15px rgba(255, 106, 0, 0.4);
+        }
+
+        .info-panel {
+            min-height: 120px;
+            padding: 15px;
+            background: #fafafa;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .info-panel h3 {
+            margin: 0 0 5px 0;
+            color: #ff6a00;
+        }
+
+        .protection-bar {
+            height: 8px;
+            background: #eee;
+            border-radius: 4px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+        .protection-fill {
+            height: 100%;
+            background: #ff6a00;
+            width: 0%;
+            transition: width 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="widget-wrapper">
+        <div class="bullseye">
+            <div class="sphere s-public" onclick="updateSphere('public')"></div>
+            <div class="sphere s-social" onclick="updateSphere('social')"></div>
+            <div class="sphere s-private" onclick="updateSphere('private')"></div>
+            <div class="sphere s-intimate" onclick="updateSphere('intimate')"></div>
+        </div>
+
+        <div class="info-panel">
+            <h3 id="sphereTitle">Sphärentheorie</h3>
+            <div id="sphereDesc">Klicken Sie auf eine Schicht des Modells.</div>
+            <div class="protection-bar">
+                <div id="protectionFill" class="protection-fill"></div>
+            </div>
+            <div id="protectionLabel" style="font-size: 0.8rem; font-weight: bold;">Schutzintensität</div>
+        </div>
+    </div>
+
+    <script>
+        const data = {
+            public: {
+                title: "Öffentlichkeitssphäre",
+                desc: "Verhalten in der Öffentlichkeit (z.B. Auftritt auf dem Marktplatz). Hier ist der Schutz am geringsten; Berichterstattung meist zulässig.",
+                fill: 20
+            },
+            social: {
+                title: "Sozial- / Berufsphäre",
+                desc: "Interaktion mit anderen (Arbeitswelt, Vereine). Eingriffe brauchen sachliche Gründe, sind aber eher rechtfertigungsfähig als im Privaten.",
+                fill: 50
+            },
+            private: {
+                title: "Privatsphäre",
+                desc: "Der häusliche Bereich und familiäre Rückzugsorte. Eingriffe sind nur bei überwiegendem öffentlichem Interesse zulässig.",
+                fill: 80
+            },
+            intimate: {
+                title: "Intimsphäre",
+                desc: "Der unantastbare Kernbereich (Gedanken, Tagebücher, Sexualität). Eingriffe sind grundsätzlich niemals rechtfertigungsfähig.",
+                fill: 100
+            }
+        };
+
+        function updateSphere(key) {
+            const item = data[key];
+            document.getElementById('sphereTitle').textContent = item.title;
+            document.getElementById('sphereDesc').textContent = item.desc;
+            document.getElementById('protectionFill').style.width = item.fill + '%';
+        }
+    </script>
+</body>
+
+</html>

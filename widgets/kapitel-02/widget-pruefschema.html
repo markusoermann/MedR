@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prüfschema-Navigator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        button {
+            background: #eee;
+            color: #333;
+            border: 2px solid #ddd;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        button.active {
+            background: #ff6a00;
+            color: white;
+            border-color: #ff6a00;
+        }
+        .schema-box {
+            border: 2px solid #ff6a00;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: left;
+            min-height: 250px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .step {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeIn 0.3s forwards;
+        }
+        .step-num {
+            background: #ff6a00;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 0.8rem;
+        }
+        .step-content strong {
+            display: block;
+            color: #ff6a00;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button-group">
+            <button id="btnA" class="active" onclick="showSchema('A')">Staatlicher Eingriff</button>
+            <button id="btnB" onclick="showSchema('B')">Privat vs. Privat</button>
+        </div>
+        <div id="schemaContent" class="schema-box">
+            <!-- Content dynamic -->
+        </div>
+    </div>
+
+    <script>
+        const contentA = [
+            { title: "Schutzbereich", text: "Ist das Verhalten (z.B. Meinung) sachlich und persönlich geschützt?" },
+            { title: "Eingriff", text: "Liegt eine staatliche Maßnahme vor, die das Verhalten erschwert?" },
+            { title: "Rechtfertigung", text: "Beruht der Eingriff auf einem verfassungsgemäßen Gesetz? (Verhältnismäßigkeit & Wechselwirkungslehre)" }
+        ];
+
+        const contentB = [
+            { title: "Anspruchsnorm", text: "Gibt es eine zivilrechtliche Basis? (z.B. § 823 BGB, § 22 KUG)" },
+            { title: "Kollidierende Grundrechte", text: "Identifikation der widerstreitenden Positionen (z.B. Pressefreiheit vs. APR)" },
+            { title: "Praktische Konkordanz", text: "Abwägung im Einzelfall: Welches Recht überwiegt unter Berücksichtigung der Umstände?" }
+        ];
+
+        function showSchema(type) {
+            const btnA = document.getElementById('btnA');
+            const btnB = document.getElementById('btnB');
+            const container = document.getElementById('schemaContent');
+            
+            btnA.classList.toggle('active', type === 'A');
+            btnB.classList.toggle('active', type === 'B');
+            
+            const data = type === 'A' ? contentA : contentB;
+            
+            container.innerHTML = '';
+            data.forEach((item, index) => {
+                const div = document.createElement('div');
+                div.className = 'step';
+                div.style.animationDelay = `${index * 0.1}s`;
+                div.innerHTML = `
+                    <div class="step-num">${index + 1}</div>
+                    <div class="step-content">
+                        <strong>${item.title}</strong>
+                        <span>${item.text}</span>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        // Init
+        showSchema('A');
+    </script>
+</body>
+</html>

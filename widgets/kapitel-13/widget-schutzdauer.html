@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schutzdauer-Rechner</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        input[type="range"] {
+            width: 100%;
+            margin: 20px 0;
+            accent-color: #ff6a00;
+        }
+
+        .year-display {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff6a00;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background: #f5f5f5;
+        }
+
+        .status {
+            font-weight: bold;
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .status.protected {
+            background: #ffebee;
+            color: #c62828;
+        }
+
+        .status.free {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label>Todesjahr des Urhebers:</label>
+        <div class="year-display" id="deathYear">1950</div>
+        <input type="range" id="slider" min="1850" max="2026" value="1950">
+
+        <div class="result">
+            Schutzfrist endet am 31.12. <span id="endYear" class="year-display">2020</span>
+            <br>
+            <span id="statusLabel" class="status free">GEMEINFREI</span>
+        </div>
+
+        <p style="font-size: 0.8rem; color: #666; margin-top: 15px;">
+            Berechnung: Todesjahr + 70 Jahre (§ 64 UrhG)
+        </p>
+    </div>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const deathYearDisplay = document.getElementById('deathYear');
+        const endYearDisplay = document.getElementById('endYear');
+        const statusLabel = document.getElementById('statusLabel');
+        const currentYear = 2026;
+
+        function update() {
+            const deathYear = parseInt(slider.value);
+            const endYear = deathYear + 70;
+
+            deathYearDisplay.textContent = deathYear;
+            endYearDisplay.textContent = endYear;
+
+            if (endYear >= currentYear) {
+                statusLabel.textContent = "URHEBERRECHTLICH GESCHÜTZT";
+                statusLabel.className = "status protected";
+            } else {
+                statusLabel.textContent = "GEMEINFREI (PUBLIC DOMAIN)";
+                statusLabel.className = "status free";
+            }
+        }
+
+        slider.addEventListener('input', update);
+        update();
+    </script>
+</body>
+
+</html>

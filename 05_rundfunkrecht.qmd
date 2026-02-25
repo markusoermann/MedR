@@ -1,0 +1,140 @@
+---
+title: "Grundstrukturen des Rundfunkrechts"
+subtitle: "Einheit 5: Die duale Rundfunkordnung und Medienaufsicht"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: moodle-html
+---
+
+# Einführung: Die besondere Rolle des Rundfunks
+
+Willkommen in der "Königsklasse" der Medienregulierung. Während die Presse sich weitegehend selbst reguliert, liegt der Rundfunk an einer rechtlich sehr kurzen Leine. Der Grund: sein Einfluss auf die Meinungsbildung ist so groß, dass das Bundesverfassungsgericht (BVerfG) ihn ehrfurchtsvoll als "Medium und Faktor" der individuellen und öffentlichen Meinungsbildung bezeichnet. 
+
+Warum dieses Misstrauen – oder besser: diese besondere Vorsicht?
+
+- **Suggestivkraft:** Bewegte Bilder und Ton haben eine enorme emotionale Überzeugungskraft. Sie wirken authentischer als bedrucktes Papier.
+- **Breitenwirkung:** Rundfunk erreicht die Massen gleichzeitig im heimischen Wohnzimmer – früher das Lagerfeuer der Nation, heute das digitale Endgerät.
+
+# Der Rundfunkbegriff
+
+Bevor wir Regeln anwenden können, müssen wir wissen, worüber wir sprechen: Was ist überhaupt "Rundfunk"? Ein klassischer Fall von "Es kommt darauf an."
+
+Denn wir müssen den weiten verfassungsrechtlichen Begriff vom engeren einfachgesetzlichen unterscheiden.
+
+## Der verfassungsrechtliche Begriff 
+
+Das Grundgesetz denkt in ([Art. 5 Abs. 1 S. 2 Var. 2 GG](https://www.gesetze-im-internet.de/gg/art_5.html)) den Rundfunk groß. Um den Schutzbereich so weit wie möglich zu fassen, ist Rundfunk hier jede an die Allgemeinheit gerichtete Übertragung von medialen Inhalten mittels körperloser Signale (egal welche Technik). Erfasst sind also nicht nur traditionelle Rundfunksendungen in Radio und Fernsehen, sondern auch digitale Sendungen (z.B. Live-Streams).
+
+## Der einfachgesetzliche Begriff
+
+Wenn es ans Eingemachte geht – nämlich um harte Pflichten und Lizenzen –, wird der Gesetzgeber strenger. Nach [§ 2 MStV](https://www.gesetze-bayern.de/Content/Document/MStV-2) (Medienstaatsvertrag der Länder) müssen sechs Kriterien *kumulativ* vorliegen:
+
+1.  **Sendeplan:** Verbreitung entlang eines festen Sendeplans.
+2.  **Journalistisch-redaktionell:** Die Inhalte müssen journalistisch-redaktionell zusammengestellt werden.
+3.  **Allgemeinheit:** Nicht nur für drei Kumpels im Discord.
+4.  **Zeitgleichheit:** Alle empfangen es prinzipiell im selben Moment.
+5.  **Bewegtbild oder Ton:** Reine Text-Ticker reichen nicht.
+6.  **Telekommunikation:** Die Sendung muss mittels Telekommunikation vermittelt werden, dazu zählt auch das Internet.
+
+::: {.flip-card}
+#### Telemedien bzw. Digitale Dienste
+Angebote, die *nicht* zeitgleich oder linear gesendet werden (z.B. Netflix, Mediatheken), sind kein Rundfunk, sondern sogenannte Telemedien oder (neuerdings) Digitale Dienste. Die Grenzen verschwimmen allerdings beim Live-Streaming (z.B. Twitch).
+:::
+
+# Verfassungsrechtliche Vorgaben 
+
+Die **Rundfunkfreiheit** ist ein "dienendes Grundrecht". Es schützt die Sender nicht primär um ihrer selbst willen, sondern um der freien Meinungsbildung der Bürgerinnen und Bürger zu dienen.
+
+Zwei verfassungsrechtliche Pfeiler tragen dieses System:
+
+1.  **Staatsfreiheit:** Der Staat darf den Rundfunk nicht lenken (kein Staatsrundfunk!).
+
+2.  **Pluralismus:** Das Spektrum der Meinungen in der Gesellschaft muss abgebildet werden.
+
+::: {.details}
+#### Föderaler Flickenteppich
+Der Bund kümmert sich nur um die Sendetechnik ([Art. 73 Abs. 1 Nr. 7 GG](https://www.gesetze-im-internet.de/gg/art_73.html)). Das inhaltliche Medienrecht ist Ländersache (Kulturhoheit). Daraus erwächst ein dichtes Gestrüpp aus Medienstaatsverträgen, Landesrundfunkgesetzen und Landesmediengesetzen.
+:::
+
+# Die Duale Rundfunkordnung
+
+Seit den 1980er Jahren (Stichwort: Kabelpilotprojekte) haben wir ein Nebeneinander von zwei Systemen: Öffentlich-rechtlich (ÖRR) und Privat.
+
+## Der Öffentlich-Rechtliche Rundfunk (ÖRR)
+
+- **Auftrag:** Grundversorgung (Information, Bildung, Kultur, Unterhaltung) für alle. Garantiert durch eine verfassungsrechtliche Bestands- und Entwicklungsgarantie als Gewährleistungsgehalt der Rundfunkfreibheit.
+- **Finanzierung:** Rundfunkbeitrag, unabhängig ermittelt durch die staatsferne **KEF** (Kommission zur Ermittlung des Finanzbedarfs).
+- **Vielfaltssicherung:** **Binnenpluralismus**. Die Kontrolleure für das Programm ("Rundfunkrat") müssen aus der Gesellschaft kommen. Laut BVerfG dürfen maximal ein Drittel der Gremienmitglieder Staatsvertreter sein.
+
+## Der Private Rundfunk
+
+- **Zulassung:** Im Gegensatz zur Presse bedarf Privatfernsehen einer Lizenz (durch die Landesmedienanstalten).
+- **Finanzierung:** Durch ein kommerzeilles Geschäftsmodell (Werbung, Pay-TV).
+- **Vielfaltssicherung:** **Außenpluralismus**. Die Vielfalt soll durch viele verschiedene Anbieter am Markt entstehen. Die **KEK** verhindert, dass ein einzelner Tycoon die gesamte Meinungsmacht an sich reißt.
+
+Vergleichen Sie die beiden Säulen der dualen Rundfunkordnung:
+
+<iframe src="widgets/kapitel-05/widget-dualitaet.html" 
+        width="100%" height="320px" frameborder="0"
+        title="Duales System Explorer: ÖRR vs. Privat">
+</iframe>
+
+
+# Medienkonvergenz: Wenn Grenzen verschwimmen
+
+Die Digitalisierung ist der Stresstest für das traditionelle Rundfunkrecht. Denn heute treffen vorher getrennte Mediengattungen auf einer Verbreitungsinfratruktur zusammen: Dem Internet. Damit verschwimme die Grenzen zwischen Presse und Rundfunk sowie den entsprechenden Medienmärkten, es entstehen neue Konkurrenzverhältnisse und es stellen sich neue Fragen:
+
+Darf etwa die gebührenfinanzierte ARD eine **Tagesschau-App** anbieten, die aussieht wie die App einer Tageszeitung? Die privaten Verlage schrien "Wettbewerbsverzerrung!". 
+
+Die rechtliche Lösung: "Presseähnliche" (rein textbasierte) Auftritte sind dem ÖRR verboten. Jeder neue Online-Auftritt muss durch den **Dreistufentest (Public Value Test)**:
+
+1.  Befriedigt es demokratische/kulturelle Bedürfnisse?
+
+2.  Trägt es qualitativ zum publizistischen Wettbewerb bei?
+
+3.  Was kostet der Spaß?
+
+Der folgende Ablauf zeigt die Stationen dieses Prüfverfahrens:
+
+<iframe src="widgets/kapitel-05/widget-dreistufentest.html" 
+        width="100%" height="400px" frameborder="0"
+        title="Visualisierung: Der Dreistufentest">
+</iframe>
+
+
+# Plattformregulierung
+
+Wer heute entscheidet, was auf der Startseite von Smart-TVs oder in Suchmaschinen oben steht, hat erhebliche publizistische Macht (Gatekeeper-Funktion). Der MStV reagiert mit:
+
+- **Must-carry-Regeln:** Wichtige Programme (wie der ÖRR) müssen auffindbar sein.
+
+- **Transparenz:** Algorithmen und Sortierkriterien dürfen Rundfunkangebote nicht unbillig diskriminieren und müssen offengelegt werden.
+
+# Lernkontrolle
+
+::: {.drag-exercise}
+Während Netflix als Abruf-Dienst ein *Telemedium* ist, da es nicht *zeitgleich und linear* gesendet wird, kann ein regelmäßiger Twitch-Livestream unter den *Rundfunkbegriff* fallen. Die Unabhängigkeit des ÖRR sichert der *Binnenpluralismus*, bei dem maximal *ein Drittel* der Gremienvertreter staatsnah sein darf.
+:::
+
+::: {.quick-check}
+Welches Kriterium gehört **nicht** zwingend zum einfachgesetzlichen Rundfunkbegriff (§ 2 MStV)?
+
+- Linearität (fester Sendeplan).
+- **Politische Berichterstattung.**
+- Verbreitung mittels Telekommunikation.
+- Zum zeitgleichen Empfang bestimmt.
+:::

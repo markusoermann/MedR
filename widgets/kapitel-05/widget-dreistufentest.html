@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreistufentest (Public Value Test)</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .step-container {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .step-container::before {
+            content: '';
+            position: absolute;
+            left: 14px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #eee;
+        }
+
+        .step {
+            position: relative;
+            margin-bottom: 30px;
+            cursor: pointer;
+        }
+
+        .circle {
+            position: absolute;
+            left: -34px;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: white;
+            border: 4px solid #ff6a00;
+            z-index: 1;
+            transition: 0.3s;
+        }
+
+        .step.active .circle {
+            background: #ff6a00;
+        }
+
+        .step h4 {
+            margin: 0;
+            font-size: 1rem;
+            color: #ff6a00;
+            transition: 0.3s;
+        }
+
+        .step-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .step.active .step-content {
+            max-height: 100px;
+        }
+
+        .info-box {
+            background: #fdf2f2;
+            border-left: 4px solid #dc2626;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.85rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 style="color: #ff6a00; margin-top:0">Ablauf: Der Dreistufentest</h3>
+        <p style="font-size: 0.85rem; margin-bottom: 20px;">Klicken Sie auf die Schritte, um den Prüfprozess für
+            ÖRR-Online-Angebote zu verstehen:</p>
+
+        <div class="step-container">
+            <div class="step" onclick="this.classList.toggle('active')">
+                <div class="circle"></div>
+                <h4>Stufe 1: Gesellschaftlicher Mehrwert</h4>
+                <div class="step-content">Entspricht das Angebot den demokratischen, sozialen und kulturellen
+                    Bedürfnissen der Gesellschaft? Hat es einen "Public Value"?</div>
+            </div>
+            <div class="step" onclick="this.classList.toggle('active')">
+                <div class="circle"></div>
+                <h4>Stufe 2: Publizistischer Wettbewerb</h4>
+                <div class="step-content">Welche Auswirkungen hat das Angebot auf den Markt? Trägt es zum Wettbewerb bei
+                    oder verdrängt es private Presseverlage unbillig?</div>
+            </div>
+            <div class="step" onclick="this.classList.toggle('active')">
+                <div class="circle"></div>
+                <h4>Stufe 3: Finanzieller Aufwand</h4>
+                <div class="step-content">Ist der finanzielle Aufwand für das Angebot angemessen und durch den Auftrag
+                    gedeckt?</div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <strong>Wichtig:</strong> Das Verfahren wird in den Aufsichtsgremien (Rundfunkrat/Verwaltungsrat)
+            durchgeführt. Presseverlage können hierzu Stellungnahmen abgeben.
+        </div>
+    </div>
+</body>
+
+</html>

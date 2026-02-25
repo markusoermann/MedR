@@ -1,0 +1,130 @@
+---
+title: "Schranken des Urheberrechts"
+subtitle: "Einheit 13: Was darf die Allgemeinheit?"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: moodle-html
+---
+
+# Die Rechtsinhaberschaft – Wer ist der Schöpfer?
+
+Im deutschen Urheberrecht gilt ein eherner Grundsatz, der uns fundamental von den "Work-for-hire"-Konzepten des anglo-amerikanischen Rechts abgrenzt, wonach dem Arbeitgeber das Copyright an Werken seiner Angestellten zusteht: das **Schöpferprinzip**.
+
+## Das Schöpferprinzip
+
+Gemäß [§ 7 UrhG](https://www.gesetze-im-internet.de/urhg/__7.html) ist der Urheber immer der Schöpfer des Werkes. Dies klingt trivial, hat aber weitreichende Konsequenzen:
+
+*   **Nur natürliche Personen:** Da eine "persönliche geistige Schöpfung" (§ 2 Abs. 2) verlangt wird, kann Urheber immer nur ein Mensch sein. Keine GmbH, keine Behörde und – nach aktuellem Stand – auch keine KI.
+*   **Keine juristischen Personen:** Firmen können niemals Urheber sein. Wenn ein Programmierer bei SAP eine geniale Software schreibt, bleibt er der Urheber. Die Firma erwirbt lediglich Nutzungsrechte.
+*   **Unübertragbarkeit:** Das Urheberrecht als Ganzes ist nicht übertragbar ([§ 29 Abs. 1 UrhG](https://www.gesetze-im-internet.de/urhg/__29.html)). Sagt jemand: "Ich verkaufe dir mein Urheberrecht", meint er juristisch korrekt: "Ich räume dir exklusive Nutzungsrechte (Lizenzen) ein".
+
+::: {.flip-card}
+#### Schöpferprinzip
+Das Recht entsteht "unmittelbar und unteilbar" in der Person des Schöpfers. Es bedarf keiner Registrierung (wie beim Patent) und kann nicht wie eine Sache als Ganzes übereignet werden.
+:::
+
+## Allein-, Miturheber und Werkverbindung
+
+Oft ist ein Werk nicht das Ergebnis eines einsamen Genies, sondern eine Teamleistung.
+
+1.  **Alleinurheber:** Eine Person schafft das Werk allein. Wichtig: Die bloße Themenvorgabe (z.B. durch eine Professorin) begründet keine Urheberschaft.
+2.  **Miturheberschaft ([§ 8 UrhG](https://www.gesetze-im-internet.de/urhg/__8.html)):** Mehrere haben gemeinsam geschaffen, und die Anteile lassen sich nicht getrennt verwerten (z.B. Text und Zeichnung in einem Comic, die nur zusammen wirken).
+3.  **Werkverbindung ([§ 9 UrhG](https://www.gesetze-im-internet.de/urhg/__9.html)):** Selbstständige Werke werden zu einer gemeinsamen Verwertung verbunden (Liedtext + Melodie). Hier bleiben die Werke rechtlich eigenständig, bilden aber eine Verwertungsgemeinschaft.
+
+::: {.case-study}
+#### Die Bachelorarbeit
+Professor O. gibt Studentin S. ein präzises Thema und eine Gliederung für ihre Bachelorarbeit vor. S. schreibt daraufhin den Text. Wer ist Urheber?
+
+::: {.solution}
+Die Studentin S. ist Alleinurheberin. Die bloße Anregung oder Gliederungshilfe ist kein urheberrechtlich relevanter Schöpfungsakt. Nur die Umsetzung in eine konkrete Textform genießt Schutz.
+:::
+:::
+
+# Die Schutzdauer – Wann wird Kultur zum Gemeingut?
+
+Urheberrecht ist ein zeitlich begrenztes Monopol. Der Gesetzgeber will, dass Werke irgendwann der Allgemeinheit gehören, um den kulturellen Fortschritt nicht zu bremsen.
+
+*   **Regeldauer:** Das Urheberrecht erlischt **70 Jahre nach dem Tod** des Urhebers ([§ 64 UrhG](https://www.gesetze-im-internet.de/urhg/__64.html)).
+*   **Gemeinfreiheit (Public Domain):** Danach darf jeder das Werk nutzen, verändern und verwerten, ohne jemanden um Erlaubnis zu bitten.
+
+Testen Sie hier, ab wann bekannte Werke (oder Ihre eigenen) gemeinfrei werden:
+
+<iframe src="widgets/kapitel-13/widget-schutzdauer.html" 
+        width="100%" height="400px" frameborder="0"
+        title="Interaktiver Schutzdauer-Rechner">
+</iframe>
+
+> **Warnung:** Beethovens Kompositionen sind zwar gemeinfrei, die Einspielung der Berliner Philharmoniker von 2024 ist es jedoch nicht! Hier greifen die **Leistungsschutzrechte** der Musiker und des Labels.
+
+# Schranken – Die Grenzen des Urheberrechts
+
+Damit das Urheberrecht nicht zum Showstopper für die Kultur und Wissenschaft wird, erlauben die §§ 44 ff. UrhG bestimmte Nutzungen auch ohne Zustimmung des Urhebers. Im Gegensatz zum US-amerikanischen "Fair Use" (Generalklausel mit Einzelfallprüfung) haben wir in Deutschland einen **geschlossenen Katalog** von Einzelausnahmen (Schrankendogmatik). Alles, was nicht explizit erlaubt ist, bleibt verboten.
+
+## Die Privatkopie
+
+Wir dürfen Kopien für den rein privaten Gebrauch anfertigen. Vorauaussetzungen nach ([§ 53 Abs. 1 UrhG](https://www.gesetze-im-internet.de/urhg/__53.html)):
+
+*   **Kein Kommerz:** Die Nutzung darf keinen Erwerbszwecken dienen.
+*   **Keine offensichtlich rechtswidrige Vorlage:** Downloads von Piraterie-Seiten (z.B. kinox.to) sind auch durch § 53 UrhG nicht gedeckt.
+*   **Vergütung:** Da der Staat das Kopieren im Privaten nicht kontrollieren kann (und will), zahlen wir beim Kauf von Scannern oder Handys pauschal eine "Geräteabgabe" ([§ 54 UrhG](https://www.gesetze-im-internet.de/urhg/__54.html)).
+
+::: {.drag-exercise}
+Die Privatkopie erlaubt maximal *sieben Exemplare* für den *privaten Gebrauch*, sofern die Vorlage nicht *offensichtlich rechtswidrig* ist.
+:::
+
+## Das Zitatrecht
+
+Zitieren ist kein Selbstzweck zur Verschönerung, sondern ein Werkzeug der geistigen Auseinandersetzung. Vorraussetzungen des Zitatrechts nach [§ 51 UrhG](https://www.gesetze-im-internet.de/urhg/__51.html):
+
+*   **Belegfunktion:** Das Zitat muss die eigene Argumentation stützen.
+*   **Umfang:** Nur so viel wie nötig, so wenig wie möglich.
+*   **Quellenangabe:** Wer den Urheber nicht nennt, begeht eine Urheberrechtsverletzung ([§ 63 UrhG](https://www.gesetze-im-internet.de/urhg/__63.html)).
+
+## Panoramafreiheit
+
+Was dauerhaft auf der Straße steht, gehört nach [§ 59 UrhG](https://www.gesetze-im-internet.de/urhg/__59.html) optisch der Allgemeinheit. Fassaden, Denkmäler und Brunnen dürfen fotografiert und die Bilder kommerziell genutzt werden. 
+
+> **Achtung:** Dies gilt nur für Werke, die **bleibend** sind. Christos verhüllter Reichstag war eine temporäre Installation – hier galt die Panoramafreiheit nicht!
+
+## Parodie und Pastiche
+
+Seit 2021 haben wir in ([§ 51a UrhG](https://www.gesetze-im-internet.de/urhg/__51a.html)) eine explizite Schranke für Parodien und Karikaturen. Wichtig ist der "innere Abstand" zum Original: Das neue Werk muss eine eigene kritische oder humoristische Aussage treffen.
+
+Und - alles verstanden? Machen Sie den  **"Schranken-Check"**:
+
+<iframe src="widgets/kapitel-13/widget-schranken-check.html" 
+        width="100%" height="350px" frameborder="0"
+        title="Interaktiver Schranken-Check">
+</iframe>
+
+# Lernkontrolle
+
+::: {.quick-check}
+Ein Unternehmen lässt von einer KI ein Logo entwerfen. Wer ist der gesetzliche Urheber?
+
+- Das Unternehmen
+- Der Programmierer der KI
+- **Niemand (das Logo ist gemeinfrei, da keine menschliche Schöpfung)**
+:::
+
+::: {.quick-check}
+In einem YouTube-Video wird ein Foto nur eingeblendet, weil es "hübsch aussieht". Ist das durch das Zitatrecht (§ 51 UrhG) gedeckt?
+
+- Ja, Bilder darf man immer zitieren.
+- **Nein, es fehlt die Belegfunktion (Auseinandersetzung mit dem Werk).**
+- Ja, sofern der Name des Fotografen genannt wird.
+:::

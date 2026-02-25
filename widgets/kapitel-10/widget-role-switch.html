@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Act: Rollenwechsel-Simulator</title>
+    <style>
+        :root {
+            --thws-orange: #ff6a00;
+            --text-dark: #333333;
+            --provider-color: #0056b3;
+            --deployer-color: #28a745;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background: #fff;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 650px;
+            text-align: center;
+        }
+
+        .actor-box {
+            display: inline-block;
+            width: 250px;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 10px;
+            border: 3px solid #eee;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .actor-box.active-deployer {
+            border-color: var(--deployer-color);
+            background: #e9f7ef;
+        }
+
+        .actor-box.active-provider {
+            border-color: var(--provider-color);
+            background: #e7f1ff;
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .actor-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .actor-role {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .arrow {
+            font-size: 2rem;
+            color: #ccc;
+            margin: 20px 0;
+            transition: color 0.3s;
+        }
+
+        .trigger-list {
+            text-align: left;
+            margin-top: 20px;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .trigger-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .trigger-item:hover {
+            background: #eee;
+        }
+
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--thws-orange);
+            border-radius: 4px;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .checked .checkbox::after {
+            content: '✓';
+            color: var(--thws-orange);
+            font-weight: bold;
+        }
+
+        .info-panel {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            min-height: 80px;
+        }
+
+        .provider-label {
+            color: var(--provider-color);
+            font-weight: bold;
+        }
+
+        .deployer-label {
+            color: var(--deployer-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="deployer-box" class="actor-box active-deployer">
+            <div class="actor-title">Unternehmen X</div>
+            <div class="actor-role">Betreiber (Deployer)</div>
+            <div style="font-size: 0.85rem">Nutzt KI-System für interne Zwecke</div>
+        </div>
+
+        <div id="arrow" class="arrow">↓</div>
+
+        <div id="provider-box" class="actor-box">
+            <div class="actor-title">Unternehmen X</div>
+            <div class="actor-role">Anbieter (Provider)</div>
+            <div style="font-size: 0.85rem">Trägt volle Compliance-Verantwortung</div>
+        </div>
+
+        <div class="trigger-list">
+            <div class="trigger-item" onclick="toggleTrigger(this, 't1')">
+                <div class="checkbox"></div>
+                <div><b>Eigener Name:</b> KI-System wird unter eigener Marke vertrieben.</div>
+            </div>
+            <div class="trigger-item" onclick="toggleTrigger(this, 't2')">
+                <div class="checkbox"></div>
+                <div><b>Wesentliche Änderung:</b> Algorithmus wird massiv modifiziert.</div>
+            </div>
+            <div class="trigger-item" onclick="toggleTrigger(this, 't3')">
+                <div class="checkbox"></div>
+                <div><b>Zweckänderung:</b> Einsatz in Hochrisiko-Bereich (nicht vorgesehen).</div>
+            </div>
+        </div>
+
+        <div id="info-text" class="info-panel">
+            Unternehmen X ist aktuell <span class="deployer-label">Betreiber</span>. Es muss das System gemäß Anleitung
+            nutzen und die menschliche Aufsicht sicherstellen.
+        </div>
+    </div>
+
+    <script>
+        const activeTriggers = new Set();
+
+        function toggleTrigger(element, id) {
+            element.classList.toggle('checked');
+            if (activeTriggers.has(id)) {
+                activeTriggers.delete(id);
+            } else {
+                activeTriggers.add(id);
+            }
+            updateUI();
+        }
+
+        function updateUI() {
+            const isProvider = activeTriggers.size > 0;
+            const deployerBox = document.getElementById('deployer-box');
+            const providerBox = document.getElementById('provider-box');
+            const arrow = document.getElementById('arrow');
+            const infoText = document.getElementById('info-text');
+
+            if (isProvider) {
+                deployerBox.classList.remove('active-deployer');
+                providerBox.classList.add('active-provider');
+                arrow.style.color = 'var(--thws-orange)';
+                infoText.innerHTML = `⚠️ <b>Rollenwechsel!</b> Durch die Handlungen wurde Unternehmen X rechtlich zum <span class="provider-label">Anbieter</span>. Es muss nun alle Pflichten des AI Acts (Konformitätsbewertung, techn. Dokumentation) erfüllen.`;
+                infoText.style.background = '#fff5ed';
+            } else {
+                deployerBox.classList.add('active-deployer');
+                providerBox.classList.remove('active-provider');
+                arrow.style.color = '#ccc';
+                infoText.innerHTML = `Unternehmen X ist aktuell <span class="deployer-label">Betreiber</span>. Es muss das System gemäß Anleitung nutzen und die menschliche Aufsicht sicherstellen.`;
+                infoText.style.background = '#f9f9f9';
+            }
+        }
+    </script>
+</body>
+
+</html>

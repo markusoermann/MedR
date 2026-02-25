@@ -1,0 +1,135 @@
+---
+title: "Inhalt des Urheberrechts"
+subtitle: "Einheit 12: Persönlichkeitsrechte und Verwertungsrechte"
+date: last-modified
+lang: de
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: handout-typst
+---
+
+# Der Inhalt des Urheberrechts: Die Doppelstruktur
+
+Das Urheberrecht ist kein bloßes Monopol zur wirtschaftlichen Ausbeutung, sondern tief in der Persönlichkeit des Schöpfers verwurzelt. Wir folgen wie schon erwähntim deutschen Recht der sogenannten **monistischen Theorie**. Gemäß [§ 11 UrhG](https://www.gesetze-im-internet.de/urhg/__11.html) schützt das Urheberrecht den Urheber in seinen geistigen und persönlichen Beziehungen zum Werk (Urheberpersönlichkeitsrecht) und ermöglicht die Verwertung des Werkes (Verwertungsrechte).
+
+Dies entspricht den Motiven des Urhebers: Er (oder Sie) hat ein Interesse daran, dass das Werk nicht entstellt wird (ideell) und dass er/sie von seinem Erfolg profitiert (materiell).
+
+::: {.flip-card}
+#### Monistische Theorie (§ 11 UrhG)
+Die Verknüpfung von Persönlichkeitsrechten und Verwertungsrechten zu einer unteilbaren Einheit. Das Urheberrecht ist daher – anders als das Copyright im anglo-amerikanischen Raum – grundsätzlich nicht übertragbar (nur vererblich).
+:::
+
+Die folgende Visualisierung verdeutlicht, wie sich das Urheberrecht in diese zwei Bereiche aufsplittet:
+
+<iframe src="widgets/kapitel-12/widget-doppelstruktur.html" 
+        width="100%" height="450px" frameborder="0"
+        title="Interaktive Darstellung der urheberrechtlichen Doppelstruktur">
+</iframe>
+
+# Das Urheberpersönlichkeitsrecht
+
+Das Urheberpersönlichkeitsrecht schützt die ideelle Verbindung. Es ist das "Stoppzeichen" des Urhebers, wenn sein Werk in einer Weise verwendet wird, die seinem Ruf oder seiner Intention widerspricht.
+
+## Das Veröffentlichungsrecht
+
+Der Urheber hat nach ([§ 12 UrhG](https://www.gesetze-im-internet.de/urhg/__12.html)) das alleinige Recht zu bestimmen, ob und wie sein Werk veröffentlicht wird. Solange ein Werk nicht veröffentlicht ist, genießt es den höchsten Schutz.
+
+::: {.case-study}
+#### Die Kafka-Eskapade
+Franz Kafka verfügte in seinem Testament, dass seine unveröffentlichten Manuskripte vernichtet werden sollten. Sein Nachlassverwalter Max Brod ignorierte dies – zum Glück für die Weltliteratur, aber rechtlich gesehen? War dies ein Eingriff in das Veröffentlichungsrecht?
+
+::: {.solution}
+Ja, das Veröffentlichungsrecht ([§ 12 UrhG](https://www.gesetze-im-internet.de/urhg/__12.html)) erlaubt dem Urheber sogar, sein Werk für immer der Öffentlichkeit vorzuenthalten. Erst durch die (rechtmäßige) Veröffentlichung wird dieser private Schutzraum geöffnet.
+:::
+:::
+
+## Anerkennung der Urheberschaft
+
+Der Urheber kann nach ([§ 13 UrhG](https://www.gesetze-im-internet.de/urhg/__13.html)) bestimmen, ob das Werk mit einer Urheberbezeichnung zu versehen ist und welche Bezeichnung zu verwenden ist (z. B. Klarname, Pseudonym (Künstlername) oder anonym).
+
+> **Praxisfalle:** Wer ein Stockfoto lizenziert, darf den "Foto-Credit" nicht einfach weglassen. Ohne ausdrücklichen Verzicht auf das Recht aus [§ 13 UrhG](https://www.gesetze-im-internet.de/urhg/__13.html) muss die Fotografin genannt werden.
+
+## Das Entstellungsverbot
+
+Dieses Recht nach ([§ 14 UrhG](https://www.gesetze-im-internet.de/urhg/__14.html)) ist das schärfste Schwert des Urhebers gegen ungewollte Änderungen. Er kann Beeinträchtigungen verbieten, die seine berechtigten geistigen oder persönlichen Interessen gefährden. Hier findet stets eine Abwägung statt.
+
+::: {.case-study}
+#### Die Decke im Berliner Hauptbahnhof
+Der Architekt Meinhard v. Gerkan konzipierte für den Berliner Hauptbahnhof filigrane Gewölbedecken. Die Deutsche Bahn ersetzte diese aus Kostengründen durch flache Rasterdecken.
+
+::: {.solution}
+Das LG Berlin gab dem Architekten 2006 recht (Urt. vom 28. November 2006, Az. 16 O 240/05). Die Änderung war eine Entstellung i.S.d. [§ 14 UrhG](https://www.gesetze-im-internet.de/urhg/__14.html), da der ästhetische Gesamteindruck des Werkes massiv beeinträchtigt wurde. Die wirtschaftlichen Interessen der Bahn mussten hinter den Urheberpersönlichkeitsrechten zurücktreten. 
+
+Um einen Rückbau zu vermeiden und den Streit zu beenden, schlossen der Architekt Gerkan und der damalige Bahnchef Hartmut Mehdorn im Januar 2008 einen Vergleich. Die Decken blieben, aber die Bahn verpflichtete sich zu Zahlungen an eine von Gerkan gegründete Akademie zur Förderung der Baukultur.
+:::
+:::
+
+# Die Verwertungsrechte 
+
+Während das Persönlichkeitsrecht dem Schutz der Ehre dient, dienen die Verwertungsrechte der §§ 15 ff. UrhG dem Füllen des Geldbeutels. Das Gesetz trennt hierbei traditionell zwischen der Verwertung in körperlicher und in unkörperlicher Form.
+
+## Körperliche Verwertung
+
+Bei der körperlichen Verwertung im Sinne des [§ 15 Abs. 1 UrhG](https://www.gesetze-im-internet.de/urhg/__15.html) nimmt der Nutzer das Werk bildlich gesprochen "in die Hand" und nutzt es.
+
+*   **Vervielfältigungsrecht ([§ 16 UrhG](https://www.gesetze-im-internet.de/urhg/__16.html)):** Jede Fixierung, egal ob Kopie, Scan, Download oder Speicherung auf einem Server.
+*   **Verbreitungsrecht ([§ 17 UrhG](https://www.gesetze-im-internet.de/urhg/__17.html)):** Das In-Verkehr-Bringen von physischen Stücken (Verkauf, Vermietung).
+
+::: {.flip-card}
+#### Erschöpfungsgrundsatz
+Hat der Urheber ein physisches Werkstück (z. B. ein Buch) einmal in der EU mit seiner Zustimmung verkauft, ist sein Verbreitungsrecht an *genau diesem* Exemplar erschöpft, ([§ 17 Abs. 2 UrhG](https://www.gesetze-im-internet.de/urhg/__17.html)). Der Käufer darf es also gebraucht weiterverkaufen.
+:::
+
+## Unkörperliche Verwertung
+
+Im digitalen Zeitalter ist die unkörperliche Verwertung im Sinne des [§ 15 Abs. 2 UrhG](https://www.gesetze-im-internet.de/urhg/__15.html) der Standardfall: Die Wiedergabe erfolgt ohne physischen Träger. Einziger Ankerpunkt: Die Wiedergabe muss **öffentlich** sein.
+
+::: {.drag-exercise}
+Wiedergabe ist *öffentlich*, wenn sie für eine *Mehrzahl von Personen* bestimmt ist, die nicht durch *persönliche Beziehungen* untereinander verbunden sind.
+:::
+
+Die wichtigsten Rechte hierbei:
+
+*   **Offentliche Zugänglichmachung ([§ 19a UrhG](https://www.gesetze-im-internet.de/urhg/__19a.html)):** Das Internetrecht schlechthin. On-Demand-Streaming (YouTube, Netflix) oder das Posten eines Bildes auf Instagram. Der Nutzer wählt Ort und Zeit selbst.
+
+*   **Senderecht ([§ 20 UrhG](https://www.gesetze-im-internet.de/urhg/__20.html)):** Die lineare Ausstrahlung (klassisches TV, Live-Radio). Zeit und Ort werden vom Sender vorgegeben.
+
+## Das Recht der Bearbeitung
+
+Darf man einen Roman verfilmen oder einen Remix erstellen? Grundsätzlich ja, aber die Veröffentlichung und Verwertung bedürfen der Zustimmung des Originalurhebers ([§ 23 UrhG](https://www.gesetze-im-internet.de/urhg/__23.html)).
+
+::: {.details}
+#### Abgrenzung: Freie Benutzung vs. Bearbeitung
+Früher gab es die "freie Benutzung" (§ 24 UrhG a.F.). Heute findet sich dies in [§ 23 Abs. 1 Satz 2 UrhG](https://www.gesetze-im-internet.de/urhg/__23.html): Wenn das neue Werk einen so großen Abstand zum Original wahrt, dass dessen Züge "verblassen", ist keine Zustimmung nötig. Auch für Parodien und Karikaturen gibt es mit [§ 51a UrhG](https://www.gesetze-im-internet.de/urhg/__51a.html) eine wichtige Erlaubnisnorm ("Schranke").
+:::
+
+# Lernkontrolle
+
+::: {.quick-check}
+Ein Nutzer lädt ein urheberrechtlich geschütztes Lied auf eine Cloud-Plattform hoch, damit jeder darauf zugreifen kann. Welches Recht ist primär betroffen?
+
+- § 17 UrhG (Verbreitungsrecht)
+- § 20 UrhG (Senderecht)
+- **§ 19a UrhG (Recht der öffentlichen Zugänglichmachung)**
+- § 14 UrhG (Entstellungsverbot)
+:::
+
+::: {.quick-check}
+Wann ist eine Wiedergabe "öffentlich"?
+
+- Wenn mehr als drei Personen anwesend sind.
+- Wenn die Personen über soziale Medien verbunden sind.
+- **Wenn sie für eine Mehrzahl von Personen bestimmt ist, die nicht persönlich miteinander verbunden sind.**
+:::
