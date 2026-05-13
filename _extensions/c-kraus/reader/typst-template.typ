@@ -24,7 +24,7 @@
   authors: (),
   course: none,
   semester: none,
-  faculty: [Fakultät Informatik und Wirtschaftsinformatik],
+  faculty: [Fakultät Wirtschaftsingenieurwesen],
   university: [Technische Hochschule Würzburg-Schweinfurt],
   date: none,
   version: none,
