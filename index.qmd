@@ -1,0 +1,90 @@
+---
+title: "Urheber- und Medienrecht"
+subtitle: "Kursstartseite & Inhaltsverzeichnis"
+date: last-modified
+lang: de
+toc: false
+number-sections: false
+
+# Autoren-Daten
+author:
+  - name: Prof. Dr. Markus Oermann
+    email: markus.oermann@thws.de
+    role: Dozent
+    affiliation: THWS FIW
+
+# Semester-Daten
+semester: "SoSe 26"
+course: "Urheber- und Medienrecht"
+version: "1.0"
+
+# --- Ausgabe-Formate ---
+format: moodle-html
+---
+
+Willkommen bei **Urheber- und Medienrecht**, einem Pflichtmodul des Studiengangs Digitale Gesellschaft an der THWS. In fünfzehn Lerneinheiten führen wir vom Begriff und den Grundrechten des Medienrechts über die Regulierung von Presse, Rundfunk, Digitalen Diensten, Datenwirtschaft, Telekommunikation und Künstlicher Intelligenz bis zu den Grundlagen, Inhalten, Schranken und Rechtsfolgen des Urheberrechts. Vorkenntnisse werden vorausgesetzt, die Sie idealerweise im Modul "Einführung in das Recht" erworben haben.
+
+Jede Einheit unten ist ein eigenständiges, interaktives Skript: Lesen Sie es im Browser, arbeiten Sie die eingebetteten Quick-Checks, Fallstudien und Übungen durch, und nutzen Sie bei Bedarf die PDF-Fassung zum Ausdrucken oder Nachschlagen.
+
+## Kursdaten
+
+| | |
+|---|---|
+| **Studiengang** | Digitale Gesellschaft (B. Sc.), THWS FIW |
+| **Modul** | Urheber- und Medienrecht (BDGD 4), Pflichtmodul, 4. Semester |
+| **Semester** | Sommersemester 2026 |
+| **Dozent** | Prof. Dr. iur. Markus Oermann, M.A. (THWS FIW) |
+| **Format** | 15 Lerneinheiten, Single Source Publishing (interaktives Skript + PDF) |
+| **Prüfung** | Schriftliche Prüfung (90 Min.); Gesetzestexte als Hilfsmittel zugelassen |
+| **Sprache** | Deutsch/Englisch |
+
+## So nutzen Sie diese Seite
+
+- **15 chronologische Lerneinheiten** (unten), jede ein eigenständiges Quarto-Skript entlang des Semesterverlaufs.
+- **Interaktive Elemente** sind direkt im Text eingebettet: Flip-Cards für Definitionen, Quick-Checks zur Selbstkontrolle, Fallstudien mit Lösungen und Drag-Übungen, mit denen Sie rechtliche Mechanismen selbst durchspielen können.
+- **Reader.** Jede Einheit ist zusätzlich als PDF verfügbar, wenn Sie lieber offline oder auf Papier arbeiten.
+
+## Inhaltsverzeichnis
+
+### Teil I · Grundlagen des Medienrechts
+
+Begriff und Rechtsquellen des Medienrechts, die Kommunikationsgrundrechte des Grundgesetzes und der Schutz der Persönlichkeit als Fundament aller weiteren Einheiten.
+
+| Nr | Einheit | Was Sie lernen | Reader |
+|----|------|------|------|
+| 1 | [Was ist Medienrecht? – Definition und Einordnung](01_was_ist_medienrecht.html) | Querschnittsmaterie Medienrecht, Doppelcharakter der Medien, Ziele und Funktionen, Rechtsquellen auf EU-, Bundes- und Länderebene | [PDF](01_was_ist_medienrecht.pdf) |
+| 2 | [Grundrechte im Medienrecht](02_grundrechte_ueberblick.html) | Abwehrrechte und objektive Wertentscheidung, Lüth-Urteil und mittelbare Drittwirkung, Kommunikationsfreiheiten (Art. 5 Abs. 1 GG), Zensurverbot, Schrankentrias, Wechselwirkungslehre | [PDF](02_grundrechte_ueberblick.pdf) |
+| 3 | [Grundlagen des Persönlichkeitsschutzes](03_persoenlichkeitsschutz.html) | Funktion und verfassungsrechtliche Herleitung des APR, Sphärentheorie, Selbstdarstellung und Selbstbestimmung, Verdachtsberichterstattung, Ehrschutz | [PDF](03_persoenlichkeitsschutz.pdf) |
+
+### Teil II · Medienregulierung, Digitale Dienste und Netzwirtschaft
+
+Von der Aufsicht über Presse und Rundfunk zur europäischen Plattform-, Daten- und KI-Regulierung sowie dem Recht der Telekommunikationsinfrastruktur.
+
+| Nr | Einheit | Was Sie lernen | Reader |
+|----|------|------|------|
+| 4 | [Regulierung, Aufsicht und Presserecht](04_regulierung_presserecht.html) | Akteure der Medienaufsicht, Selbstregulierung und regulierte Selbstregulierung, institutionelle Garantien, presserechtliche Pflichten | [PDF](04_regulierung_presserecht.pdf) |
+| 5 | [Grundstrukturen des Rundfunkrechts](05_rundfunkrecht.html) | Verfassungsrechtlicher und einfachgesetzlicher Rundfunkbegriff, die duale Rundfunkordnung, öffentlich-rechtlicher und privater Rundfunk | [PDF](05_rundfunkrecht.pdf) |
+| 6 | [Recht der Digitalen Dienste](06_digitale_dienste.html) | Impressumspflicht, Trennungsgebot, Filterfunktion und Diensteklassen des DSA, Notice-and-Action-Verfahren | [PDF](06_digitale_dienste.pdf) |
+| 7 | [Sorgfaltspflichten nach dem DSA](07_dsa_sorgfaltspflichten.html) | Gestuftes Pflichtenregime für Vermittlungsdienste, Hosting-Anbieter, Online-Plattformen und VLOPs/VLOSEs, DSA-Filter und Haftungsprüfung, digitales Hausrecht | [PDF](07_dsa_sorgfaltspflichten.pdf) |
+| 8 | [Digital Markets Act und Datenwirtschaftsrecht](08_dma_datenrecht.html) | Gatekeeper-Regulierung und Verhaltenspflichten des DMA, Durchsetzung, Ende des „Dateneigentums“, Data Governance Act und Data Act | [PDF](08_dma_datenrecht.pdf) |
+| 9 | [Telekommunikationsrecht](09_telekommunikationsrecht.html) | Trennung von Technik und Inhalt, vom Staatsmonopol zum Regulierungsrecht, Netzneutralität, Anbieterwechsel, Fernmeldegeheimnis, Vorratsdatenspeicherung | [PDF](09_telekommunikationsrecht.pdf) |
+| 10 | [Der Rechtsrahmen für Künstliche Intelligenz](10_ki_rechtsrahmen.html) | Risikobasierter Ansatz des AI Act, Rollenverteilung zwischen Anbieter und Betreiber, Haftungsregime, Bezüge zum Urheberrecht | [PDF](10_ki_rechtsrahmen.pdf) |
+
+### Teil III · Urheberrecht
+
+Vom Schöpferprinzip über die Verwertungs- und Persönlichkeitsrechte der Urheber und deren Schranken bis zu Rechtsfolgen von Verletzungen und der Lizenzierung von Werken.
+
+| Nr | Einheit | Was Sie lernen | Reader |
+|----|------|------|------|
+| 11 | [Grundlagen des Urheberrechts](11_urheberrecht_grundlagen.html) | Schöpferprinzip, Werkbegriff und Schutzvoraussetzungen | [PDF](11_urheberrecht_grundlagen.pdf) |
+| 12 | [Inhalt des Urheberrechts](12_urheberrecht_inhalt.html) | Veröffentlichungsrecht, Anerkennung der Urheberschaft, Entstellungsverbot, körperliche und unkörperliche Verwertungsrechte, Bearbeitungsrecht | [PDF](12_urheberrecht_inhalt.pdf) |
+| 13 | [Schranken des Urheberrechts](13_urheberrecht_schranken.html) | Allein- und Miturheberschaft, Privatkopie, Zitatrecht, Panoramafreiheit, Parodie und Pastiche | [PDF](13_urheberrecht_schranken.pdf) |
+| 14 | [Folgen von Urheberrechtsverletzungen](14_urheberrecht_folgen.html) | Unterlassungs- und Beseitigungsansprüche, Schadensersatz, Hilfsansprüche auf Auskunft und Vernichtung | [PDF](14_urheberrecht_folgen.pdf) |
+| 15 | [Lizenzen und Verwertungsgesellschaften](15_lizenzen_vgs.html) | Verwertungs- vs. Nutzungsrecht, Stufenleiter der Gestattungen, einfache und ausschließliche Nutzungsrechte, Zweckübertragungstheorie, Verwertungsgesellschaften nach dem VGG | [PDF](15_lizenzen_vgs.pdf) |
+
+## Autor
+
+**Prof. Dr. iur. Markus Oermann, M.A.**
+Fakultät Informatik und Wirtschaftsinformatik
+Technische Hochschule Würzburg-Schweinfurt (THWS)
+[markus.oermann@thws.de](mailto:markus.oermann@thws.de)
