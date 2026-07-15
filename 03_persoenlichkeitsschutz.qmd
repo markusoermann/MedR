@@ -18,7 +18,9 @@ version: "1.0"
 
 
 # --- Ausgabe-Formate ---
-format: moodle-html
+format:
+  moodle-html: default
+  reader-typst: default
 ---
 
 # Einführung und rechtliche Verankerung

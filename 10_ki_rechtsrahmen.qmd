@@ -17,7 +17,9 @@ course: "Urheber- und Medienrecht"
 version: "1.0"
 
 # --- Ausgabe-Formate ---
-format: moodle-html
+format:
+  moodle-html: default
+  reader-typst: default
 ---
 
 # Einleitung
@@ -59,7 +61,7 @@ Die Rollenverteilung im AI Act ist entscheidend für die Pflichtenverteilung:
 Simulation: Wann wird ein Betreiber rechtlich zum Anbieter?
 
 <iframe src="widgets/kapitel-10/widget-role-switch.html" 
-        width="100%" height="650px" frameborder="0"
+        width="100%" height="710px" frameborder="0"
         title="Anbieter vs. Betreiber Rollenwechsel">
 </iframe>
 
