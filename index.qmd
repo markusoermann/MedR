@@ -82,7 +82,7 @@ Vom Schöpferprinzip über die Verwertungs- und Persönlichkeitsrechte der Urheb
 | 14 | [Folgen von Urheberrechtsverletzungen](14_urheberrecht_folgen.html) | Unterlassungs- und Beseitigungsansprüche, Schadensersatz, Hilfsansprüche auf Auskunft und Vernichtung | [PDF](14_urheberrecht_folgen.pdf) |
 | 15 | [Lizenzen und Verwertungsgesellschaften](15_lizenzen_vgs.html) | Verwertungs- vs. Nutzungsrecht, Stufenleiter der Gestattungen, einfache und ausschließliche Nutzungsrechte, Zweckübertragungstheorie, Verwertungsgesellschaften nach dem VGG | [PDF](15_lizenzen_vgs.pdf) |
 
-## Autor
+## Dozent
 
 **Prof. Dr. iur. Markus Oermann, M.A.**
 Fakultät Informatik und Wirtschaftsinformatik
