@@ -17,7 +17,9 @@ course: "Urheber- und Medienrecht"
 version: "1.0"
 
 # --- Ausgabe-Formate ---
-format: handout-typst
+format:
+  moodle-html: default
+  reader-typst: default
 ---
 
 # Einleitung: Die Monetarisierung kreativer Leistungen

@@ -17,7 +17,9 @@ course: "Urheber- und Medienrecht"
 version: "1.0"
 
 # --- Ausgabe-Formate ---
-format: moodle-html
+format:
+  moodle-html: default
+  reader-typst: default
 ---
 
 # Der gestufte Ansatz der Sorgfaltspflichten
