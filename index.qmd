@@ -37,6 +37,7 @@ Jede Einheit unten ist ein eigenständiges, interaktives Skript: Lesen Sie es im
 | **Format** | 15 Lerneinheiten, Single Source Publishing (interaktives Skript + PDF) |
 | **Prüfung** | Schriftliche Prüfung (90 Min.); Gesetzestexte als Hilfsmittel zugelassen |
 | **Sprache** | Deutsch/Englisch |
+| **DOI** | [![DOI](media/zenodo-doi-badge.svg)](https://doi.org/10.5281/zenodo.22932588) |
 
 ## So nutzen Sie diese Seite
 
@@ -81,6 +82,15 @@ Vom Schöpferprinzip über die Verwertungs- und Persönlichkeitsrechte der Urheb
 | 13 | [Schranken des Urheberrechts](13_urheberrecht_schranken.html) | Allein- und Miturheberschaft, Privatkopie, Zitatrecht, Panoramafreiheit, Parodie und Pastiche | [PDF](13_urheberrecht_schranken.pdf) |
 | 14 | [Folgen von Urheberrechtsverletzungen](14_urheberrecht_folgen.html) | Unterlassungs- und Beseitigungsansprüche, Schadensersatz, Hilfsansprüche auf Auskunft und Vernichtung | [PDF](14_urheberrecht_folgen.pdf) |
 | 15 | [Lizenzen und Verwertungsgesellschaften](15_lizenzen_vgs.html) | Verwertungs- vs. Nutzungsrecht, Stufenleiter der Gestattungen, einfache und ausschließliche Nutzungsrechte, Zweckübertragungstheorie, Verwertungsgesellschaften nach dem VGG | [PDF](15_lizenzen_vgs.pdf) |
+
+## Zitation
+
+Dieser Kurs ist auf Zenodo archiviert und über eine DOI zitierfähig. Der Badge oben verweist auf die *Concept-DOI*, die immer auf die jeweils neueste Version auflöst.
+
+- **Concept-DOI (alle Versionen):** [10.5281/zenodo.22932588](https://doi.org/10.5281/zenodo.22932588)
+- **Diese Version (SoSe 26, v1.0.0):** [10.5281/zenodo.22932589](https://doi.org/10.5281/zenodo.22932589)
+
+> Oermann, M. (2026). *Urheber- und Medienrecht: Kursmaterialien* (Version 1.0.0) [Lehrmaterial]. Zenodo. <https://doi.org/10.5281/zenodo.22932588>
 
 ## Dozent
 
